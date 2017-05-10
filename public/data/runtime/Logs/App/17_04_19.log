@@ -1,0 +1,2189 @@
+[ 2017-04-19T11:06:32+08:00 ] 112.224.67.75 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 3 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1175 行.
+
+[ 2017-04-19T11:06:33+08:00 ] 223.104.90.54 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 4 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1205 行.
+
+[ 2017-04-19T11:06:33+08:00 ] 116.1.44.167 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:06:33+08:00 ] 223.104.11.253 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 4 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1205 行.
+
+[ 2017-04-19T11:06:34+08:00 ] 171.214.238.48 /index.php?g=app&m=register&a=doregister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_users` WHERE `mobile` = '18482190880' LIMIT 1   [ RunTime:0.2412s ]
+
+[ 2017-04-19T11:06:34+08:00 ] 223.104.248.5 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:06:34+08:00 ] 112.28.135.13 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:06:34+08:00 ] 113.80.101.76 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0003s ]
+
+[ 2017-04-19T11:06:35+08:00 ] 120.195.151.10 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:06:37+08:00 ] 223.104.248.5 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0002s ]
+
+[ 2017-04-19T11:06:37+08:00 ] 112.10.211.77 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:06:38+08:00 ] 117.136.75.113 /index.php?g=app&m=register&a=send_code&mobile=15260139093&deviceType=H5&timestamp=1492571198800&sign=18e2556ea46f973cdef0f30b5b1d8aba&_=1492571198823
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+
+[ 2017-04-19T11:06:39+08:00 ] 180.126.143.79 /index.php?g=app&m=login&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: logintype /www/web/default/application/App/Controller/LoginController.class.php 第 366 行.
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT * FROM `cmf_users` WHERE `mobile` = '15380522397' LIMIT 1   [ RunTime:0.2478s ]
+SQL: UPDATE `cmf_users` SET `last_login_time`='2017-04-19 11:06:39',`last_login_ip`='180.126.143.79',`token`='3801b5be86ca85b428a3ea7395f04f0b' WHERE `id` = '583658' [ RunTime:0.0002s ]
+
+[ 2017-04-19T11:06:40+08:00 ] 180.126.143.79 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001121s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:06:40+08:00 ] 120.195.151.10 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:06:40+08:00 ] 223.104.11.253 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 4 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1205 行.
+
+[ 2017-04-19T11:06:42+08:00 ] 125.46.216.4 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:06:43+08:00 ] 180.126.143.79 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:06:44+08:00 ] 223.104.13.237 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:06:44+08:00 ] 223.104.11.253 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 4 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1205 行.
+
+[ 2017-04-19T11:06:44+08:00 ] 118.181.20.159 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:06:45+08:00 ] 223.104.248.5 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:06:46+08:00 ] 223.104.13.237 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:06:47+08:00 ] 183.202.1.100 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=79 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:06:47+08:00 ] 113.80.101.76 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:06:47+08:00 ] 116.1.44.167 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=79 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:06:48+08:00 ] 183.47.110.173 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:06:48+08:00 ] 223.104.13.237 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:06:48+08:00 ] 125.46.216.4 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:06:49+08:00 ] 117.136.8.239 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:06:50+08:00 ] 117.136.75.113 /index.php?g=app&m=register&a=doregister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_users` WHERE `mobile` = '15260139093' LIMIT 1   [ RunTime:0.2407s ]
+SQL: INSERT INTO `cmf_users` (`user_login`,`user_email`,`mobile`,`reg_from`,`user_nicename`,`user_pass`,`last_login_ip`,`create_time`,`last_login_time`,`user_status`,`user_type`) VALUES ('','','15260139093','5','','###497200387b4c494d9adab08587f88baf','117.136.75.113','2017-04-19 11:06:50','2017-04-19 11:06:50','1','2') [ RunTime:0.0004s ]
+
+[ 2017-04-19T11:06:51+08:00 ] 182.207.216.45 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 3 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1175 行.
+
+[ 2017-04-19T11:06:52+08:00 ] 117.136.11.166 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0003s ]
+
+[ 2017-04-19T11:06:53+08:00 ] 119.128.145.250 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:06:53+08:00 ] 171.214.238.48 /index.php?g=app&m=register&a=send_code
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+
+[ 2017-04-19T11:06:54+08:00 ] 119.128.145.250 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:06:54+08:00 ] 223.104.13.237 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=86 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0004s ]
+
+[ 2017-04-19T11:06:55+08:00 ] 117.136.81.5 /index.php?g=app&m=register&a=send_code
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+
+[ 2017-04-19T11:06:56+08:00 ] 183.47.110.173 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:06:57+08:00 ] 223.104.248.5 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=83 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:06:57+08:00 ] 117.136.11.166 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:06:57+08:00 ] 171.91.82.183 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 3 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1175 行.
+
+[ 2017-04-19T11:06:57+08:00 ] 171.91.253.218 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:06:58+08:00 ] 120.195.151.10 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:06:58+08:00 ] 110.251.34.209 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:06:58+08:00 ] 112.246.122.202 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 4 AND `slide_status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1205 行.
+
+[ 2017-04-19T11:06:59+08:00 ] 223.104.11.253 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 4 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1205 行.
+
+[ 2017-04-19T11:06:59+08:00 ] 223.104.13.237 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=88 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:00+08:00 ] 223.104.169.13 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 3 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1175 行.
+
+[ 2017-04-19T11:07:01+08:00 ] 120.195.151.10 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0003s ]
+
+[ 2017-04-19T11:07:01+08:00 ] 117.136.8.239 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:07:01+08:00 ] 220.166.214.165 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:02+08:00 ] 112.11.134.218 /index.php?g=app&m=register&a=send_code
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+
+[ 2017-04-19T11:07:03+08:00 ] 183.202.1.100 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:07:03+08:00 ] 117.136.81.5 /index.php?g=app&m=register&a=doregister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001425s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_users` WHERE `mobile` = '13677178786' LIMIT 1   [ RunTime:0.2469s ]
+
+[ 2017-04-19T11:07:04+08:00 ] 117.136.8.239 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0003s ]
+
+[ 2017-04-19T11:07:04+08:00 ] 171.214.238.48 /index.php?g=app&m=register&a=reset_password
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+
+[ 2017-04-19T11:07:05+08:00 ] 59.41.77.229 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 4 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1205 行.
+
+[ 2017-04-19T11:07:06+08:00 ] 117.136.11.166 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=79 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:06+08:00 ] 117.136.75.113 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0009s ]
+
+[ 2017-04-19T11:07:07+08:00 ] 120.195.151.10 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=77 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:07+08:00 ] 171.91.82.183 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 3 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1175 行.
+
+[ 2017-04-19T11:07:08+08:00 ] 223.104.13.237 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=87 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:10+08:00 ] 117.136.11.166 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:11+08:00 ] 119.128.145.250 /index.php?g=app&m=register&a=send_code
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+
+[ 2017-04-19T11:07:11+08:00 ] 111.122.211.54 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 3 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1175 行.
+
+[ 2017-04-19T11:07:12+08:00 ] 117.136.8.239 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=77 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:12+08:00 ] 112.10.211.77 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:13+08:00 ] 171.91.253.218 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:13+08:00 ] 112.103.184.246 /index.php?g=app&m=business&a=filter_para
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001229s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_business_property_name` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_business_property_name` WHERE ( property_type=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business_property_name` WHERE ( property_type=2 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business_property_name` WHERE ( property_type=3 )  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:13+08:00 ] 120.195.151.10 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:13+08:00 ] 112.103.184.246 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,6   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 7 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE `post_status` = 1 ORDER BY listorder ASC LIMIT 0,3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 4 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:13+08:00 ] 117.136.11.166 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:15+08:00 ] 112.103.184.246 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:16+08:00 ] 171.214.238.48 /index.php?g=app&m=register&a=reset_password
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_users` WHERE `mobile` = '18482190880' LIMIT 1   [ RunTime:0.2341s ]
+SQL: UPDATE `cmf_users` SET `user_pass`='###dc3c6be749134128f76e9461635b7537',`last_login_ip`='171.214.238.48',`last_login_time`='2017-04-19 11:07:15' WHERE `mobile` = '18482190880' [ RunTime:0.6792s ]
+
+[ 2017-04-19T11:07:16+08:00 ] 117.136.8.239 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:07:17+08:00 ] 119.128.145.250 /index.php?g=app&m=register&a=doregister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_users` WHERE `mobile` = '18688818440' LIMIT 1   [ RunTime:0.2371s ]
+SQL: INSERT INTO `cmf_users` (`user_login`,`user_email`,`mobile`,`reg_from`,`user_nicename`,`user_pass`,`last_login_ip`,`create_time`,`last_login_time`,`user_status`,`user_type`) VALUES ('','','18688818440','0','','###abb7d10b50e590c782697a534226f0e7','119.128.145.250','2017-04-19 11:07:17','2017-04-19 11:07:17','1','2') [ RunTime:0.0003s ]
+
+[ 2017-04-19T11:07:18+08:00 ] 117.136.8.239 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0003s ]
+
+[ 2017-04-19T11:07:19+08:00 ] 117.136.11.166 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=69 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:19+08:00 ] 61.180.95.144 /index.php?g=app&m=register&a=send_code&mobile=13697928980&deviceType=H5&timestamp=1492571239679&sign=c165f71a483ae28f8bab742cb4320276&_=1492571239693
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+
+[ 2017-04-19T11:07:22+08:00 ] 120.195.151.10 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:22+08:00 ] 117.136.81.5 /index.php?g=app&m=login&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: logintype /www/web/default/application/App/Controller/LoginController.class.php 第 366 行.
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT * FROM `cmf_users` WHERE `mobile` = '13677178786' LIMIT 1   [ RunTime:0.2528s ]
+SQL: UPDATE `cmf_users` SET `last_login_time`='2017-04-19 11:07:22',`last_login_ip`='117.136.81.5',`token`='bf74e292b8c3fa7a059335042f83a62e' WHERE `id` = '542763' [ RunTime:0.0003s ]
+
+[ 2017-04-19T11:07:22+08:00 ] 112.96.176.67 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 4 AND `slide_status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1205 行.
+
+[ 2017-04-19T11:07:23+08:00 ] 183.47.110.173 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:07:23+08:00 ] 117.136.81.5 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001406s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:07:24+08:00 ] 117.136.84.120 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 4 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1205 行.
+
+[ 2017-04-19T11:07:24+08:00 ] 203.156.237.30 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:07:25+08:00 ] 113.200.143.8 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 3 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1175 行.
+
+[ 2017-04-19T11:07:25+08:00 ] 117.136.11.166 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:25+08:00 ] 112.103.184.246 /index.php?g=app&m=business&a=filter
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0015s ]
+SQL: select business_id from cmf_business_properties where property_id = 19 [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE `post_status` = 1 AND `id` IN ('7','11','66','68','73','74','75','76','27','77','79','81','82','61','64','56','15','13','12','83','84','85','86','87','88') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_business` WHERE `post_status` = 1 AND `id` IN ('7','11','66','68','73','74','75','76','27','77','79','81','82','61','64','56','15','13','12','83','84','85','86','87','88') ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: slide /www/web/default/application/App/Controller/BusinessController.class.php 第 361 行.
+
+[ 2017-04-19T11:07:25+08:00 ] 183.47.110.173 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:25+08:00 ] 60.212.189.84 /index.php?g=app&m=register&a=send_code
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+
+[ 2017-04-19T11:07:26+08:00 ] 171.214.238.48 /index.php?g=app&m=login&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: logintype /www/web/default/application/App/Controller/LoginController.class.php 第 366 行.
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT * FROM `cmf_users` WHERE `mobile` = '18482190880' LIMIT 1   [ RunTime:0.1594s ]
+SQL: UPDATE `cmf_users` SET `last_login_time`='2017-04-19 11:07:26',`last_login_ip`='171.214.238.48',`token`='12b49dc1fbdbc0cca304ac2a9ecd1fb6' WHERE `id` = '370119' [ RunTime:0.0003s ]
+
+[ 2017-04-19T11:07:26+08:00 ] 171.214.238.48 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:07:26+08:00 ] 117.136.81.5 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:28+08:00 ] 112.103.184.246 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0003s ]
+
+[ 2017-04-19T11:07:29+08:00 ] 203.156.237.30 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=84 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:30+08:00 ] 112.96.176.67 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 4 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1205 行.
+
+[ 2017-04-19T11:07:31+08:00 ] 183.202.1.100 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=63 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0003s ]
+
+[ 2017-04-19T11:07:31+08:00 ] 222.169.51.138 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:07:32+08:00 ] 223.86.253.154 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 4 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1205 行.
+
+[ 2017-04-19T11:07:33+08:00 ] 119.128.145.250 /index.php?g=app&m=login&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: logintype /www/web/default/application/App/Controller/LoginController.class.php 第 366 行.
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT * FROM `cmf_users` WHERE `mobile` = '18688818440' LIMIT 1   [ RunTime:0.2375s ]
+SQL: UPDATE `cmf_users` SET `last_login_time`='2017-04-19 11:07:33',`last_login_ip`='119.128.145.250',`token`='b02a41ff542e0e8d922485064258bd8a' WHERE `id` = '583661' [ RunTime:0.0004s ]
+
+[ 2017-04-19T11:07:33+08:00 ] 223.104.11.253 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 4 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1205 行.
+
+[ 2017-04-19T11:07:33+08:00 ] 119.128.145.250 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:07:33+08:00 ] 120.195.151.10 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=88 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0002s ]
+
+[ 2017-04-19T11:07:34+08:00 ] 112.11.134.218 /index.php?g=app&m=register&a=reset_password
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_users` WHERE `mobile` = '15990187549' LIMIT 1   [ RunTime:0.2427s ]
+SQL: UPDATE `cmf_users` SET `user_pass`='###1767919cefd4c3cefd7b2a47bdf90ec9',`last_login_ip`='112.11.134.218',`last_login_time`='2017-04-19 11:07:33' WHERE `mobile` = '15990187549' [ RunTime:0.7219s ]
+
+[ 2017-04-19T11:07:34+08:00 ] 183.204.54.186 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:34+08:00 ] 183.11.36.79 /index.php?g=app&m=register&a=send_code&mobile=13826540776&deviceType=H5&timestamp=1492571253830&sign=1dba2f6e3cac0aa990dca21dcef4193a&_=1492571253845
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+
+[ 2017-04-19T11:07:35+08:00 ] 119.128.145.250 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:36+08:00 ] 112.103.184.246 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=88 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:38+08:00 ] 171.214.238.48 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=79 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0003s ]
+
+[ 2017-04-19T11:07:39+08:00 ] 61.180.95.144 /index.php?g=app&m=register&a=doregister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_users` WHERE `mobile` = '13697928980' LIMIT 1   [ RunTime:0.2534s ]
+SQL: INSERT INTO `cmf_users` (`user_login`,`user_email`,`mobile`,`reg_from`,`user_nicename`,`user_pass`,`last_login_ip`,`create_time`,`last_login_time`,`user_status`,`user_type`) VALUES ('','','13697928980','5','','###f8c3cb0157ab88842923570fea088755','61.180.95.144','2017-04-19 11:07:39','2017-04-19 11:07:39','1','2') [ RunTime:0.0003s ]
+
+[ 2017-04-19T11:07:39+08:00 ] 222.169.51.138 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:07:40+08:00 ] 124.236.183.14 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 3 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1175 行.
+
+[ 2017-04-19T11:07:40+08:00 ] 117.136.81.5 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0003s ]
+
+[ 2017-04-19T11:07:40+08:00 ] 112.10.211.77 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:40+08:00 ] 112.11.134.218 /index.php?g=app&m=login&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: logintype /www/web/default/application/App/Controller/LoginController.class.php 第 366 行.
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT * FROM `cmf_users` WHERE `mobile` = '6217001540017304807' LIMIT 1   [ RunTime:0.2518s ]
+
+[ 2017-04-19T11:07:41+08:00 ] 183.204.54.186 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:07:42+08:00 ] 112.17.240.97 /index.php?g=app&m=register&a=send_code&mobile=13616559563&deviceType=H5&timestamp=1492571261733&sign=de94742a0e21f16d96a194e08fa5acb0&_=1492571261746
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+
+[ 2017-04-19T11:07:43+08:00 ] 120.195.151.10 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:07:43+08:00 ] 36.98.116.111 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:43+08:00 ] 183.204.54.186 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0003s ]
+
+[ 2017-04-19T11:07:44+08:00 ] 106.6.142.167 /index.php?g=app&m=register&a=send_code&mobile=15779779009&deviceType=H5&timestamp=1492571264796&sign=f305398eeb180a46d430e9ef10f6dbb5&_=1492571264810
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+
+[ 2017-04-19T11:07:47+08:00 ] 117.136.81.5 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:07:48+08:00 ] 183.11.36.79 /index.php?g=app&m=register&a=doregister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_users` WHERE `mobile` = '13826540776' LIMIT 1   [ RunTime:0.2409s ]
+SQL: INSERT INTO `cmf_users` (`user_login`,`user_email`,`mobile`,`reg_from`,`user_nicename`,`user_pass`,`last_login_ip`,`create_time`,`last_login_time`,`user_status`,`user_type`) VALUES ('','','13826540776','5','','###b113ba8cad03e71bda0f90b63b4321b9','183.11.36.79','2017-04-19 11:07:48','2017-04-19 11:07:48','1','2') [ RunTime:0.0004s ]
+
+[ 2017-04-19T11:07:48+08:00 ] 180.126.143.79 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001433s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:07:49+08:00 ] 117.136.26.61 /index.php?g=app&m=register&a=send_code&mobile=17881105220&deviceType=H5&timestamp=1492571267213&sign=5d80b5276245313bf13a15977274409e&_=1492571267239
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+
+[ 2017-04-19T11:07:50+08:00 ] 124.160.213.19 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:50+08:00 ] 220.115.167.123 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:50+08:00 ] 111.1.210.166 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 3 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1175 行.
+
+[ 2017-04-19T11:07:51+08:00 ] 112.17.240.97 /index.php?g=app&m=register&a=doregister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_users` WHERE `mobile` = '13616559563' LIMIT 1   [ RunTime:0.2504s ]
+SQL: INSERT INTO `cmf_users` (`user_login`,`user_email`,`mobile`,`reg_from`,`user_nicename`,`user_pass`,`last_login_ip`,`create_time`,`last_login_time`,`user_status`,`user_type`) VALUES ('','','13616559563','5','','###21bc617a738cae98a97785084e716761','112.17.240.97','2017-04-19 11:07:51','2017-04-19 11:07:51','1','2') [ RunTime:0.0004s ]
+
+[ 2017-04-19T11:07:52+08:00 ] 125.46.216.4 /index.php?g=app&m=login&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: logintype /www/web/default/application/App/Controller/LoginController.class.php 第 366 行.
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT * FROM `cmf_users` WHERE `mobile` = '15158870021' LIMIT 1   [ RunTime:0.2328s ]
+
+[ 2017-04-19T11:07:54+08:00 ] 60.212.189.84 /index.php?g=app&m=register&a=doregister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_users` WHERE `mobile` = '15263171166' LIMIT 1   [ RunTime:0.2421s ]
+
+[ 2017-04-19T11:07:55+08:00 ] 112.28.135.13 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:55+08:00 ] 180.130.2.172 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 3 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1175 行.
+
+[ 2017-04-19T11:07:55+08:00 ] 117.136.66.167 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:55+08:00 ] 112.10.211.77 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=88 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:55+08:00 ] 183.204.54.186 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=77 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:56+08:00 ] 220.115.167.123 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:07:56+08:00 ] 59.51.212.168 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=69 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:57+08:00 ] 112.17.240.215 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:57+08:00 ] 36.98.116.111 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:57+08:00 ] 106.6.142.167 /index.php?g=app&m=register&a=doregister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+NOTIC: [8] Undefined index: mobilecode /www/web/default/application/Common/Common/function.php 第 1550 行.
+
+[ 2017-04-19T11:07:57+08:00 ] 122.157.252.6 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 4 AND `slide_status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: review /www/web/default/application/App/Controller/BusinessController.class.php 第 1205 行.
+
+[ 2017-04-19T11:07:59+08:00 ] 180.126.143.79 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001318s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:07:59+08:00 ] 171.91.253.218 /index.php?g=app&m=login&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: logintype /www/web/default/application/App/Controller/LoginController.class.php 第 366 行.
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT * FROM `cmf_users` WHERE `mobile` = '18284077657' LIMIT 1   [ RunTime:0.2501s ]
+SQL: UPDATE `cmf_users` SET `last_login_time`='2017-04-19 11:07:59',`last_login_ip`='171.91.253.218',`token`='0ad52ae122d7a77eec981f970f3eab34' WHERE `id` = '583659' [ RunTime:0.2276s ]
+
+[ 2017-04-19T11:07:59+08:00 ] 117.136.11.166 /index.php?g=app&m=login&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: logintype /www/web/default/application/App/Controller/LoginController.class.php 第 366 行.
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT * FROM `cmf_users` WHERE `mobile` = '15980307901' LIMIT 1   [ RunTime:0.2535s ]
+SQL: UPDATE `cmf_users` SET `last_login_time`='2017-04-19 11:07:59',`last_login_ip`='117.136.11.166',`token`='d74b6b099d20fe7b2b21383da36b06fe' WHERE `id` = '583622' [ RunTime:0.0003s ]
+
+[ 2017-04-19T11:08:00+08:00 ] 171.91.253.218 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001324s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:08:00+08:00 ] 117.136.11.166 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:08:01+08:00 ] 60.212.189.84 /index.php?g=app&m=register&a=doregister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_users` WHERE `mobile` = '15263171166' LIMIT 1   [ RunTime:0.2571s ]
+
+[ 2017-04-19T11:08:01+08:00 ] 117.136.81.5 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:08:02+08:00 ] 124.160.213.19 /index.php?g=app&m=login&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: logintype /www/web/default/application/App/Controller/LoginController.class.php 第 366 行.
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT * FROM `cmf_users` WHERE `mobile` = '13282223313' LIMIT 1   [ RunTime:0.0025s ]
+SQL: UPDATE `cmf_users` SET `last_login_time`='2017-04-19 11:08:02',`last_login_ip`='124.160.213.19',`token`='2731ab8dd0ec473d62ef2abb9d632904' WHERE `id` = '4172' [ RunTime:0.0003s ]
+
+[ 2017-04-19T11:08:02+08:00 ] 180.126.143.79 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:08:02+08:00 ] 124.160.213.19 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:08:03+08:00 ] 223.104.101.41 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:08:03+08:00 ] 117.136.8.239 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:08:04+08:00 ] 180.126.143.79 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:08:05+08:00 ] 106.6.142.167 /index.php?g=app&m=register&a=doregister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+NOTIC: [8] Undefined index: mobilecode /www/web/default/application/Common/Common/function.php 第 1550 行.
+
+[ 2017-04-19T11:08:05+08:00 ] 124.160.213.19 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001490s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:08:06+08:00 ] 125.46.216.4 /index.php?g=app&m=login&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: logintype /www/web/default/application/App/Controller/LoginController.class.php 第 366 行.
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT * FROM `cmf_users` WHERE `mobile` = '15158870021' LIMIT 1   [ RunTime:0.2330s ]
+SQL: UPDATE `cmf_users` SET `last_login_time`='2017-04-19 11:08:06',`last_login_ip`='125.46.216.4',`token`='e2066b5f3712164d42d4ddb0ed4dde14' WHERE `id` = '573613' [ RunTime:0.0004s ]
+
+[ 2017-04-19T11:08:06+08:00 ] 39.128.45.166 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:08:06+08:00 ] 220.115.167.123 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0003s ]
+
+[ 2017-04-19T11:08:07+08:00 ] 125.46.216.4 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+
+[ 2017-04-19T11:08:07+08:00 ] 183.11.36.79 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0002s ]
+
+[ 2017-04-19T11:08:07+08:00 ] 39.128.45.166 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:08:08+08:00 ] 117.136.8.239 /index.php?g=app&m=business&a=info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`post_title`,`smeta`,`feilv`,`post_hits` FROM `cmf_business` WHERE `recommended` = 1 AND `post_status` = 1 ORDER BY id desc  [ RunTime:0.0003s ]
+
+[ 2017-04-19T11:08:08+08:00 ] 36.98.116.111 /index.php?g=app&m=login&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: logintype /www/web/default/application/App/Controller/LoginController.class.php 第 366 行.
+NOTIC: [8] Undefined index: auto /www/web/default/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT * FROM `cmf_users` WHERE `mobile` = '18636703302' LIMIT 1   [ RunTime:0.0019s ]
+SQL: UPDATE `cmf_users` SET `last_login_time`='2017-04-19 11:08:08',`last_login_ip`='36.98.116.111',`token`='a593d07b45ac0385544cc8d7e3fb9fee' WHERE `id` = '2046' [ RunTime:0.0002s ]
+
+[ 2017-04-19T11:08:08+08:00 ] 117.136.66.167 /index.php?g=app&m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_slide` WHERE `slide_cid` = 1 AND `slide_status` = 1  [ RunTime:0.0001s ]
+
+[ 2017-04-19T11:08:08+08:00 ] 36.98.116.111 /index.php?g=app&m=business&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+NOTIC: [2048] Declaration of App\Controller\BusinessController::redirect() should be compatible with Think\Controller::redirect($url, $params = Array, $delay = 0, $msg = '') /www/web/default/application/App/Controller/BusinessController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cmf_business` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_business` WHERE ( post_status=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_business` WHERE ( post_status=1 ) ORDER BY listorder ASC LIMIT 0,20   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 913 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 958 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1015 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1036 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1059 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1082 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1105 行.
+NOTIC: [8] Undefined index: code /www/web/default/application/App/Controller/BusinessController.class.php 第 1128 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1151 行.
+NOTIC: [8] Undefined index: type /www/web/default/application/App/Controller/BusinessController.class.php 第 1181 行.
+

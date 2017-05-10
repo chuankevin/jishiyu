@@ -1,0 +1,6 @@
+[ 2017-04-18T16:54:21+08:00 ] 106.37.66.201 /index.php?g=Portal&m=AdminCreditcard&a=index&menuid=163
+NOTIC: D方法实例化没找到模型类Portal\Model\CreditcardModel
+
+[ 2017-04-18T16:54:27+08:00 ] 106.37.66.201 /index.php?g=&m=AdminCreditcard&a=edit&term=&id=7
+NOTIC: D方法实例化没找到模型类Portal\Model\CreditcardModel
+
