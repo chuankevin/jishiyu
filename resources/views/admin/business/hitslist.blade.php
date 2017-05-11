@@ -13,6 +13,7 @@
                    {{-- 渠道编号：
                     <input type="text" class="form-control" name="keywords" placeholder="渠道编号" value="{{$keywords}}">&nbsp;&nbsp;&nbsp;&nbsp;--}}
                     <button type="submit" class="btn btn-primary">搜索</button>
+                    <button type="button" class="btn btn-success" onclick="location.reload()">刷新</button>
                 </div>
             </div>
         </form>

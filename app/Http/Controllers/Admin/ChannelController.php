@@ -142,22 +142,25 @@ class ChannelController extends HomeController
         $data=new ChannelNo();
 
         //dd($users->where('channel','QD0007')->count());
+        $start_time=$request->start_time;
+        $end_time=$request->end_time;
         $keywords=$request->keywords;
         if($keywords!=''){
-            $data=$data->where('no','like','%'.$keywords.'%');
+            $data=$data->where('no','like','%'.$keywords.'%')
+                ->orWhere('channel.name','like','%'.$keywords.'%');
         }
+
 
         //渠道信息
         $data=$data
-            ->orderBy('create_at','desc')
-            ->select('id','no','lv1','lv2','lv3','lv4','lv5','create_at','is_delete')
+            ->leftjoin('channel','channel_no.lv2','=','channel.id')
+            ->orderBy('channel_no.create_at','desc')
+            ->select('channel_no.id','channel_no.no','lv1','lv3','lv4','lv5','channel_no.create_at','channel_no.is_delete','channel.name as lv2')
             ->paginate(10);
 
         foreach($data as $k=>$v){
             $users=new User();
             //条件筛选
-            $start_time=$request->start_time;
-            $end_time=$request->end_time;
             if($start_time!=''){
                 $users=$users->where('create_time','>=',$start_time);
             }
@@ -184,11 +187,11 @@ class ChannelController extends HomeController
             }else{
                 $data[$k]['lv1']='';
             }
-            if($v['lv2']!=0){
+          /*  if($v['lv2']!=0){
                 $data[$k]['lv2']=Channel::find($v['lv2'])['name'];
             }else{
                 $data[$k]['lv2']='';
-            }
+            }*/
             if($v['lv3']!=0){
                 $data[$k]['lv3']=Channel::find($v['lv3'])['name'];
             }else{

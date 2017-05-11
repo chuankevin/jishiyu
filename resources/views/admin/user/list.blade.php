@@ -7,8 +7,11 @@
         <form class="form-inline" method="get" >
             <div class="box-body">
                 <div class="form-group">
+                    时间：
+                    <input type="text" class="form-control date-picker start" id='start_time' name="start_time" placeholder="" value="{{$start_time}}">－
+                    <input type="text" class="form-control date-picker end" id="end_time" name="end_time" placeholder="" value="{{$end_time}}">&nbsp;&nbsp;&nbsp;&nbsp;
                     渠道号：
-                    <select class="form-control selectpicker2" name="channel">
+                    <select class="form-control selectpicker2" id="channel" name="channel">
                         <option value="">请选择渠道号</option>
                         @foreach($channels as $value)
                             <option value="{{$value->id}}"
@@ -19,8 +22,10 @@
                         @endforeach
                     </select>&nbsp;&nbsp;&nbsp;&nbsp;
                     手机：
-                    <input type="text" class="form-control" name="mobile" placeholder="请输入手机号" value="{{$mobile}}">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" class="form-control" id="mobile" name="mobile" placeholder="请输入手机号" value="{{$mobile}}">&nbsp;&nbsp;&nbsp;&nbsp;
                     <button type="submit" class="btn btn-primary">搜索</button>
+                    <button type="button" class="btn btn-success" onclick="location.reload()">刷新</button>
+                    <button type="button" class="btn btn-warning" onclick="exportExcel()">导出</button>
                 </div>
             </div>
         </form>
@@ -83,7 +88,7 @@
         </div>
         <!-- /.box-body -->
         <div class="box-footer clearfix">
-            {!! $data->appends(['channel'=>$channel,'mobile'=>$mobile])->links() !!}
+            {!! $data->appends(['channel'=>$channel,'mobile'=>$mobile,'start_time'=>$start_time,'end_time'=>$end_time])->links() !!}
             {{--<ul class="pagination pagination-sm no-margin pull-left">
                 <li><a href="#">&laquo;</a></li>
                 <li><a href="#">1</a></li>
@@ -97,6 +102,12 @@
     <script>
         $(function() {
             $('.selectpicker2').select2();
+            $('.date-picker').datepicker({
+                format:'yyyy-mm-dd',
+                language: 'zh-CN',
+                autoclose: true,
+                todayBtn : true,
+            });
         });
 
 
@@ -115,6 +126,29 @@
                     location.reload();
                 }
             });
+        }
+
+        function exportExcel(){
+            var start_time=$('#start_time').val();
+            var end_time=$('#end_time').val();
+            var mobile=$('#mobile').val();
+            var channel=$('#channel').val();
+            //alert(start_time);return false;
+                $.ajax({
+                    data:{
+                        start_time:start_time,
+                        end_time:end_time,
+                        mobile:mobile,
+                        channel:channel,
+                        _token:"{{csrf_token()}}"
+                    },
+                    dataType:'json',
+                    type:'post',
+                    url:"{{url('/admin/user/export')}}",
+                    success:function(data){
+                        location.href=data.url;
+                    }
+                });
         }
     </script>
 

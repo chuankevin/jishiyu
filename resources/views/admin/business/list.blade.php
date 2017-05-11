@@ -10,6 +10,7 @@
                     关键词：
                     <input type="text" class="form-control" name="keywords" placeholder="请输入关键词" value="{{$keywords}}">&nbsp;&nbsp;&nbsp;&nbsp;
                     <button type="submit" class="btn btn-primary">搜索</button>
+                    <button type="button" class="btn btn-success" onclick="location.reload()">刷新</button>
                 </div>
             </div>
         </form>
@@ -37,8 +38,20 @@
                     </td>
                     <td>{{$value->post_hits}}</td>
                     <td>{{$value->edufanwei}}</td>
-                    <td>{{$value->feilv}}</td>
-                    <td>{{$value->qixianfanwei}}</td>
+                    <td>{{$value->feilv}}
+                        @if($value->fv_unit==1)
+                            日
+                        @else
+                            月
+                        @endif
+                    </td>
+                    <td>{{$value->qixianfanwei}}
+                        @if($value->qx_unit==1)
+                            日
+                        @else
+                            月
+                        @endif
+                    </td>
                     <td>{{$value->zuikuaifangkuan}}</td>
                     <td>
                         @if($value->smeta!='')
