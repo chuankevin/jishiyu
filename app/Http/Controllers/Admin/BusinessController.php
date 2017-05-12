@@ -64,6 +64,7 @@ class BusinessController extends HomeController
                 $data->zuikuaifangkuan=$request->zuikuaifangkuan;
                 $data->shenqingtiaojian=$request->shenqingtiaojian;
                 $data->link=$request->link;
+                $data->link_h5=$request->link_h5;
                 $data->smeta=json_encode(['thumb'=>$request->img_path]);
                 $data->post_date=date('Y-m-d H:i:s');
                 $data->post_modified=date('Y-m-d H:i:s');
@@ -148,6 +149,7 @@ class BusinessController extends HomeController
                 $data->zuikuaifangkuan=$request->zuikuaifangkuan;
                 $data->shenqingtiaojian=$request->shenqingtiaojian;
                 $data->link=$request->link;
+                $data->link_h5=$request->link_h5;
                 $data->smeta=json_encode(['thumb'=>$request->img_path]);
                 $data->post_modified=date('Y-m-d H:i:s');
                 $data->save();

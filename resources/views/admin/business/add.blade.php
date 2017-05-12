@@ -67,10 +67,17 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">申请地址：</label>
+                    <label for="" class="col-sm-2 control-label">APP申请地址：</label>
 
                     <div class="col-sm-4">
                         <input type="text" class="form-control" id="link" placeholder="请输入网址" name="link">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">H5申请地址：</label>
+
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="link_h5" placeholder="请输入网址" name="link_h5">
                     </div>
                 </div>
                 {{--<div class="form-group">
@@ -188,7 +195,11 @@
             }
             //申请地址
             if($('#link').val()==''){
-                msg('请输入申请地址');
+                msg('请输入APP申请地址');
+                return false;
+            }
+            if($('#link_h5').val()==''){
+                msg('请输入H5申请地址');
                 return false;
             }
             //职业身份

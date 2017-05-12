@@ -30,7 +30,7 @@ class HomeController extends Controller
             });
 
         })->store('xls','./excel/exports',true);
-        return response()->json(['url'=>'http://'.$_SERVER['SERVER_NAME'].'/excel/exports/'.$ret['file']]);
+        return response()->json(['url'=>'http://'.$_SERVER['SERVER_NAME'].':81'.'/excel/exports/'.$ret['file']]);
 
     }
 }
