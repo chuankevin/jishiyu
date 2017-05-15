@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ca250de-fd69-47b1-9cce-9eea6ffb224d" name="默认的" comment="" />
+    <list default="true" id="5ca250de-fd69-47b1-9cce-9eea6ffb224d" name="默认的" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AlipayController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AlipayController.php" />
+    </list>
     <ignored path="laravel.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -33,45 +36,84 @@
       <file leaf-file-name="AlipayController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AlipayController.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< .mine
             <state relative-caret-position="612">
               <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding>
                 <element signature="e#44#83#0#PHP" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="561">
+              <caret line="33" column="99" selection-start-line="33" selection-start-column="99" selection-end-line="33" selection-end-column="99" />
+              <folding>
+                <element signature="e#44#83#0#PHP" expanded="true" />
+              </folding>
+>>>>>>> .theirs
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< .mine
       <file leaf-file-name="public_key.pem" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/zmxy-sdk/public_key.pem">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+=======
       <file leaf-file-name="RSAUtil.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/zmxy-sdk/zmop/RSAUtil.php">
+>>>>>>> .theirs
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="55" column="60" lean-forward="false" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="60" />
+<<<<<<< .mine
+            <state relative-caret-position="85">
+              <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+=======
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> .theirs
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< .mine
+      <file leaf-file-name="RSAUtil.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/zmxy-sdk/zmop/RSAUtil.php">
+=======
       <file leaf-file-name="ApiController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiController.php">
+>>>>>>> .theirs
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< .mine
+            <state relative-caret-position="280">
+              <caret line="55" column="60" lean-forward="false" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="60" />
+=======
             <state relative-caret-position="170">
-              <caret line="12" column="55" lean-forward="false" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+              <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+>>>>>>> .theirs
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< .mine
+      <file leaf-file-name="ApiController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiController.php">
+=======
+      <file leaf-file-name="CashbusController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CashbusController.php">
+>>>>>>> .theirs
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< .mine
+            <state relative-caret-position="170">
+              <caret line="12" column="55" lean-forward="false" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+=======
+            <state relative-caret-position="289">
+              <caret line="21" column="9" selection-start-line="19" selection-start-column="7" selection-end-line="21" selection-end-column="9" />
+>>>>>>> .theirs
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< .mine
       <file leaf-file-name="CashbusController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CashbusController.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,6 +124,18 @@
           </provider>
         </entry>
       </file>
+=======
+
+
+
+
+
+
+
+
+
+
+>>>>>>> .theirs
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -146,8 +200,13 @@
         <option value="$PROJECT_DIR$/resources/views/admin/business/add.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/BusinessController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/business/edit.blade.php" />
+<<<<<<< .mine
         <option value="$PROJECT_DIR$/public/zmxy-sdk/public_key.pem" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AlipayController.php" />
+=======
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AlipayController.php" />
+
+>>>>>>> .theirs
       </list>
     </option>
   </component>
@@ -258,6 +317,29 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+<<<<<<< .mine
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zmxy-sdk" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zmop" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+=======
+
+
+
+
+
+
+
+
+
+
+>>>>>>> .theirs
             <PATH_ELEMENT>
               <option name="myItemId" value="zmxy-sdk" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
@@ -281,76 +363,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jishiyu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jishiyu" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jishiyu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jishiyu" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jishiyu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jishiyu" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -487,17 +504,30 @@
       <workItem from="1494397081187" duration="12197000" />
       <workItem from="1494475511219" duration="11037000" />
       <workItem from="1494551996922" duration="774000" />
+<<<<<<< .mine
       <workItem from="1494558560018" duration="9409000" />
       <workItem from="1494580380561" duration="3159000" />
       <workItem from="1494584319602" duration="109000" />
       <workItem from="1494811442538" duration="728000" />
       <workItem from="1494828970058" duration="2890000" />
       <workItem from="1494836402699" duration="2946000" />
+=======
+      <workItem from="1494558560018" duration="9409000" />
+      <workItem from="1494580380561" duration="3159000" />
+      <workItem from="1494584319602" duration="109000" />
+      <workItem from="1494811442538" duration="728000" />
+
+
+>>>>>>> .theirs
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< .mine
     <option name="totallyTimeSpent" value="242455000" />
+=======
+    <option name="totallyTimeSpent" value="236619000" />
+>>>>>>> .theirs
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -510,10 +540,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26096824" sideWeight="0.5057283" order="2" side_tool="true" content_ui="tabs" />
+<<<<<<< .mine
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16684435" sideWeight="0.4942717" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16364606" sideWeight="0.4942717" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> .theirs
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -555,6 +589,23 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< .mine
+
+
+
+
+
+
+
+=======
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/adminuser/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> .theirs
     <entry file="file://$PROJECT_DIR$/app/Models/RoleMenu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -774,6 +825,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< .mine
     <entry file="file://$USER_HOME$/Documents/WeChat Files/super_rosh/Files/browser.html" />
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -782,34 +834,65 @@
         </state>
       </provider>
     </entry>
+=======
+
+
+
+
+
+
+
+
+>>>>>>> .theirs
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< .mine
         <state relative-caret-position="835">
           <caret line="157" column="54" lean-forward="false" selection-start-line="157" selection-start-column="54" selection-end-line="157" selection-end-column="54" />
+=======
+        <state relative-caret-position="272">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+>>>>>>> .theirs
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< .mine
         <state relative-caret-position="544">
           <caret line="32" column="76" lean-forward="false" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
+=======
+        <state relative-caret-position="597">
+          <caret line="80" column="7" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
+>>>>>>> .theirs
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/business/add.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< .mine
         <state relative-caret-position="215">
           <caret line="76" column="71" lean-forward="false" selection-start-line="76" selection-start-column="65" selection-end-line="76" selection-end-column="71" />
+=======
+        <state relative-caret-position="835">
+          <caret line="157" column="54" selection-start-line="157" selection-start-column="54" selection-end-line="157" selection-end-column="54" />
+>>>>>>> .theirs
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/business/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< .mine
         <state relative-caret-position="317">
           <caret line="79" column="110" lean-forward="false" selection-start-line="79" selection-start-column="110" selection-end-line="79" selection-end-column="110" />
+=======
+        <state relative-caret-position="544">
+          <caret line="32" column="76" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
+>>>>>>> .theirs
         </state>
       </provider>
     </entry>
+<<<<<<< .mine
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/BusinessController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2718">
@@ -849,11 +932,51 @@
         </state>
       </provider>
     </entry>
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> .theirs
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="12" column="55" lean-forward="false" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -861,7 +984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="55" column="60" lean-forward="false" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -869,10 +991,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ChannelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="835">
+          <caret line="149" column="67" selection-start-line="149" selection-start-column="67" selection-end-line="149" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/channel/nolist.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="133" selection-start-line="10" selection-start-column="118" selection-end-line="10" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/zmxy-sdk/zmop/WebUtil.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/zmxy-sdk/zmop/ZmopClient.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/zmxy-sdk/zmop/RSAUtil.php" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CashbusController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" column="9" selection-start-line="19" selection-start-column="7" selection-end-line="21" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< .mine
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AlipayController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -883,6 +1037,50 @@
         </state>
       </provider>
     </entry>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=======
+    <entry file="file://$PROJECT_DIR$/public/zmxy-sdk/zmop/RSAUtil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AlipayController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="99" selection-start-line="33" selection-start-column="99" selection-end-line="33" selection-end-column="99" />
+          <folding>
+            <element signature="e#44#83#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> .theirs
   </component>
   <component name="masterDetails">
     <states>
