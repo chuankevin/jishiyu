@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Models\AppActivate;
 use App\Models\Channel;
 use App\Models\ChannelNo;
+use App\Models\ChannelNoPro;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -104,6 +105,7 @@ class ChannelController extends HomeController
                 $data->lv3=$request->lv3;
                 $data->lv4=$request->lv4;
                 $data->lv5=$request->lv5;
+                $data->name=$request->name;
                 $data->is_delete=0;
                 $data->create_at=date('Y-m-d H:i:s');
                 $data->update_at=date('Y-m-d H:i:s');
@@ -111,6 +113,12 @@ class ChannelController extends HomeController
 
                 $data->no="QD".str_pad($data->id,4,"0",STR_PAD_LEFT );
                 $data->save();
+
+                $proportion=new ChannelNoPro();
+                $proportion->channel_no_id=$data->id;
+                $proportion->proportion=100;
+                $proportion->save();
+
                 DB::commit();
 
                 $channel1=Channel::where(['is_delete'=>0,'lv'=>1])
@@ -155,7 +163,7 @@ class ChannelController extends HomeController
         $data=$data
             ->leftjoin('channel','channel_no.lv2','=','channel.id')
             ->orderBy('channel_no.create_at','desc')
-            ->select('channel_no.id','channel_no.no','lv1','lv3','lv4','lv5','channel_no.create_at','channel_no.is_delete','channel.name as lv2')
+            ->select('channel_no.id','channel_no.no','lv1','lv3','lv4','lv5','channel_no.create_at','channel_no.is_delete','channel.name as lv2','channel_no.name')
             ->paginate(10);
 
         foreach($data as $k=>$v){

@@ -2,7 +2,7 @@
 @section('content')
     <div class="box box-info">
         <div class="box-header with-border">
-            <h3 class="box-title">编辑管理员</h3>
+            <h3 class="box-title">编辑比例</h3>
         </div>
         <!-- /.box-header -->
         <!-- form start -->
@@ -11,36 +11,29 @@
             <div class="box-body">
 
                 <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">管理员用户名：</label>
-
-                    <div class="col-sm-4">
-                        <input type="text" class="form-control" id="name" placeholder="只能输入数字字母下划线" name="name" value="{{$data->name}}">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">用户角色：</label>
+                    <label for="" class="col-sm-2 control-label">渠道：</label>
 
                     <div class="checkbox col-sm-4">
-                        <select class="form-control selectpicker2" id="role_id" name="role_id">
+                        <select class="form-control selectpicker2" id="channel_no_id" name="channel_no_id" disabled="disabled">
                             <option value="">请选择</option>
-                            @foreach($roles as $role)
-                                <option value="{{$role->id}}"
-                                @if($data->roleId==$role->id)
+                            @foreach($channels as $channel)
+                                <option value="{{$channel->id}}"
+                                @if($data->channel_no_id==$channel->id)
                                     selected
                                 @endif
-                                >{{$role->name}}</option>
+                                >{{$channel->name}}</option>
                             @endforeach
                         </select>
                     </div>
                 </div>
-
                 <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">密码：</label>
+                    <label for="" class="col-sm-2 control-label">比例：</label>
 
                     <div class="col-sm-4">
-                        <input type="password" class="form-control" id="pwd" placeholder="请输入6位数字密码" name="pwd" value="{{$data->password}}">
+                        <input type="text" class="form-control" id="proportion" placeholder="" name="proportion" value="{{$data->proportion}}">%
                     </div>
                 </div>
+
 
                 <!-- /.box-body -->
                 <div class="box-footer">
@@ -65,32 +58,23 @@
     <script>
         //字段验证
         function check(){
-            //名称
-            if($('#name').val()==''){
-                msg('请输入用户名');
-                return false;
-            }
-            var reg=/^\w+$/;
+
+        /*    var reg=/^\w+$/;
             //alert(reg.test($('#name').val()));
             if(!reg.test($('#name').val())){
                 msg('用户名格式不正确');
                 return false;
-            }
+            }*/
             //角色
-            if($('#role_id').val()=='') {
-                msg('请选择相应角色');
-                return false;
-            }
-            //密码
-            if($('#pwd').val()=='') {
-                msg('请输入密码');
+            if($('#channel_no__id').val()=='') {
+                msg('请选择渠道');
                 return false;
             }
 
-           /* if($('#pwd').val().length!=6){
-                msg('请输入6位数字密码');
+            if($('#proportion').val()=='') {
+                msg('请填写比例');
                 return false;
-            }*/
+            }
 
         }
 

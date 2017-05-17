@@ -41,11 +41,13 @@ $menuList = RoleMenu::getMenuList($admin_id);
         <ul class="sidebar-menu">
             <li class="header">HEADER</li>
             <!-- Optionally, you can add icons to the links -->
+            <?php if(RoleMenu::hasMenuCategory($menuList,'控制面板','category')): ?>
             <li class="treeview">
                 <a href="{{action('Admin\IndexController@getIndex')}}"><i class="fa  fa-home"></i>
                     <span>控制面板</span>
                 </a>
             </li>
+            <?php endif ?>
             <?php if(RoleMenu::hasMenuCategory($menuList,'用户管理','category')): ?>
             <li class="treeview">
                 <a href="{{action('Admin\UserController@getList')}}"><i class="fa  fa-user"></i>
@@ -128,6 +130,10 @@ $menuList = RoleMenu::getMenuList($admin_id);
                             <li class="admin-channel-nolist"><a href="{{action('Admin\ChannelController@getNolist')}}"><i class="fa fa-circle-o"></i>渠道编号列表</a></li>
                         <?php endif ?>
 
+                            <?php if(RoleMenu::hasMenuCategory($menuList,'比例设置','menuName')): ?>
+                            <li class="admin-channel-nolist"><a href="{{action('Admin\ChannelNoProController@getList')}}"><i class="fa fa-circle-o"></i>比例设置</a></li>
+                            <?php endif ?>
+
                     </ul>
                 </li>
             <?php endif ?>
@@ -166,6 +172,14 @@ $menuList = RoleMenu::getMenuList($admin_id);
             <li class="treeview">
                 <a href="{{action('Admin\AppLogController@getList')}}"><i class="fa  fa-file-text-o"></i>
                     <span>APP日志</span>
+                </a>
+            </li>
+            <?php endif ?>
+
+            <?php if(RoleMenu::hasMenuCategory($menuList,'渠道注册查询','category')): ?>
+            <li class="treeview">
+                <a href="{{action('Admin\ChannelRegController@getList')}}"><i class="fa  fa-user"></i>
+                    <span>渠道注册查询</span>
                 </a>
             </li>
             <?php endif ?>

@@ -31,6 +31,8 @@ Route::group(['namespace' => 'Admin', 'middleware' => ['web']], function () {
 	Route::controller('admin/login', 'LoginController');
 	Route::controller('admin/user', 'UserController');
 	Route::controller('admin/channel', 'ChannelController');
+	Route::controller('admin/channelreg', 'ChannelRegController');
+	Route::controller('admin/channelnopro', 'ChannelNoProController');
 	Route::controller('admin/business', 'BusinessController');
 	Route::controller('admin/card', 'CardController');
 	Route::controller('admin/slide', 'SlideController');

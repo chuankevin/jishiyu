@@ -79,14 +79,14 @@
             }
             //密码
             if($('#pwd').val()=='') {
-                msg('请输入6位数字密码');
+                msg('请输入密码');
                 return false;
             }
 
-            if($('#pwd').val().length!=6){
+           /* if($('#pwd').val().length!=6){
                 msg('请输入6位数字密码');
                 return false;
-            }
+            }*/
 
         }
 

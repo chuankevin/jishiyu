@@ -23,6 +23,7 @@
                 <tr>
                     <th style="width: 10px">ID</th>
                     <th>渠道编号</th>
+                    <th>渠道别名</th>
                     <th>注册数量</th>
                     <th>激活数量</th>
                     <th>一级渠道</th>
@@ -38,6 +39,7 @@
                     <tr>
                         <td>{{$value->id}}</td>
                         <td>{{$value->no}}</td>
+                        <td>{{$value->name}}</td>
                         <td>{{$value->count}}</td>
                         <td>{{$value->activate_count}}</td>
                         <td>{{$value->lv1}}</td>

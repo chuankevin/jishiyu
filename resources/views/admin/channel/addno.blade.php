@@ -70,6 +70,13 @@
                         </select>
                     </div>
                 </div>
+                <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">渠道别名：</label>
+
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="name" placeholder="" name="name">
+                    </div>
+                </div>
 
             </div>
             <!-- /.box-body -->
@@ -96,6 +103,10 @@
         function check(){
             if($('.lv-1 select').val()==''){
                 msg('请选择渠道');
+                return false;
+            }
+            if($('#name').val()==''){
+                msg('请填写渠道别名');
                 return false;
             }
         }
