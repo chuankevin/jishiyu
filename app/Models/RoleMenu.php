@@ -22,7 +22,9 @@ class RoleMenu extends Model
         return DB::select('SELECT
                             cmf_user_roles.userId,
                             cmf_role_menu_details.menuName,
-                            cmf_role_menu_details.category
+                            cmf_role_menu_details.category,
+                            cmf_role_menu_details.controller,
+                            cmf_role_menu_details.action
                             FROM
                             cmf_user_roles
                             INNER JOIN cmf_user_role_detail ON cmf_user_roles.roleId = cmf_user_role_detail.id

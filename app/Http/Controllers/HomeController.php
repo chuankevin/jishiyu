@@ -2,21 +2,37 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 
-use App\Http\Requests;
+use App\Models\RoleMenu;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\URL;
 use Maatwebsite\Excel\Facades\Excel;
 
 class HomeController extends Controller
 {
-    //
+
     public function __construct()
     {
+        //登录判断
         $admin_user=session('admin_user');
         if(!$admin_user){
             echo "<script> location.href='/admin/login' </script>";
         }
         view()->share(compact('admin_user'));
+
+        //访问权限控制
+        $url=URL::current();
+        $path=parse_url($url)['path'];
+        $path=explode('/',$path);
+        $controller=$path[2];
+        //$action=$path[3];
+        $menuList = RoleMenu::getMenuList($admin_user->id);
+
+        if(!RoleMenu::hasMenuCategory($menuList,$controller,'controller')){
+            $c=$menuList[0]->controller;
+            echo "<script> location.href='/admin/".$c."/list' </script>";
+
+        }
     }
 
     public function export($filename,$title,$data){
@@ -33,4 +49,6 @@ class HomeController extends Controller
         return response()->json(['url'=>'http://'.$_SERVER['SERVER_NAME'].':81'.'/excel/exports/'.$ret['file']]);
 
     }
+
+
 }
