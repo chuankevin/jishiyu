@@ -155,7 +155,7 @@ class ChannelController extends HomeController
         $keywords=$request->keywords;
         if($keywords!=''){
             $data=$data->where('no','like','%'.$keywords.'%')
-                ->orWhere('channel.name','like','%'.$keywords.'%');
+                ->orWhere('channel_no.name','like','%'.$keywords.'%');
         }
 
 

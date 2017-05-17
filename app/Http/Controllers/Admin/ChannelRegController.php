@@ -16,7 +16,7 @@ class ChannelRegController extends HomeController
     public function getList(Request $request){
         $admin_user=session('admin_user');
         $channel=$admin_user->name;
-        $data=ChannelNo::leftjoin('channel_no_pro','channel_no.id','=','channel_no_pro.proportion')
+        $data=ChannelNo::leftjoin('channel_no_pro','channel_no.id','=','channel_no_pro.channel_no_id')
             ->where('no',$channel)
             ->first();
 
@@ -33,7 +33,8 @@ class ChannelRegController extends HomeController
         }
         //注册数量
         $num=$users->where('channel',$channel)->count();
-        $data['count']=$data->proportion/100*$num;
+        $data['count']=ceil(($data->proportion)/100*$num);
+        //dd($data);
 
         if($data->lv1!=0){
             $data->lv1=Channel::find($data->lv1)['name'];
