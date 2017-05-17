@@ -1,8 +1,8 @@
 <?php
 
 
-include('./RSAUtil.php');
-include('./WebUtil.php');
+include(public_path().'/zmxy-sdk/zmop/RSAUtil.php');
+include(public_path().'/zmxy-sdk/zmop/WebUtil.php');
 class ZmopClient {
 	//应用ID
 	public $appId;
