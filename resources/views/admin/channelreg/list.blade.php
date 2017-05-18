@@ -42,6 +42,34 @@
                 {{--@endforeach--}}
             </table>
         </div>
+
+        <div class="box-header with-border">
+            <h3 class="box-title">近七天注册</h3>
+        </div>
+        <div class="box-body">
+            <table class="table table-bordered">
+                <tr>
+                    <th>{{date('Y-m-d')}}</th>
+                    <th>{{date('Y-m-d',time()-3600*24)}}</th>
+                    <th>{{date('Y-m-d',time()-3600*24*2)}}</th>
+                    <th>{{date('Y-m-d',time()-3600*24*3)}}</th>
+                    <th>{{date('Y-m-d',time()-3600*24*4)}}</th>
+                    <th>{{date('Y-m-d',time()-3600*24*5)}}</th>
+                    <th>{{date('Y-m-d',time()-3600*24*6)}}</th>
+
+                </tr>
+                <tr>
+                    <td>{{$data->today}}</td>
+                    <td>{{$data->day1}}</td>
+                    <td>{{$data->day2}}</td>
+                    <td>{{$data->day3}}</td>
+                    <td>{{$data->day4}}</td>
+                    <td>{{$data->day5}}</td>
+                    <td>{{$data->day6}}</td>
+
+                </tr>
+            </table>
+        </div>
         <!-- /.box-body -->
         {{--<div class="box-footer clearfix">
             {!! $data->appends(['keywords'=>$keywords,'start_time'=>$start_time,'end_time'=>$end_time])->links() !!}

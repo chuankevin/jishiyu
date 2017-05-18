@@ -34,7 +34,29 @@ class ChannelRegController extends HomeController
         //注册数量
         $num=$users->where('channel',$channel)->count();
         $data['count']=ceil(($data->proportion)/100*$num);
-        //dd($data);
+        //七天注册量
+        $today=$users->where('channel',$channel)->where('create_time','>=',date('Y-m-d'))->count();
+        $data['today']=ceil(($data->proportion)/100*$today);
+
+        $day1=$users->where('channel',$channel)->whereBetween('create_time',[date('Y-m-d',time()-3600*24),date('Y-m-d')])->count();
+        $data['day1']=ceil(($data->proportion)/100*$day1);
+
+        $day2=$users->where('channel',$channel)->whereBetween('create_time',[date('Y-m-d',time()-3600*24*2),date('Y-m-d',time()-3600*24)])->count();
+        $data['day2']=ceil(($data->proportion)/100*$day2);
+
+        $day3=$users->where('channel',$channel)->whereBetween('create_time',[date('Y-m-d',time()-3600*24*3),date('Y-m-d',time()-3600*24*2)])->count();
+        $data['day3']=ceil(($data->proportion)/100*$day3);
+
+        $day4=$users->where('channel',$channel)->whereBetween('create_time',[date('Y-m-d',time()-3600*24*4),date('Y-m-d',time()-3600*24*3)])->count();
+        $data['day4']=ceil(($data->proportion)/100*$day4);
+
+        $day5=$users->where('channel',$channel)->whereBetween('create_time',[date('Y-m-d',time()-3600*24*5),date('Y-m-d',time()-3600*24*4)])->count();
+        $data['day5']=ceil(($data->proportion)/100*$day5);
+
+        $day6=$users->where('channel',$channel)->whereBetween('create_time',[date('Y-m-d',time()-3600*24*6),date('Y-m-d',time()-3600*24*5)])->count();
+        $data['day6']=ceil(($data->proportion)/100*$day6);
+
+
 
         if($data->lv1!=0){
             $data->lv1=Channel::find($data->lv1)['name'];
@@ -65,6 +87,10 @@ class ChannelRegController extends HomeController
         }else{
             $data->lv5='';
         }
+
+        //近七天注册
+
+
 
         return view('admin.channelreg.list',compact('data','start_time','end_time'));
     }
