@@ -44,7 +44,7 @@ class UserController extends HomeController{
         //用户信息
         $data=$data/*->where('user_status',1)*/
             ->orderBy('create_time','desc')
-            ->select('id','reg_from','channel','user_login','user_nicename','avatar','user_email','mobile','create_time','last_login_time','last_login_ip','user_status')
+            ->select('id','reg_from','channel','user_login','user_nicename','avatar','user_email','mobile','create_time','last_login_time','last_login_ip','user_status','hits')
             ->paginate(10);
         //渠道信息
         $channels=ChannelNo::where('is_delete',0)

@@ -21,19 +21,7 @@ class ChannelRegController extends HomeController
             ->first();
 
         $users=new User();
-        //条件筛选
-        $start_time=$request->start_time;
-        $end_time=$request->end_time;
-        if($start_time!=''){
-            $users=$users->where('create_time','>=',$start_time);
-        }
-        if($end_time!=''){
-            $end=date('Y-m-d',strtotime($end_time)+3600*24);
-            $users=$users->where('create_time','<=',$end);
-        }
-        //注册数量
-        $num=$users->where('channel',$channel)->count();
-        $data['count']=ceil(($data->proportion)/100*$num);
+
         //七天注册量
         $today=$users->where('channel',$channel)->where('create_time','>=',date('Y-m-d'))->count();
         $data['today']=ceil(($data->proportion)/100*$today);
@@ -56,6 +44,19 @@ class ChannelRegController extends HomeController
         $day6=$users->where('channel',$channel)->whereBetween('create_time',[date('Y-m-d',time()-3600*24*6),date('Y-m-d',time()-3600*24*5)])->count();
         $data['day6']=ceil(($data->proportion)/100*$day6);
 
+        //条件筛选
+        $start_time=$request->start_time;
+        $end_time=$request->end_time;
+        if($start_time!=''){
+            $users=$users->where('create_time','>=',$start_time);
+        }
+        if($end_time!=''){
+            $end=date('Y-m-d',strtotime($end_time)+3600*24);
+            $users=$users->where('create_time','<=',$end);
+        }
+        //注册数量
+        $num=$users->where('channel',$channel)->count();
+        $data['count']=ceil(($data->proportion)/100*$num);
 
 
         if($data->lv1!=0){

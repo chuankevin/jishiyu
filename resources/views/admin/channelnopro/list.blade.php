@@ -2,7 +2,7 @@
 @section('content')
     <div class="box">
         <div class="box-header with-border">
-            <h3 class="box-title">管理员列表</h3>
+            <h3 class="box-title">比例列表</h3>
         </div>
         {{--<form class="form-inline" method="get" >
             <div class="box-body">
@@ -27,20 +27,17 @@
             <table class="table table-bordered">
                 <tr>
                     <th style="width: 10px">ID</th>
-                    <th>管理员名称</th>
-                    <th>角色</th>
-                    <th style="width: 40px" colspan="2">操作</th>
+                    <th>渠道名称</th>
+                    <th>比例</th>
+                    <th style="width: 40px">操作</th>
                 </tr>
                 @foreach($data as $key=>$value)
                 <tr>
                     <td>{{$key+1}}</td>
                     <td>{{$value->name}}</td>
-                    <td>{{$value->role_name}}</td>
+                    <td>{{$value->proportion}}%</td>
                     <td style="width: 40px">
-                        <a href="{{url('admin/adminuser/edit')}}?id={{$value->id}}"><button type="button" class="btn btn-block btn-danger btn-sm" >编辑</button></a>
-                    </td>
-                    <td style="width: 40px">
-                            <button type="button" class="btn btn-block btn-success btn-sm" onclick="if(confirm('确定要删除吗？')){_delete({{$value->id}})}">删除</button>
+                        <a href="{{url('admin/channelnopro/edit')}}?id={{$value->id}}"><button type="button" class="btn btn-block btn-danger btn-sm" >编辑</button></a>
                     </td>
                 </tr>
                 @endforeach

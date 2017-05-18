@@ -44,6 +44,7 @@
                     <th>最后登录时间</th>
                     <th>最后登录IP</th>
                     <th>状态</th>
+                    <th>点击</th>
                     <th style="width: 40px">操作</th>
                 </tr>
                 @foreach($data as $key=>$value)
@@ -75,6 +76,7 @@
                             未验证
                         @endif
                     </td>
+                    <td>{{$value->hits}}</td>
                     <td>
                         @if($value->user_status==1)
                             <button type="button" class="btn btn-block btn-danger btn-sm" onclick="is_delete({{$value->id}},{{$value->user_status}})">禁用</button>
