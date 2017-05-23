@@ -31,14 +31,20 @@ class BusinessController extends HomeController
         if($keywords!=''){
             $data=$data->where('post_title','like','%'.$keywords.'%');
         }
+        $post_status=isset($request->post_status) ? $request->post_status : 1;
+        if($post_status!=''){
+            $data=$data->where('post_status',$post_status);
+        }else{
+            $data=$data->where('post_status',1);
+        }
         //业务数据
         $data=$data
-            ->where('post_status',1)
+            //->where('post_status',1)
             ->orderBy('post_date','desc')
-            ->select('id','post_title','post_hits','edufanwei','feilv','qixianfanwei','zuikuaifangkuan','smeta','post_date','link')
+            ->select('id','post_title','post_hits','edufanwei','feilv','qixianfanwei','zuikuaifangkuan','smeta','post_date','link','post_status')
             ->paginate(10);
 
-        return view('admin.business.list',compact('data','keywords'));
+        return view('admin.business.list',compact('data','keywords','post_status'));
     }
 
     /**
@@ -229,10 +235,11 @@ class BusinessController extends HomeController
         $path='./upload/';
         $upFilePath = md5(date('ymdhis').rand(100000,999999)).".jpg";
         $ok=move_uploaded_file($_FILES['fileToUpload']['tmp_name'],$path.$upFilePath);
-        if($ok === FALSE){
-            echo json_encode(['msg'=>'0','file_url'=>'http://'.$_SERVER['SERVER_NAME'].':81'.'/upload/'.$upFilePath,'path'=>$upFilePath]);
+
+       if($ok === FALSE){
+            echo json_encode(['msg'=>'0','file_url'=>'http://'.$_SERVER['SERVER_NAME'].':82'.'/upload/'.$upFilePath,'path'=>$upFilePath]);
         }else{
-            echo json_encode(['msg'=>'1','file_url'=>'http://'.$_SERVER['SERVER_NAME'].':81'.'/upload/'.$upFilePath,'path'=>$upFilePath]);
+            echo json_encode(['msg'=>'1','file_url'=>'http://'.$_SERVER['SERVER_NAME'].':82'.'/upload/'.$upFilePath,'path'=>$upFilePath]);
         }
     }
 

@@ -9,6 +9,11 @@
                 <div class="form-group">
                     关键词：
                     <input type="text" class="form-control" name="keywords" placeholder="请输入关键词" value="{{$keywords}}">&nbsp;&nbsp;&nbsp;&nbsp;
+                    发布状态：
+                    <select class="form-control selectpicker2" id="channel" name="post_status">
+                        <option value="1" @if($post_status==1) selected @endif >已上架</option>
+                        <option value="0" @if($post_status==0) selected @endif>已下架</option>
+                    </select>&nbsp;&nbsp;&nbsp;
                     <button type="submit" class="btn btn-primary">搜索</button>
                     <button type="button" class="btn btn-success" onclick="location.reload()">刷新</button>
                 </div>
@@ -27,7 +32,7 @@
                     <th>最快放款</th>
                     <th>缩略图</th>
                     <th>发布时间</th>
-                    {{--<th>状态</th>--}}
+                    <th>状态</th>
                     <th style="width: 40px" colspan="2">操作</th>
                 </tr>
                 @foreach($data as $key=>$value)
@@ -57,6 +62,7 @@
                         @if($value->smeta!='')
                        <a href="{{asset('/upload/'.json_decode($value->smeta)->thumb)}}" target="_blank">
                             <img src="{{asset('/upload/'.json_decode($value->smeta)->thumb)}}" alt="" width="40">
+                       </a>
                         @else
                                <a href="{{asset('/upload/default.png')}}" target="_blank">
                                    <img src="{{asset('/upload/default.png')}}" alt="" width="40">
@@ -64,7 +70,7 @@
                        </a>
                     </td>
                     <td>{{$value->post_date}}</td>
-                    {{--<td></td>--}}
+                    <td>@if($value->post_status==1) 已上架 @else 已下架 @endif</td>
                     <td style="width: 40px">
                         <a href="{{url('admin/business/edit')}}?id={{$value->id}}"><button type="button" class="btn btn-block btn-success btn-sm">编辑</button></a>
                     </td>
@@ -77,14 +83,14 @@
         </div>
         <!-- /.box-body -->
         <div class="box-footer clearfix">
-           {!! $data->appends(['keywords'=>$keywords])->links() !!}
+           {!! $data->appends(['keywords'=>$keywords,'post_status'=>$post_status])->links() !!}
 
         </div>
     </div>
 
     <script>
         $(function() {
-            $('.selectpicker2').select2();
+            //$('.selectpicker2').select2();
         });
 
         function _delete(id){

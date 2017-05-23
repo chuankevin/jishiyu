@@ -84,15 +84,18 @@ class AlipayController extends ApiController
      * @return \Illuminate\Http\JsonResponse
      * 芝麻加密加签，返回授权地址
      */
-    public function postEncrypt(Request $req){
+    public function anyEncrypt(Request $req){
 
-        $identity_type=$req->identity_type;
-        if(!$identity_type){
+        if(!isset($_REQUEST['identity_type'])){
             return $this->msg('0001','参数不正确');
+        }else{
+            $identity_type=$_REQUEST['identity_type'];
         }
-        $identity_param=$req->identity_param;
-        if(!$identity_param){
+
+        if(!isset($_REQUEST['identity_param'])){
             return $this->msg('0001','参数不正确');
+        }else{
+            $identity_param=$_REQUEST['identity_param'];
         }
 
         $client = new \ZmopClient($this->gatewayUrl,$this->appId,$this->charset,$this->private_key,$this->public_key);

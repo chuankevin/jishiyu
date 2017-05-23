@@ -18,7 +18,7 @@
                                     @if($value->id==$channel)
                                         selected
                                     @endif
-                            >{{$value->no}}</option>
+                            >{{$value->name}}</option>
                         @endforeach
                     </select>&nbsp;&nbsp;&nbsp;&nbsp;
                     手机：
@@ -35,7 +35,7 @@
                 <tr>
                     <th style="width: 10px">ID</th>
                     <th>来源</th>
-                    <th>渠道编号</th>
+                    <th>渠道名称</th>
                     <th>用户名</th>
                     <th>昵称</th>
                     <th>头像</th>
@@ -51,7 +51,7 @@
                 <tr>
                     <td>{{$value->id}}</td>
                     <td>{{$value->reg_from}}</td>
-                    <td>{{$value->channel}}</td>
+                    <td>{{$value->name}}</td>
                     <td>
                         @if($value->user_login=='')
                             第三方用户

@@ -43,12 +43,21 @@ class UserController extends HomeController{
         }
         //用户信息
         $data=$data/*->where('user_status',1)*/
+            //->leftjoin('channel_no','users.channel','=','channel_no.no')
             ->orderBy('create_time','desc')
-            ->select('id','reg_from','channel','user_login','user_nicename','avatar','user_email','mobile','create_time','last_login_time','last_login_ip','user_status','hits')
+            ->select('users.id','users.reg_from','users.channel','users.user_login','users.user_nicename','users.avatar','users.user_email','users.mobile','users.create_time','users.last_login_time','users.last_login_ip','users.user_status','users.hits')
             ->paginate(10);
+         foreach($data as $key=>$value){
+             $channelno=ChannelNo::where('no',$value->channel)->first();
+             if($channelno){
+                 $data[$key]['name']=$channelno->name;
+             }
+
+         }
+
         //渠道信息
         $channels=ChannelNo::where('is_delete',0)
-            ->select('id','no')
+            ->select('id','no','name')
             ->get();
         return view('admin.user.list',compact('data','channels','channel','mobile','start_time','end_time'));
     }
@@ -104,11 +113,11 @@ class UserController extends HomeController{
         if(!empty($mobile)){
             $data=$data->where('mobile','like','%'.$mobile.'%');
         }
-        $head=[['ID','来源','渠道编号','用户名','昵称','手机','注册时间','最后登录时间','最后登录IP','状态']];
+        $head=[['ID','来源','渠道编号','用户名','昵称','手机','注册时间','最后登录时间','最后登录IP','点击','状态']];
         //用户信息
         $data=$data->where('user_status',1)
             ->orderBy('create_time','desc')
-            ->select('id','reg_from','channel','user_login','user_nicename','mobile','create_time','last_login_time','last_login_ip','user_status')
+            ->select('id','reg_from','channel','user_login','user_nicename','mobile','create_time','last_login_time','last_login_ip','hits','user_status')
             ->get()
             ->toArray();
         $data=array_merge($head,$data);

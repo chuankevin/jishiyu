@@ -161,9 +161,9 @@ class ChannelController extends HomeController
 
         //渠道信息
         $data=$data
-            ->leftjoin('channel','channel_no.lv2','=','channel.id')
+            //->leftjoin('channel','channel_no.lv2','=','channel.id')
             ->orderBy('channel_no.create_at','desc')
-            ->select('channel_no.id','channel_no.no','lv1','lv3','lv4','lv5','channel_no.create_at','channel_no.is_delete','channel.name as lv2','channel_no.name')
+            ->select('channel_no.id','channel_no.no','lv1','lv2','lv3','lv4','lv5','channel_no.create_at','channel_no.is_delete','channel_no.name')
             ->paginate(10);
 
         foreach($data as $k=>$v){
@@ -195,11 +195,11 @@ class ChannelController extends HomeController
             }else{
                 $data[$k]['lv1']='';
             }
-          /*  if($v['lv2']!=0){
+            if($v['lv2']!=0){
                 $data[$k]['lv2']=Channel::find($v['lv2'])['name'];
             }else{
                 $data[$k]['lv2']='';
-            }*/
+            }
             if($v['lv3']!=0){
                 $data[$k]['lv3']=Channel::find($v['lv3'])['name'];
             }else{
