@@ -24,6 +24,7 @@
             <table class="table table-bordered">
                 <tr>
                     <th style="width: 10px">ID</th>
+                    <th style="width: 30px">排序</th>
                     <th>名称</th>
                     <th>点击量</th>
                     <th>额度范围</th>
@@ -38,6 +39,7 @@
                 @foreach($data as $key=>$value)
                 <tr>
                     <td>{{$value->id}}</td>
+                    <td><input type="text" style="width:30px" value="{{$value->listorder}}" onchange="changeOrder(this,{{$value->id}})"></td>
                     <td>
                         <a href="{{$value->link}}" target="_blank">{{$value->post_title}}</a>
                     </td>
@@ -103,6 +105,22 @@
                 url:"{{url('admin/business/delete')}}",
                 success:function(data){
                     alert(data.msg);
+                    location.reload();
+                }
+            });
+        }
+
+        function changeOrder(obj,id){
+            $.ajax({
+                data:{
+                    id:id,
+                    order:obj.value
+                },
+                dataType:'json',
+                type:'get',
+                url:"{{url('admin/business/order')}}",
+                success:function(data){
+                    //alert(data.msg);
                     location.reload();
                 }
             });

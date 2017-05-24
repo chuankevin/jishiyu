@@ -41,7 +41,7 @@ class BusinessController extends HomeController
         $data=$data
             //->where('post_status',1)
             ->orderBy('post_date','desc')
-            ->select('id','post_title','post_hits','edufanwei','feilv','qixianfanwei','zuikuaifangkuan','smeta','post_date','link','post_status')
+            ->select('id','post_title','post_hits','edufanwei','feilv','qixianfanwei','zuikuaifangkuan','smeta','post_date','link','post_status','listorder')
             ->paginate(10);
 
         return view('admin.business.list',compact('data','keywords','post_status'));
@@ -224,6 +224,15 @@ class BusinessController extends HomeController
         }else{
             return response()->json(['msg'=>'删除失败']);
         }
+
+    }
+
+    public function getOrder(Request $request){
+        $id=$request->id;
+        $order=$request->order;
+        $business=Business::find($id);
+        $business->listorder=$order;
+        $business->save();
 
     }
 
