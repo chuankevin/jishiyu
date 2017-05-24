@@ -46,5 +46,6 @@ Route::group(['namespace' => 'Api', 'middleware' => ['web']], function () {
 	Route::controller('api/alipay', 'AlipayController');
 	Route::controller('api/cashbus', 'CashbusController');
 	Route::controller('api/toutiao', 'TouTiaoController');
+	Route::controller('api/message', 'MessageController');
 
 });
