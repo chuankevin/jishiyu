@@ -227,6 +227,10 @@ class BusinessController extends HomeController
 
     }
 
+    /**
+     * @param Request $request
+     * 排序
+     */
     public function getOrder(Request $request){
         $id=$request->id;
         $order=$request->order;
@@ -234,6 +238,32 @@ class BusinessController extends HomeController
         $business->listorder=$order;
         $business->save();
 
+    }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     * 产品上下架
+     */
+    public function getUpdate(Request $request){
+        $id=$request->id;
+        $status=$request->status;
+        $business=Business::find($id);
+        if($status==0){
+            $business->post_status=1;
+            if($business->save()){
+                return response()->json(['msg'=>'上架成功']);
+            }else{
+                return response()->json(['msg'=>'上架失败']);
+            }
+        }elseif ($status==1){
+            $business->post_status=0;
+            if($business->save()){
+                return response()->json(['msg'=>'下架成功']);
+            }else{
+                return response()->json(['msg'=>'下架失败']);
+            }
+        }
     }
 
     /**

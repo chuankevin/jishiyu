@@ -74,6 +74,9 @@
                     <td>{{$value->post_date}}</td>
                     <td>@if($value->post_status==1) 已上架 @else 已下架 @endif</td>
                     <td style="width: 40px">
+                        <button type="button" class="btn btn-block btn-success btn-sm" onclick="if(confirm('确定要执行吗？')){is_sale({{$value->id}},{{$value->post_status}})}">@if($value->post_status==0) 上架 @else 下架 @endif</button>
+                    </td>
+                    <td style="width: 40px">
                         <a href="{{url('admin/business/edit')}}?id={{$value->id}}"><button type="button" class="btn btn-block btn-success btn-sm">编辑</button></a>
                     </td>
                     <td style="width: 40px">
@@ -121,6 +124,22 @@
                 url:"{{url('admin/business/order')}}",
                 success:function(data){
                     //alert(data.msg);
+                    location.reload();
+                }
+            });
+        }
+
+        function is_sale(id,status){
+            $.ajax({
+                data:{
+                    id:id,
+                    status:status
+                },
+                dataType:'json',
+                type:'get',
+                url:"{{url('admin/business/update')}}",
+                success:function(data){
+                    alert(data.msg);
                     location.reload();
                 }
             });
