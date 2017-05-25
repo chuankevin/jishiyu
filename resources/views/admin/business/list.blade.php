@@ -88,6 +88,7 @@
         </div>
         <!-- /.box-body -->
         <div class="box-footer clearfix">
+            
            {!! $data->appends(['keywords'=>$keywords,'post_status'=>$post_status])->links() !!}
 
         </div>
