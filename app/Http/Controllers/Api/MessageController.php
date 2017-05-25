@@ -14,6 +14,9 @@ use App\Http\Controllers\Controller;
 
 class MessageController extends ApiController
 {
+
+    public $api_secret='wTCzqpY30jF9DHd8saT3E2tQU0q7aUhK';
+
     /**
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse
@@ -92,6 +95,7 @@ class MessageController extends ApiController
                 }else{
                     $message_type=new MessageType();
                     $message_type->name=$msg_name;
+                    $message_type->icon='/img/jishiyu/zidingyi.png';
                     $message_type->is_defind=1;
                     $message_type->save();
                     $type_id=$message_type->id;
@@ -155,4 +159,26 @@ class MessageController extends ApiController
             return $this->msg('0000','成功');
         }
     }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     * 生成签名
+     */
+    public function postSignature(Request $request){
+        if(empty($request->all())){
+            return $this->msg('0001','参数不存在');
+        }
+        //先将参数以其参数名的字典序升序进行排序
+        $params=$request->all();
+        ksort($params);
+        //数组转url格式
+        $str = http_build_query($params).$this->api_secret;
+        //sha1加密
+        $sign=sha1($str);
+        return $this->msg('0000','成功',["sign"=>$sign]);
+
+    }
+
+
 }

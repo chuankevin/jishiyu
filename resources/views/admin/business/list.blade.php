@@ -74,7 +74,7 @@
                     <td>{{$value->post_date}}</td>
                     <td>@if($value->post_status==1) 已上架 @else 已下架 @endif</td>
                     <td style="width: 40px">
-                        <button type="button" class="btn btn-block btn-success btn-sm" onclick="if(confirm('确定要执行吗？')){is_sale({{$value->id}},{{$value->post_status}})}">@if($value->post_status==0) 上架 @else 下架 @endif</button>
+                        <button type="button" class="btn btn-block btn-warning btn-sm" onclick="if(confirm('确定要执行吗？')){is_sale({{$value->id}},{{$value->post_status}})}">@if($value->post_status==0) 上架 @else 下架 @endif</button>
                     </td>
                     <td style="width: 40px">
                         <a href="{{url('admin/business/edit')}}?id={{$value->id}}"><button type="button" class="btn btn-block btn-success btn-sm">编辑</button></a>
