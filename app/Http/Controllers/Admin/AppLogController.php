@@ -33,7 +33,7 @@ class AppLogController extends HomeController
         }
 
         $data=$data->leftjoin('users','app_log.user_id','=','users.id')
-            ->select('app_log.*','users.mobile','users.channel',DB::raw('SUM(hits) as hits'),DB::raw('SUM(open) as open'))
+            ->select('app_log.*','users.mobile','users.channel',DB::raw('SUM(hit) as hits'),DB::raw('SUM(open) as open'))
             ->groupBy('user_id')
             ->paginate(10);
         //dd($data);

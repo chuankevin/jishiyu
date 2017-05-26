@@ -176,6 +176,28 @@ $menuList = RoleMenu::getMenuList($admin_id);
             </li>
             <?php endif ?>
 
+            <?php if(RoleMenu::hasMenuCategory($menuList,'及时雨贷款APP','category')): ?>
+            <li class="treeview ">
+                <a href="#"><i class="fa fa-credit-card"></i>
+                    <span>及时雨贷款APP</span>
+                    <span class="pull-right-container">
+                          <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                </a>
+                <ul class="treeview-menu">
+
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'提醒列表','menuName')): ?>
+                    <li class="admin-message-list"><a href="{{action('Admin\MessageController@getList')}}"><i class="fa fa-circle-o"></i>提醒列表</a></li>
+                    <?php endif ?>
+
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'意见反馈','menuName')): ?>
+                    <li class="admin-feedback-add"><a href="{{action('Admin\FeedBackController@getList')}}"><i class="fa fa-circle-o"></i>意见反馈</a></li>
+                    <?php endif ?>
+
+                </ul>
+            </li>
+            <?php endif ?>
+
             <?php if(RoleMenu::hasMenuCategory($menuList,'渠道注册查询','category')): ?>
             <li class="treeview">
                 <a href="{{action('Admin\ChannelRegController@getList')}}"><i class="fa  fa-user"></i>

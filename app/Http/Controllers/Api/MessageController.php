@@ -31,7 +31,7 @@ class MessageController extends ApiController
             ->leftjoin('message_rep','message.rep_id','=','message_rep.id')
             ->leftjoin('message_rem','message.rem_id','=','message_rem.id')
             ->where('user_id',$user_id)
-            ->select('message.id','message.name','message_type.name as type_name','amount','repayment_date','message_rep.name as rep_name','message_rem.name as rem_name','remark')
+            ->select('message.id as msg_id','message.name','message_type.name as type_name','message_type.icon','amount','repayment_date','message_rep.name as rep_name','message_rem.name as rem_name','remark')
             ->orderBy('message.created_at','desc')
             ->get();
 
@@ -44,7 +44,7 @@ class MessageController extends ApiController
      * 提醒类型
      */
     public function postTypelist(Request $request){
-        $data=MessageType::select('id','name','icon')
+        $data=MessageType::select('id as type_id','name','icon')
             ->where('is_defind',0)
             ->get();
         return $this->msg('0000','成功',['data'=>$data]);
@@ -56,7 +56,7 @@ class MessageController extends ApiController
      * 提醒重复
      */
     public function postReplist(Request $request){
-        $data=MessageRep::select('id','name')
+        $data=MessageRep::select('id as rep_id','name')
             ->get();
         return $this->msg('0000','成功',['data'=>$data]);
     }
@@ -67,7 +67,7 @@ class MessageController extends ApiController
      * 提醒时间
      */
     public function postRemlist(Request $request){
-        $data=MessageRem::select('id','name')
+        $data=MessageRem::select('id as rem_id','name')
             ->get();
         return $this->msg('0000','成功',['data'=>$data]);
     }
@@ -178,6 +178,16 @@ class MessageController extends ApiController
         $sign=sha1($str);
         return $this->msg('0000','成功',["sign"=>$sign]);
 
+    }
+
+    public function postAuthinfo(Request $request){
+        $authinfo=$request->authinfo;
+        if(!$authinfo){
+            return $this->msg('0001','authinfo参数不存在');
+        }
+        $str=$authinfo.$this->api_secret;
+        $sign=sha1($str);
+        return $this->msg('0000','成功',["sign"=>$sign]);
     }
 
 

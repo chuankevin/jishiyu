@@ -40,6 +40,8 @@ Route::group(['namespace' => 'Admin', 'middleware' => ['web']], function () {
 	Route::controller('admin/role', 'RoleController');
 	Route::controller('admin/adminuser', 'AdminUserController');
 	Route::controller('admin/applog', 'AppLogController');
+	Route::controller('admin/message', 'MessageController');
+	Route::controller('admin/feedback', 'FeedBackController');
 });
 
 Route::group(['namespace' => 'Api', 'middleware' => ['web']], function () {
@@ -47,5 +49,7 @@ Route::group(['namespace' => 'Api', 'middleware' => ['web']], function () {
 	Route::controller('api/cashbus', 'CashbusController');
 	Route::controller('api/toutiao', 'TouTiaoController');
 	Route::controller('api/message', 'MessageController');
+	Route::controller('api/jpush', 'JPushController');
+	Route::controller('api/feedback', 'FeedBackController');
 
 });
