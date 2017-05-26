@@ -178,7 +178,7 @@ $menuList = RoleMenu::getMenuList($admin_id);
 
             <?php if(RoleMenu::hasMenuCategory($menuList,'及时雨贷款APP','category')): ?>
             <li class="treeview ">
-                <a href="#"><i class="fa fa-credit-card"></i>
+                <a href="#"><i class="fa fa-apple"></i>
                     <span>及时雨贷款APP</span>
                     <span class="pull-right-container">
                           <i class="fa fa-angle-left pull-right"></i>
