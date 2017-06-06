@@ -36,6 +36,8 @@ class AlipayController extends ApiController
     //芝麻分配给商户的 appId
     public $appId = "1002755";
 
+    public $secret = "89f76f454bec8ea3cb2876b8c46a4a8e";
+
 
     /**
      * @param Request $request
@@ -115,6 +117,25 @@ class AlipayController extends ApiController
         //$sign=base64_encode(\RSAUtil::sign($str,"d:\Projects\jishiyu\public\zmxy-sdk\private_key.pem"));
         $sign=\RSAUtil::sign($str,$this->private_key);
         */
+
+    }
+
+    public function postSignature(Request $request){
+        if(empty($request->all())){
+            return $this->msg('0001','参数不存在');
+        }
+        //先将参数以其参数名的字典序升序进行排序
+        $params=$request->all();
+        ksort($params);
+        //数组转字符串
+        $str = '';
+        foreach($params as $key=>$value){
+            $str.=$key.$value;
+        }
+        $str.=$this->secret;
+        //md5加密
+        $sign=md5($str);
+        return $this->msg('0000','成功',["sign"=>bin2hex($sign)]);
 
     }
 }

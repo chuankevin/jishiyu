@@ -43,8 +43,8 @@
                     <th>注册时间</th>
                     <th>最后登录时间</th>
                     <th>最后登录IP</th>
-                    <th>状态</th>
                     <th>点击</th>
+                    <th>停留(秒)</th>
                     <th style="width: 40px">操作</th>
                 </tr>
                 @foreach($data as $key=>$value)
@@ -67,16 +67,8 @@
                     <td>{{$value->create_time}}</td>
                     <td>{{$value->last_login_time}}</td>
                     <td>{{$value->last_login_ip}}</td>
-                    <td>
-                        @if($value->user_status==1)
-                            正常
-                        @elseif($value->user_status==0)
-                            禁用
-                        @elseif($value->user_status==2)
-                            未验证
-                        @endif
-                    </td>
                     <td>{{$value->hits}}</td>
+                    <td>{{ceil($value->stay_time/1000)}}</td>
                     <td>
                         @if($value->user_status==1)
                             <button type="button" class="btn btn-block btn-danger btn-sm" onclick="is_delete({{$value->id}},{{$value->user_status}})">禁用</button>

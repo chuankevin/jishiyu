@@ -24,11 +24,19 @@ class FeedBackController extends ApiController
         $data=new FeedBack();
         $data->user_id=$user_id;
         $data->problem=$problem;
-        $data->img=$request->img;
+
+        $path='./upload/';
+        $upFilePath = md5(date('ymdhis').rand(100000,999999)).".jpg";
+        $ret=move_uploaded_file($_FILES['photo']['tmp_name'],$path.$upFilePath);
+        if($ret){
+            $data->img='/upload/'.$upFilePath;
+        }
+        //$data->img=json_encode($_FILES);
         $data->mobile=$request->mobile;
         $data->email=$request->email;
         if($data->save()){
             return $this->msg('0000','成功');
         }
     }
+
 }

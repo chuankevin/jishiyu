@@ -4,6 +4,7 @@
         <div class="box-header with-border">
             <h3 class="box-title">编辑比例</h3>
         </div>
+
         <!-- /.box-header -->
         <!-- form start -->
         <form class="form-horizontal" method="post" onsubmit="return check()">
@@ -33,7 +34,20 @@
                         <input type="text" class="form-control" id="proportion" placeholder="" name="proportion" value="{{$data->proportion}}">%
                     </div>
                 </div>
+                <div class="box-body">
+                    <label for="" class="col-sm-2 control-label">其他时段：</label>
+                    <div class="form-group" style="float: left;margin-left: 0%">
+                        <input type="text" class="form-control date-picker start" name="start_time" placeholder="" value="{{$data->start}}" style="width:200px">－
+                        <input type="text" class="form-control date-picker end" name="end_time" placeholder="" value="{{$data->end}}" style="width:200px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">其他时段比例：</label>
 
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="proportion2" placeholder="" name="proportion2" value="{{$data->proportion2}}">%
+                    </div>
+                </div>
 
                 <!-- /.box-body -->
                 <div class="box-footer">
@@ -56,6 +70,14 @@
     @endif
 
     <script>
+        $(function() {
+            $('.date-picker').datepicker({
+                format:'yyyy-mm-dd',
+                language: 'zh-CN',
+                autoclose: true,
+                todayBtn : true,
+            });
+        });
         //字段验证
         function check(){
 

@@ -53,7 +53,7 @@
                 <div class="form-group">
                     <label for="" class="col-sm-2 control-label">上传图片：</label>
                     <img src="" class="iconimg" alt="" style="width: 100px;height: 100px;">
-                    <div class="upload-div" style="margin-top:-35px;margin-left:40%;">
+                    <div class="upload-div" style="margin-top:-16px;margin-left:40%;">
                         <button type="button" class="btn btn-primary" id="changeImg">点击上传</button>
                     </div>
                     {{--<input type="file" id="exampleInputFile" name="image">--}}

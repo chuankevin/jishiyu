@@ -14,7 +14,7 @@ class JPushController extends ApiController
     public $app_key = 'fa0d81922f79360b1f440714';
     public $master_secret = '0b232f731af2bfaf59acdc80';
 
-    public function postPush(Request $request){
+    public function create_push(Request $request){
         //初始化
         $client=new JPush($this->app_key,$this->master_secret,null);
         $push=$client->push();
@@ -22,7 +22,7 @@ class JPushController extends ApiController
         $platform = array('ios');
         $alert = 'Hello JPush';
         $alias = array('13691458151');
-        $tag = array('13691458151');
+
         //$regId = array('rid1', 'rid2');
         $ios_notification = array(
             'sound' => 'hello jpush',
@@ -51,7 +51,6 @@ class JPushController extends ApiController
         );
         $response = $push->setPlatform($platform)
             ->addAlias($alias)
-            //->addTag($tag)
             //->addRegistrationId($regId)
             ->iosNotification($alert, $ios_notification)
             ->message($content, $message);
@@ -63,6 +62,10 @@ class JPushController extends ApiController
             // try something else here
             print $e;
         }
+
+    }
+
+    public function push(){
 
     }
 }

@@ -194,6 +194,22 @@ $menuList = RoleMenu::getMenuList($admin_id);
                     <li class="admin-feedback-add"><a href="{{action('Admin\FeedBackController@getList')}}"><i class="fa fa-circle-o"></i>意见反馈</a></li>
                     <?php endif ?>
 
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'添加银行','menuName')): ?>
+                        <li class="admin-bank-add"><a href="{{action('Admin\BankController@anyAdd')}}"><i class="fa fa-circle-o"></i>添加银行</a></li>
+                    <?php endif ?>
+
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'银行列表','menuName')): ?>
+                        <li class="admin-bank-list"><a href="{{action('Admin\BankController@getList')}}"><i class="fa fa-circle-o"></i>银行列表</a></li>
+                    <?php endif ?>
+
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'添加banner','menuName')): ?>
+                        <li class="admin-banner-add"><a href="{{action('Admin\BannerController@anyAdd')}}"><i class="fa fa-circle-o"></i>添加Banner</a></li>
+                    <?php endif ?>
+
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'banner列表','menuName')): ?>
+                        <li class="admin-banner-list"><a href="{{action('Admin\BannerController@getList')}}"><i class="fa fa-circle-o"></i>Banner列表</a></li>
+                    <?php endif ?>
+
                 </ul>
             </li>
             <?php endif ?>

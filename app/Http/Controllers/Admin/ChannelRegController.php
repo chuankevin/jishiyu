@@ -24,39 +24,114 @@ class ChannelRegController extends HomeController
 
         //七天注册量
         $today=$users->where('channel',$channel)->where('create_time','>=',date('Y-m-d'))->count();
-        $data['today']=ceil(($data->proportion)/100*$today);
+
+        if(date('Y-m-d')>=$data->start && date('Y-m-d')<=$data->end){
+            $data['today']=ceil(($data->proportion2)/100*$today);
+        }else{
+            $data['today']=ceil(($data->proportion)/100*$today);
+        }
+
 
         $day1=$users->where('channel',$channel)->whereBetween('create_time',[date('Y-m-d',time()-3600*24),date('Y-m-d')])->count();
-        $data['day1']=ceil(($data->proportion)/100*$day1);
+        if(date('Y-m-d',time()-3600*24)>=$data->start && date('Y-m-d',time()-3600*24)<=$data->end){
+            $data['day1']=ceil(($data->proportion2)/100*$day1);
+        }else{
+            $data['day1']=ceil(($data->proportion)/100*$day1);
+        }
+
 
         $day2=$users->where('channel',$channel)->whereBetween('create_time',[date('Y-m-d',time()-3600*24*2),date('Y-m-d',time()-3600*24)])->count();
-        $data['day2']=ceil(($data->proportion)/100*$day2);
+        if(date('Y-m-d',time()-3600*24*2)>=$data->start && date('Y-m-d',time()-3600*24*2)<=$data->end){
+            $data['day2']=ceil(($data->proportion2)/100*$day2);
+        }else{
+            $data['day2']=ceil(($data->proportion)/100*$day2);
+        }
+
 
         $day3=$users->where('channel',$channel)->whereBetween('create_time',[date('Y-m-d',time()-3600*24*3),date('Y-m-d',time()-3600*24*2)])->count();
-        $data['day3']=ceil(($data->proportion)/100*$day3);
+        if(date('Y-m-d',time()-3600*24*3)>=$data->start && date('Y-m-d',time()-3600*24*3)<=$data->end){
+            $data['day3']=ceil(($data->proportion2)/100*$day3);
+        }else{
+            $data['day3']=ceil(($data->proportion)/100*$day3);
+        }
+
 
         $day4=$users->where('channel',$channel)->whereBetween('create_time',[date('Y-m-d',time()-3600*24*4),date('Y-m-d',time()-3600*24*3)])->count();
-        $data['day4']=ceil(($data->proportion)/100*$day4);
+        if(date('Y-m-d',time()-3600*24*4)>=$data->start && date('Y-m-d',time()-3600*24*4)<=$data->end){
+            $data['day4']=ceil(($data->proportion2)/100*$day4);
+        }else{
+            $data['day4']=ceil(($data->proportion)/100*$day4);
+        }
 
         $day5=$users->where('channel',$channel)->whereBetween('create_time',[date('Y-m-d',time()-3600*24*5),date('Y-m-d',time()-3600*24*4)])->count();
-        $data['day5']=ceil(($data->proportion)/100*$day5);
+        if(date('Y-m-d',time()-3600*24*5)>=$data->start && date('Y-m-d',time()-3600*24*5)<=$data->end){
+            $data['day5']=ceil(($data->proportion2)/100*$day5);
+        }else{
+            $data['day5']=ceil(($data->proportion)/100*$day5);
+        }
 
         $day6=$users->where('channel',$channel)->whereBetween('create_time',[date('Y-m-d',time()-3600*24*6),date('Y-m-d',time()-3600*24*5)])->count();
-        $data['day6']=ceil(($data->proportion)/100*$day6);
+        if(date('Y-m-d',time()-3600*24*6)>=$data->start && date('Y-m-d',time()-3600*24*6)<=$data->end){
+            $data['day6']=ceil(($data->proportion2)/100*$day6);
+        }else{
+            $data['day6']=ceil(($data->proportion)/100*$day6);
+        }
 
         //条件筛选
         $start_time=$request->start_time;
         $end_time=$request->end_time;
+        $users1=new User();
         if($start_time!=''){
-            $users=$users->where('create_time','>=',$start_time);
+            $users1=$users1->where('create_time','>=',$start_time);
         }
         if($end_time!=''){
             $end=date('Y-m-d',strtotime($end_time)+3600*24);
-            $users=$users->where('create_time','<=',$end);
+            $users1=$users1->where('create_time','<=',$end);
         }
+
+        $users2=new User();
+        if($start_time!=''){
+            $users2=$users2->where('create_time','>=',$start_time);
+        }
+        if($end_time!=''){
+            $end=date('Y-m-d',strtotime($end_time)+3600*24);
+            $users2=$users2->where('create_time','<=',$end);
+        }
+
+        $users3=new User();
+        if($start_time!=''){
+            $users3=$users3->where('create_time','>=',$start_time);
+        }
+        if($end_time!=''){
+            $end=date('Y-m-d',strtotime($end_time)+3600*24);
+            $users3=$users3->where('create_time','<=',$end);
+        }
+
+
         //注册数量
-        $num=$users->where('channel',$channel)->count();
-        $data['count']=ceil(($data->proportion)/100*$num);
+        if($data->proportion2){
+
+            $num1=$users1
+                ->where('channel',$channel)
+                ->where('create_time','<',$data->start)
+                ->count();
+            $num2=$users2
+                ->where('channel',$channel)
+                ->whereBetween('create_time',[$data->start,date('Y-m-d',strtotime($data->end)+3600*24)])
+                ->count();
+            $num3=$users3
+                ->where('channel',$channel)
+                ->where('create_time','>',date('Y-m-d',strtotime($data->end)+3600*24))
+                ->count();
+
+            $num=ceil(($data->proportion)/100*$num1)+ceil(($data->proportion2)/100*$num2)+ceil(($data->proportion)/100*$num3);
+            $data['count']=$num;
+
+        }else{
+            $num=$users->where('channel',$channel)->count();
+            $data['count']=ceil(($data->proportion)/100*$num);
+        }
+
 
 
         if($data->lv1!=0){

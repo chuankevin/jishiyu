@@ -34,7 +34,11 @@ class ChannelNoProController extends HomeController
     public function anyEdit(Request $request){
         $data=ChannelNoPro::find($request->id);
         if($request->isMethod('post')){
+
             $data->proportion=$request->proportion;
+            $data->proportion2=$request->proportion2;
+            $data->start=$request->start_time;
+            $data->end=$request->end_time;
             if($data->save()){
                 return Redirect::to('admin/channelnopro/list');
             }
