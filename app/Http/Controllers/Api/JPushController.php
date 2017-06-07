@@ -11,12 +11,12 @@ use JPush\Client as JPush;
 
 class JPushController extends ApiController
 {
-    public $app_key = 'fa0d81922f79360b1f440714';
-    public $master_secret = '0b232f731af2bfaf59acdc80';
+    public static $app_key = 'fa0d81922f79360b1f440714';
+    public static $master_secret = '0b232f731af2bfaf59acdc80';
 
-    public function create_push(Request $request){
+    public static function create_push(Request $request){
         //初始化
-        $client=new JPush($this->app_key,$this->master_secret,null);
+        $client=new JPush(self::$app_key,self::$master_secret,null);
         $push=$client->push();
 
         $platform = array('ios');
@@ -65,7 +65,7 @@ class JPushController extends ApiController
 
     }
 
-    public function push(){
-
+    public static  function push(){
+        self::create_push();
     }
 }

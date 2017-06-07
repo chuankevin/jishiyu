@@ -55,5 +55,6 @@ Route::group(['namespace' => 'Api', 'middleware' => ['web']], function () {
 	Route::controller('api/feedback', 'FeedBackController');
 	Route::controller('api/bank', 'BankController');
 	Route::controller('api/banner', 'BannerController');
+	Route::controller('api/userinfo', 'UserInfoController');
 
 });

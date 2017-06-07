@@ -10,6 +10,7 @@ use Maatwebsite\Excel\Facades\Excel;
 
 class HomeController extends Controller
 {
+    public $port='80';
 
     public function __construct()
     {
@@ -46,7 +47,7 @@ class HomeController extends Controller
             });
 
         })->store('xls','./excel/exports',true);
-        return response()->json(['url'=>'http://'.$_SERVER['SERVER_NAME'].':81'.'/excel/exports/'.$ret['file']]);
+        return response()->json(['url'=>'http://'.$_SERVER['SERVER_NAME'].':'.$this->port.'/excel/exports/'.$ret['file']]);
 
     }
 
