@@ -2,57 +2,56 @@
 @section('content')
     <div class="box box-info">
         <div class="box-header with-border">
-            <h3 class="box-title">添加Banner</h3>
+            <h3 class="box-title">添加产品</h3>
         </div>
         <!-- /.box-header -->
         <!-- form start -->
-        <form class="form-horizontal" method="post" onsubmit="return check()">
+        <form class="form-horizontal" method="post" onsubmit="return check()" enctype="multipart/form-data">
             {{csrf_field()}}
             <div class="box-body">
-
-                <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">分类：</label>
-
-                    <div class="col-sm-4">
-                        <select class="form-control selectpicker2" id="cid" name="cid">
-                            <option value="">请选择</option>
-                            @foreach($cats as $value)
-                                <option value="{{$value->cid}}">{{$value->cat_name}}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">标题：</label>
+                <div class="form-group lv-1" >
+                    <label for="" class="col-sm-2 control-label">产品名称：</label>
 
                     <div class="col-sm-4">
-                        <input type="text" class="form-control" id="slide_name" placeholder="" name="slide_name">
+                        <input type="text" class="form-control" id="pro_name" placeholder="请输入产品名称" name="pro_name" value="{{$data->pro_name}}">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">链接：</label>
+                <div class="form-group lv-1" >
+                    <label for="" class="col-sm-2 control-label">产品描述：</label>
 
                     <div class="col-sm-4">
-                        <input type="text" class="form-control" id="slide_url" placeholder="" name="slide_url">
+                        <input type="text" class="form-control" id="pro_describe" placeholder="请输入产品描述" name="pro_describe" value="{{$data->pro_describe}}">
                     </div>
                 </div>
+
                 <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">描述：</label>
+                    <label for="" class="col-sm-2 control-label">产品链接：</label>
 
                     <div class="col-sm-4">
-                        <input type="text" class="form-control" id="slide_des" placeholder="" name="slide_des">
+                        <input type="text" class="form-control" id="pro_link" placeholder="请输入产品链接" name="pro_link" value="{{$data->pro_link}}">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">Banner内容：</label>
 
-                    <div class="col-sm-6">
-                        <textarea name="slide_content" id="slide_content" class='form-control' cols="50" rows="5"></textarea>
+
+                <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">产品类型：</label>
+
+                    <div class="form-group col-sm-6">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="type" value="1" @if ($data->type==1) checked @endif >好评推荐
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="2" @if ($data->type==2) checked @endif>急速放款
+                            </label>
+                        </div>
+
                     </div>
                 </div>
+
                 <div class="form-group">
                     <label for="" class="col-sm-2 control-label">上传图片：</label>
-                    <img src="" class="iconimg" alt="" style="width: 100px;height: 100px;">
+                    <img src="{{asset('/data/upload/'.$data->img)}}" class="iconimg" alt="" style="width: 100px;height: 100px;">
                     <div class="upload-div" style="margin-top:-16px;margin-left:40%;">
                         <button type="button" class="btn btn-primary" id="changeImg">点击上传</button>
                     </div>
@@ -61,9 +60,10 @@
                         <input id="fileToUpload" type="file" size="20" name="fileToUpload" class="input">
                         <button id="buttonUpload">上传</button>
                     </div>
-                    <input type="hidden" name="img_path" id="file_url" value="">
+
                 </div>
             </div>
+            <input type="hidden" name="img_path" id="file_url" value="{{$data->img}}">
             <!-- /.box-body -->
             <div class="box-footer">
                 <button type="submit" class="btn btn-primary">提交</button>
@@ -73,6 +73,7 @@
             <!-- /.box-footer -->
         </form>
     </div>
+
 
     @if(isset($msg))
         <script type="text/javascript">
@@ -86,16 +87,22 @@
     <script>
         //字段验证
         function check(){
-            //分类
-            if($('#cid').val()==''){
-                msg('请输入选择分类');
-                return false;
-            }
             //名称
-            if($('#slide_name').val()==''){
-                msg('请输入Banner名称');
+            if($('#pro_name').val()==''){
+                msg('请输入产品名称');
                 return false;
             }
+            //描述
+            if($('#pro_describe').val()==''){
+                msg('请输入产品描述');
+                return false;
+            }
+            //产品链接
+            if($('#pro_link').val()==''){
+                msg('请输入产品链接');
+                return false;
+            }
+
             //图片
             if($('.iconimg').attr('src')==''){
                 msg('请上传图片');
@@ -119,13 +126,13 @@
                 data:{
                     _token:'{{csrf_token()}}'
                 },
-                url:'{{url('/admin/slide/img')}}',//处理图片脚本
+                url:'{{url('/admin/product/img')}}',//处理图片脚本
                 secureuri :false,
                 fileElementId :'fileToUpload',//file控件id
                 dataType : 'json',
                 success : function (data){
                     if(data.msg==1){
-                        $(".iconimg").attr("src","{{asset('')}}"+data.path);
+                        $(".iconimg").attr("src","{{asset('/data/upload/')}}"+"/"+data.path);
                         $('#file_url').val(data.path);
                         $('#fileToUpload').bind('change',function () {
                             ajaxFileUpload();

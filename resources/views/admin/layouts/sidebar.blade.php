@@ -190,6 +190,10 @@ $menuList = RoleMenu::getMenuList($admin_id);
                     <li class="admin-message-list"><a href="{{action('Admin\MessageController@getList')}}"><i class="fa fa-circle-o"></i>提醒列表</a></li>
                     <?php endif ?>
 
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'推送日志','menuName')): ?>
+                        <li class="admin-pushlog-list"><a href="{{action('Admin\PushLogController@getList')}}"><i class="fa fa-circle-o"></i>推送日志</a></li>
+                    <?php endif ?>
+
                     <?php if(RoleMenu::hasMenuCategory($menuList,'意见反馈','menuName')): ?>
                     <li class="admin-feedback-add"><a href="{{action('Admin\FeedBackController@getList')}}"><i class="fa fa-circle-o"></i>意见反馈</a></li>
                     <?php endif ?>
@@ -208,6 +212,14 @@ $menuList = RoleMenu::getMenuList($admin_id);
 
                     <?php if(RoleMenu::hasMenuCategory($menuList,'banner列表','menuName')): ?>
                         <li class="admin-banner-list"><a href="{{action('Admin\BannerController@getList')}}"><i class="fa fa-circle-o"></i>Banner列表</a></li>
+                    <?php endif ?>
+
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'添加产品','menuName')): ?>
+                        <li class="admin-product-add"><a href="{{action('Admin\ProductController@anyAdd')}}"><i class="fa fa-circle-o"></i>添加产品</a></li>
+                    <?php endif ?>
+
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'产品列表','menuName')): ?>
+                        <li class="admin-product-list"><a href="{{action('Admin\ProductController@getList')}}"><i class="fa fa-circle-o"></i>产品列表</a></li>
                     <?php endif ?>
 
                 </ul>

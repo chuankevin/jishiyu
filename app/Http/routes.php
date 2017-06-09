@@ -44,6 +44,8 @@ Route::group(['namespace' => 'Admin', 'middleware' => ['web']], function () {
 	Route::controller('admin/feedback', 'FeedBackController');
 	Route::controller('admin/bank', 'BankController');
 	Route::controller('admin/banner', 'BannerController');
+	Route::controller('admin/pushlog', 'PushLogController');
+	Route::controller('admin/product', 'ProductController');
 });
 
 Route::group(['namespace' => 'Api', 'middleware' => ['web']], function () {
@@ -56,5 +58,6 @@ Route::group(['namespace' => 'Api', 'middleware' => ['web']], function () {
 	Route::controller('api/bank', 'BankController');
 	Route::controller('api/banner', 'BannerController');
 	Route::controller('api/userinfo', 'UserInfoController');
+	Route::controller('api/product', 'ProductController');
 
 });

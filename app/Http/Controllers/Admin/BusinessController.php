@@ -271,14 +271,17 @@ class BusinessController extends HomeController
      * 上传图片
      */
     public function postImg(Request $request){
-        $path='./upload/';
+        $path='./upload/'.date('Ymd').'/';
+        if(!is_dir($path)){
+            mkdir($path);
+        }
         $upFilePath = md5(date('ymdhis').rand(100000,999999)).".jpg";
         $ok=move_uploaded_file($_FILES['fileToUpload']['tmp_name'],$path.$upFilePath);
 
        if($ok === FALSE){
-            echo json_encode(['msg'=>'0','file_url'=>'http://'.$_SERVER['SERVER_NAME'].':82'.'/upload/'.$upFilePath,'path'=>$upFilePath]);
+            echo json_encode(['msg'=>'0','path'=>'/'.date('Ymd').'/'.$upFilePath]);
         }else{
-            echo json_encode(['msg'=>'1','file_url'=>'http://'.$_SERVER['SERVER_NAME'].':82'.'/upload/'.$upFilePath,'path'=>$upFilePath]);
+            echo json_encode(['msg'=>'1','path'=>'/'.date('Ymd').'/'.$upFilePath]);
         }
     }
 
