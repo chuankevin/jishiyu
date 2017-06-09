@@ -127,6 +127,24 @@ class MessageController extends ApiController
         if(!$rem_id){
             return $this->msg('0006','重复方式不存在');
         }
+        //推送时间
+        switch ($rem_id){
+            case 1:
+                $time=0;
+                break;
+            case 2:
+                $time=30*60;
+                break;
+            case 3:
+                $time=60*60;
+                break;
+            case 4:
+                $time=24*60*60;
+                break;
+            case 5:
+                $time=2*24*60*60;
+                break;
+        }
         //维护数据
         $data=new Message();
         $data->user_id=$user_id;
@@ -136,6 +154,7 @@ class MessageController extends ApiController
         $data->repayment_date=$date;
         $data->rep_id=$rep_id;
         $data->rem_id=$rem_id;
+        $data->push_time=date('Y-m-d H:i',strtotime($date)-$time);
         $data->remark=$request->remark;
         if($data->save()){
             return $this->msg('0000','成功');

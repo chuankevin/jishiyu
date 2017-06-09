@@ -22,4 +22,5 @@ class BankController extends ApiController
             ->get();
         return $this->msg('0000','成功',['data'=>$data]);
     }
+
 }
