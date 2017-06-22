@@ -71,11 +71,39 @@ class JPushController extends ApiController
         foreach($data as $key=>$value){
             $ret=$this->create_push('还款提醒','您有'.$value->amount.'元欠款需要处理！',$value->mobile);
             if($ret){
-                $data=new PushLog();
-                $data->push_mobile=$value->mobile;
-                $data->push_title='还款提醒';
-                $data->push_content='您有'.$value->amount.'元欠款需要处理！';
-                $data->save();
+                $push_log=new PushLog();
+                $push_log->push_mobile=$value->mobile;
+                $push_log->push_title='还款提醒';
+                $push_log->push_content='您有'.$value->amount.'元欠款需要处理！';
+                $push_log->save();
+
+                //循环周期
+                $message=Message::find($value->id);
+                switch ($value->rep_id){
+                    case 2:
+                        $message->push_time=date('Y-m-d H:i:s',strtotime($message->push_time)+3600*24*7);
+                        break;
+                    case 9:
+                        $message->push_time=date('Y-m-d H:i:s',strtotime($message->push_time)+1800);
+                        break;
+                    case 3:
+                        $message->push_time=date('Y-m-d H:i:s',strtotime($message->push_time)+3600*24*7*2);
+                        break;
+                    case 4:
+                        $message->push_time=date('Y-m-d H:i:s',strtotime("+1 months",strtotime($message->push_time)));
+                        break;
+                    case 5:
+                        $message->push_time=date('Y-m-d H:i:s',strtotime("+2 months",strtotime($message->push_time)));
+                        break;
+                    case 7:
+                        $message->push_time=date('Y-m-d H:i:s',strtotime("+3 months",strtotime($message->push_time)));
+                        break;
+                    case 8:
+                        $message->push_time=date('Y-m-d H:i:s',strtotime("+6 months",strtotime($message->push_time)));
+                        break;
+                }
+                $message->save();
+
             }
         }
     }
@@ -93,11 +121,39 @@ class JPushController extends ApiController
         foreach($data as $key=>$value){
             $ret=$this->create_push('还款提醒','您有'.$value->amount.'元欠款需要处理！',$value->mobile);
             if($ret){
-                $data=new PushLog();
-                $data->push_mobile=$value->mobile;
-                $data->push_title='还款提醒';
-                $data->push_content='您有'.$value->amount.'元欠款需要处理！';
-                $data->save();
+                $push_log=new PushLog();
+                $push_log->push_mobile=$value->mobile;
+                $push_log->push_title='还款提醒';
+                $push_log->push_content='您有'.$value->amount.'元欠款需要处理！';
+                $push_log->save();
+
+                //循环周期
+                $message=Message::find($value->id);
+                switch ($value->rep_id){
+                    case 2:
+                        $message->push_time=date('Y-m-d H:i:s',strtotime($message->push_time)+3600*24*7);
+                        break;
+                    case 9:
+                        $message->push_time=date('Y-m-d H:i:s',strtotime($message->push_time)+1800);
+                        break;
+                    case 3:
+                        $message->push_time=date('Y-m-d H:i:s',strtotime($message->push_time)+3600*24*7*2);
+                        break;
+                    case 4:
+                        $message->push_time=date('Y-m-d H:i:s',strtotime("+1 months",strtotime($message->push_time)));
+                        break;
+                    case 5:
+                        $message->push_time=date('Y-m-d H:i:s',strtotime("+2 months",strtotime($message->push_time)));
+                        break;
+                    case 7:
+                        $message->push_time=date('Y-m-d H:i:s',strtotime("+3 months",strtotime($message->push_time)));
+                        break;
+                    case 8:
+                        $message->push_time=date('Y-m-d H:i:s',strtotime("+6 months",strtotime($message->push_time)));
+                        break;
+                }
+                $message->save();
+
             }
         }
     }

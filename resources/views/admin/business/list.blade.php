@@ -45,20 +45,8 @@
                     </td>
                     <td>{{$value->post_hits}}</td>
                     <td>{{$value->edufanwei}}</td>
-                    <td>{{$value->feilv}}
-                        @if($value->fv_unit==1)
-                            日
-                        @else
-                            月
-                        @endif
-                    </td>
-                    <td>{{$value->qixianfanwei}}
-                        @if($value->qx_unit==1)
-                            日
-                        @else
-                            月
-                        @endif
-                    </td>
+                    <td>{{$value->feilv}}</td>
+                    <td>{{$value->qixianfanwei}}</td>
                     <td>{{$value->zuikuaifangkuan}}</td>
                     <td>
                         @if($value->smeta!='')

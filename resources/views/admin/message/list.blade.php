@@ -24,7 +24,8 @@
                     <th>金额</th>
                     <th>还款日期</th>
                     <th>重复方式</th>
-                    <th>提醒时间</th>
+                    <th>提醒周期</th>
+                    <th>推送时间</th>
                     <th>备注</th>
                     <th>创建时间</th>
                 </tr>
@@ -37,6 +38,7 @@
                     <td>{{$value->repayment_date}}</td>
                     <td>{{$value->rep_name}}</td>
                     <td>{{$value->rem_name}}</td>
+                    <td>{{$value->push_time}}</td>
                     <td>{{$value->remark}}</td>
                     <td>{{$value->created_at}}</td>
                 </tr>

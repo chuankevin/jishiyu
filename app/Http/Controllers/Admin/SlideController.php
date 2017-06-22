@@ -115,13 +115,16 @@ class SlideController extends HomeController
      * 上传图片
      */
     public function postImg(Request $request){
-        $path='./data/upload/';
+        $path='./upload/'.date('Ymd').'/';
+        if(!is_dir($path)){
+            mkdir($path);
+        }
         $upFilePath = md5(date('ymdhis').rand(100000,999999)).".jpg";
         $ok=move_uploaded_file($_FILES['fileToUpload']['tmp_name'],$path.$upFilePath);
         if($ok === FALSE){
-            echo json_encode(['msg'=>'0','path'=>'/data/upload/'.$upFilePath]);
+            echo json_encode(['msg'=>'0','path'=>'/upload/'.date('Ymd').'/'.$upFilePath]);
         }else{
-            echo json_encode(['msg'=>'1','path'=>'/data/upload/'.$upFilePath]);
+            echo json_encode(['msg'=>'1','path'=>'/upload/'.date('Ymd').'/'.$upFilePath]);
         }
     }
 

@@ -68,9 +68,9 @@ class BankController extends HomeController
         $ok=move_uploaded_file($_FILES['fileToUpload']['tmp_name'],$path.$upFilePath);
 
         if($ok === FALSE){
-            echo json_encode(['msg'=>'0','file_url'=>'http://'.$_SERVER['SERVER_NAME'].':82'.'/data/upload/bank/'.$upFilePath,'path'=>'/bank/'.$upFilePath]);
+            echo json_encode(['msg'=>'0','path'=>'/bank/'.$upFilePath]);
         }else{
-            echo json_encode(['msg'=>'1','file_url'=>'http://'.$_SERVER['SERVER_NAME'].':82'.'/data/upload/bank/'.$upFilePath,'path'=>'/bank/'.$upFilePath]);
+            echo json_encode(['msg'=>'1','path'=>'/bank/'.$upFilePath]);
         }
     }
 

@@ -14,11 +14,11 @@ class ProductController extends ApiController
     public function postList(Request $request){
         $data=new Products();
         $data1=$data
-            ->where('type',1)
+            ->where(['type'=>1,'status'=>1])
             ->orderBy('order','asc')
             ->get();
         $data2=$data
-            ->where('type',2)
+            ->where(['type'=>2,'status'=>1])
             ->orderBy('order','asc')
             ->get();
 

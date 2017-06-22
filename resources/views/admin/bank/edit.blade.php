@@ -280,7 +280,7 @@
                 dataType : 'json',
                 success : function (data){
                     if(data.msg==1){
-                        $(".iconimg").attr("src",data.file_url);
+                        $(".iconimg").attr("src","{{asset('/data/upload/')}}"+data.path);
                         $('#file_url').val(data.path);
                         $('#fileToUpload').bind('change',function () {
                             ajaxFileUpload();

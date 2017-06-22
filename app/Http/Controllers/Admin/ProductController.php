@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\HomeController;
+use App\Models\ProductData;
 use App\Models\Products;
 use Illuminate\Http\Request;
 
@@ -51,14 +52,21 @@ class ProductController extends HomeController
             $data->pro_name=$request->pro_name;
             $data->pro_describe=$request->pro_describe;
             $data->pro_link=$request->pro_link;
+            $data->edufanwei=$request->edufanwei;
+            $data->feilv=$request->feilv;
+            $data->fv_unit=$request->fv_unit;
+            $data->qixianfanwei=$request->qixianfanwei;
+            $data->qx_unit=$request->qx_unit;
             $data->type=$request->type;
             $data->img=$request->img_path;
+            $data->data_id=json_encode($request->tags);
             if($data->save()){
-                return view('admin.product.add')->with('msg','添加产品成功！');
+                return Redirect::to('admin/product/list');
             }
 
         }else{
-            return view('admin.product.add');
+            $product_data=ProductData::get();
+            return view('admin.product.add',compact('product_data'));
         }
 
     }
@@ -77,8 +85,14 @@ class ProductController extends HomeController
             $data->pro_name=$request->pro_name;
             $data->pro_describe=$request->pro_describe;
             $data->pro_link=$request->pro_link;
+            $data->edufanwei=$request->edufanwei;
+            $data->feilv=$request->feilv;
+            $data->fv_unit=$request->fv_unit;
+            $data->qixianfanwei=$request->qixianfanwei;
+            $data->qx_unit=$request->qx_unit;
             $data->type=$request->type;
             $data->img=$request->img_path;
+            $data->data_id=json_encode($request->tags);
             if($data->save()){
                 return Redirect::to('admin/product/list');
             }
@@ -87,7 +101,9 @@ class ProductController extends HomeController
         }else{
             //回显产品数据
             $data=Products::find($id);
-            return view('admin.product.edit',compact('data'));
+            //资料选项
+            $product_data=ProductData::get();
+            return view('admin.product.edit',compact('data','product_data'));
         }
 
     }

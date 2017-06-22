@@ -32,7 +32,49 @@
                     </div>
                 </div>
 
+                <div class="form-group lv-2" >
+                    <label for="" class="col-sm-2 control-label">额度范围：</label>
 
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="edufanwei" placeholder="请输入额度范围" name="edufanwei">
+                    </div>
+                </div>
+                <div class="form-group lv-3 " >
+                    <label for="" class="col-sm-2 control-label">费率：</label>
+
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="feilv" placeholder="请输入费率" name="feilv">
+                    </div>
+                    <select class="form-control" name="fv_unit" id="fv_unit" style="width:60px">
+                        <option value="1">日</option>
+                        <option value="2">月</option>
+                    </select>
+                </div>
+                <div class="form-group lv-4" >
+                    <label for="" class="col-sm-2 control-label">期限范围：</label>
+
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="qixianfanwei" placeholder="请输入期限范围" name="qixianfanwei">
+                    </div>
+                    <select class="form-control" name="qx_unit" id="qx_unit" style="width:60px">
+                        <option value="1">日</option>
+                        <option value="2">月</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">认证资料：</label>
+
+                    <div class="form-group col-sm-6">
+                        <div class="checkbox">
+                            @foreach($product_data as $item)
+                                <label>
+                                    <input type="checkbox" name="tags[]" value="{{$item->id}}">{{$item->data_name}}
+                                </label>
+                            @endforeach
+                        </div>
+
+                    </div>
+                </div>
                 <div class="form-group">
                     <label for="" class="col-sm-2 control-label">产品类型：</label>
 

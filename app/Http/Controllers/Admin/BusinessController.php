@@ -41,7 +41,7 @@ class BusinessController extends HomeController
         $data=$data
             //->where('post_status',1)
             ->orderBy('post_date','desc')
-            ->select('id','post_title','post_hits','edufanwei','feilv','qixianfanwei','zuikuaifangkuan','smeta','post_date','link','post_status','listorder')
+            ->select('id','post_title','post_hits','edufanwei','feilv','qixianfanwei','zuikuaifangkuan','smeta','post_date','link','post_status','listorder','fv_unit','qx_unit')
             ->paginate(10);
 
         return view('admin.business.list',compact('data','keywords','post_status'));

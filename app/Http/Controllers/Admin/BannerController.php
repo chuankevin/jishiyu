@@ -96,9 +96,9 @@ class BannerController extends HomeController
         $upFilePath = md5(date('ymdhis').rand(100000,999999)).".jpg";
         $ok=move_uploaded_file($_FILES['fileToUpload']['tmp_name'],$path.$upFilePath);
         if($ok === FALSE){
-            echo json_encode(['msg'=>'0','file_url'=>'http://'.$_SERVER['SERVER_NAME'].'/data/upload/banner/'.$upFilePath,'path'=>'/banner/'.$upFilePath]);
+            echo json_encode(['msg'=>'0','path'=>'/banner/'.$upFilePath]);
         }else{
-            echo json_encode(['msg'=>'1','file_url'=>'http://'.$_SERVER['SERVER_NAME'].'/data/upload/banner/'.$upFilePath,'path'=>'/banner/'.$upFilePath]);
+            echo json_encode(['msg'=>'1','path'=>'/banner/'.$upFilePath]);
         }
     }
 }
