@@ -61,6 +61,13 @@
                     </select>
                 </div>
                 <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">最快放款：</label>
+
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="zuikuaifangkuan" placeholder="请输入最快放款时间" name="zuikuaifangkuan" value="{{$data->zuikuaifangkuan}}">
+                    </div>
+                </div>
+                <div class="form-group">
                     <label for="" class="col-sm-2 control-label">认证资料：</label>
 
                     <div class="form-group col-sm-6">

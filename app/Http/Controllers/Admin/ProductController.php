@@ -56,6 +56,7 @@ class ProductController extends HomeController
             $data->feilv=$request->feilv;
             $data->fv_unit=$request->fv_unit;
             $data->qixianfanwei=$request->qixianfanwei;
+            $data->zuikuaifangkuan=$request->zuikuaifangkuan;
             $data->qx_unit=$request->qx_unit;
             $data->type=$request->type;
             $data->img=$request->img_path;
@@ -89,6 +90,7 @@ class ProductController extends HomeController
             $data->feilv=$request->feilv;
             $data->fv_unit=$request->fv_unit;
             $data->qixianfanwei=$request->qixianfanwei;
+            $data->zuikuaifangkuan=$request->zuikuaifangkuan;
             $data->qx_unit=$request->qx_unit;
             $data->type=$request->type;
             $data->img=$request->img_path;
