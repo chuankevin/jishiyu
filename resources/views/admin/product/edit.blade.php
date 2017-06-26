@@ -89,6 +89,27 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">其他认证资料：</label>
+
+                    <div class="form-group col-sm-6">
+                        <div class="checkbox">
+                            @foreach($other_type as $item)
+                                <label>
+                                    <input type="checkbox" name="other_id[]" value="{{$item->id}}"
+                                           @if($data->other_id)
+                                                @if(in_array($item->id,json_decode($data->other_id)))
+                                                    checked
+                                                @endif
+                                            @endif
+                                    >{{$item->name}}
+                                </label>
+                            @endforeach
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
                     <label for="" class="col-sm-2 control-label">产品类型：</label>
 
                     <div class="form-group col-sm-6">

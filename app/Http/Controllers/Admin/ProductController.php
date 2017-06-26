@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\HomeController;
 use App\Models\ProductData;
 use App\Models\Products;
+use App\Models\UserOtherType;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -61,13 +62,15 @@ class ProductController extends HomeController
             $data->type=$request->type;
             $data->img=$request->img_path;
             $data->data_id=json_encode($request->tags);
+            $data->other_id=json_encode($request->other_id);
             if($data->save()){
                 return Redirect::to('admin/product/list');
             }
 
         }else{
             $product_data=ProductData::get();
-            return view('admin.product.add',compact('product_data'));
+            $other_type=UserOtherType::get();
+            return view('admin.product.add',compact('product_data','other_type'));
         }
 
     }
@@ -95,6 +98,7 @@ class ProductController extends HomeController
             $data->type=$request->type;
             $data->img=$request->img_path;
             $data->data_id=json_encode($request->tags);
+            $data->other_id=json_encode($request->other_id);
             if($data->save()){
                 return Redirect::to('admin/product/list');
             }
@@ -105,7 +109,9 @@ class ProductController extends HomeController
             $data=Products::find($id);
             //资料选项
             $product_data=ProductData::get();
-            return view('admin.product.edit',compact('data','product_data'));
+            //其他资料选项
+            $other_type=UserOtherType::get();
+            return view('admin.product.edit',compact('data','product_data','other_type'));
         }
 
     }

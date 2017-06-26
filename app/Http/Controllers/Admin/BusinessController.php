@@ -304,7 +304,7 @@ class BusinessController extends HomeController
         }
         if($end_time!=''){
             $end=date('Y-m-d',strtotime($end_time)+3600*24);
-            $data=$data->where('created_at','<=',$end);
+            $data=$data->where('created_at','<',$end);
         }
         //业务数据
         $data=$data
