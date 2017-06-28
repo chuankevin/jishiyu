@@ -38,7 +38,7 @@
                     <td>{{$value->id}}</td>
                     <td>{{$value->title}}</td>
                     <td>{{$value->img_url}}</td>
-                    <td><a href="{{asset('/data/upload/'.$value->img)}}" target="_blank"><img src="{{asset('/data/upload/'.$value->img)}}" alt="" width="50"></a></td>
+                    <td><a href="{{asset('/upload/'.$value->img)}}" target="_blank"><img src="{{asset('/upload/'.$value->img)}}" alt="" width="50"></a></td>
                     <td>
                         @if($value->status==1)
                             显示

@@ -36,7 +36,7 @@
                     <td>{{$value->id}}</td>
                     <td>{{$value->name}}</td>
                     <td>{{$value->describe}}</td>
-                    <td><img  src="{{asset('/data/upload/'.$value->icon)}}" width="50" /></td>
+                    <td><img  src="{{asset('/upload/'.$value->icon)}}" width="50" /></td>
                     <td><a href="{{$value->link}}">{{$value->link}}</a></td>
                     <td>{{$value->created_at}}</td>
                     <td style="width: 40px">

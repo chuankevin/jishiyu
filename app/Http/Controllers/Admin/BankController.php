@@ -73,14 +73,17 @@ class BankController extends HomeController
      * 图片上传
      */
     public function postImg(Request $request){
-        $path='./data/upload/bank/';
+        $path='./upload/'.date('Ymd').'/';
+        if(!is_dir($path)){
+            mkdir($path);
+        }
         $upFilePath = md5(date('ymdhis').rand(100000,999999)).".jpg";
         $ok=move_uploaded_file($_FILES['fileToUpload']['tmp_name'],$path.$upFilePath);
 
         if($ok === FALSE){
-            echo json_encode(['msg'=>'0','path'=>'/bank/'.$upFilePath]);
+            echo json_encode(['msg'=>'0','path'=>date('Ymd').'/'.$upFilePath]);
         }else{
-            echo json_encode(['msg'=>'1','path'=>'/bank/'.$upFilePath]);
+            echo json_encode(['msg'=>'1','path'=>date('Ymd').'/'.$upFilePath]);
         }
     }
 

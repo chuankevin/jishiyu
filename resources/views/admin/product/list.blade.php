@@ -47,8 +47,8 @@
                         @endif
                     </td>
                     <td>
-                       <a href="{{asset('/data/upload/'.$value->img)}}" target="_blank">
-                            <img src="{{asset('/data/upload/'.$value->img)}}" alt="" width="40">
+                       <a href="{{asset('upload/'.$value->img)}}" target="_blank">
+                            <img src="{{asset('upload/'.$value->img)}}" alt="" width="40">
                        </a>
                     </td>
                     <td>{{$value->created_at}}</td>

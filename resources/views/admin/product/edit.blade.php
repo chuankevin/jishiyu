@@ -153,7 +153,7 @@
 
                 <div class="form-group">
                     <label for="" class="col-sm-2 control-label">上传图片：</label>
-                    <img src="{{asset('/data/upload/'.$data->img)}}" class="iconimg" alt="" style="width: 100px;height: 100px;">
+                    <img src="{{asset('/upload/'.$data->img)}}" class="iconimg" alt="" style="width: 100px;height: 100px;">
                     <div class="upload-div" style="margin-top:-16px;margin-left:40%;">
                         <button type="button" class="btn btn-primary" id="changeImg">点击上传</button>
                     </div>
@@ -234,7 +234,7 @@
                 dataType : 'json',
                 success : function (data){
                     if(data.msg==1){
-                        $(".iconimg").attr("src","{{asset('/data/upload/')}}"+"/"+data.path);
+                        $(".iconimg").attr("src","{{asset('/upload/')}}"+"/"+data.path);
                         $('#file_url').val(data.path);
                         $('#fileToUpload').bind('change',function () {
                             ajaxFileUpload();

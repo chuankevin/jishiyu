@@ -180,7 +180,7 @@ class ProductController extends HomeController
      * 上传图片
      */
     public function postImg(Request $request){
-        $path='./data/upload/products/';
+        $path='./upload/'.date('Ymd').'/';
         if(!is_dir($path)){
             mkdir($path);
         }
@@ -188,9 +188,9 @@ class ProductController extends HomeController
         $ok=move_uploaded_file($_FILES['fileToUpload']['tmp_name'],$path.$upFilePath);
 
         if($ok === FALSE){
-            echo json_encode(['msg'=>'0','path'=>'/products/'.$upFilePath]);
+            echo json_encode(['msg'=>'0','path'=>date('Ymd').'/'.$upFilePath]);
         }else{
-            echo json_encode(['msg'=>'1','path'=>'/products/'.$upFilePath]);
+            echo json_encode(['msg'=>'1','path'=>date('Ymd').'/'.$upFilePath]);
         }
     }
 
