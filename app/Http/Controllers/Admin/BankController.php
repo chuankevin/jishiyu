@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Redirect;
 
 class BankController extends HomeController
 {
@@ -50,10 +51,19 @@ class BankController extends HomeController
      * 编辑银行
      */
     public function anyEdit(Request $request){
+        $id=$request->id;
         if($request->isMethod('post')){
-
+            $data=Bank::find($id);
+            $data->name=$request->name;
+            $data->describe=$request->describe;
+            $data->link=$request->link;
+            $data->icon=$request->img_path;
+            if($data->save()){
+                return Redirect::to('admin/bank/list');
+            }
         }else{
-            return view('admin.bank.edit');
+            $data=Bank::find($id);
+            return view('admin.bank.edit',compact('data'));
         }
 
     }

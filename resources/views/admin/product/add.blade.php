@@ -69,6 +69,13 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">申请条件：</label>
+
+                    <div class="col-sm-6">
+                        <textarea name="condition" id="condition" class='form-control' cols="50" rows="5" placeholder="请输入申请条件"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
                     <label for="" class="col-sm-2 control-label">认证资料：</label>
 
                     <div class="form-group col-sm-6">
@@ -113,6 +120,25 @@
                             </label>
                             <label>
                                 <input type="radio" name="type" value="2">急速放款
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">API对接类型：</label>
+
+                    <div class="form-group col-sm-6">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="api_type" value="1" checked>H5链接
+                            </label>
+                            <label>
+                                <input type="radio" name="api_type" value="2">免登录
+                            </label>
+                            <label>
+                                <input type="radio" name="api_type" value="3">全流程
                             </label>
                         </div>
 
