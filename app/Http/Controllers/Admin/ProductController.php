@@ -3,7 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\HomeController;
+use App\Models\BusinessPropertyName;
+use App\Models\BusinessPropertyType;
 use App\Models\ProductData;
+use App\Models\ProductProperties;
 use App\Models\Products;
 use App\Models\UserOtherType;
 use Illuminate\Http\Request;
@@ -65,14 +68,36 @@ class ProductController extends HomeController
             $data->img=$request->img_path;
             $data->data_id=json_encode($request->tags);
             $data->other_id=json_encode($request->other_id);
+
             if($data->save()){
+                //维护产品属性
+                $arr=array();//存属性
+                $properties=BusinessPropertyType::whereIn('type_id',[1,2,3])->get();//属性数据
+                foreach($properties as $property){
+                    $value=$property->type_name_en;
+                    $arr[]=$request->$value;
+                }
+                $product_pro=new ProductProperties();
+                foreach($arr as $v){
+                    foreach($v as $vv){
+                        $product_pro->insert(['business_id'=>$data->id,'property_id'=>$vv]);
+                    }
+                }
+
                 return Redirect::to('admin/product/list');
             }
 
         }else{
+            //产品数据
             $product_data=ProductData::get();
+            //其他资料
             $other_type=UserOtherType::get();
-            return view('admin.product.add',compact('product_data','other_type'));
+            //产品属性
+            $property_type=BusinessPropertyType::whereIn('type_id',[1,2,3])->get();
+            foreach($property_type as $value){
+                $value['data']=BusinessPropertyName::where('property_type',$value['type_id'])->get();
+            }
+            return view('admin.product.add',compact('product_data','other_type','property_type'));
         }
 
     }
@@ -104,6 +129,21 @@ class ProductController extends HomeController
             $data->data_id=json_encode($request->tags);
             $data->other_id=json_encode($request->other_id);
             if($data->save()){
+                $arr=array();//存属性
+                $properties=BusinessPropertyType::whereIn('type_id',[1,2,3])->get();//属性数据
+                foreach($properties as $property){
+                    $value=$property->type_name_en;
+                    $arr[]=$request->$value;
+                }
+                //维护属性数据
+                ProductProperties::where('business_id',$id)->delete();
+                $product_pro=new ProductProperties();
+                foreach($arr as $v){
+                    foreach($v as $vv){
+                        $product_pro->insert(['business_id'=>$id,'property_id'=>$vv]);
+                    }
+                }
+
                 return Redirect::to('admin/product/list');
             }
 
@@ -115,7 +155,14 @@ class ProductController extends HomeController
             $product_data=ProductData::get();
             //其他资料选项
             $other_type=UserOtherType::get();
-            return view('admin.product.edit',compact('data','product_data','other_type'));
+            //产品属性
+            $property_type=BusinessPropertyType::whereIn('type_id',[1,2,3])->get();
+            foreach($property_type as $value){
+                $value['data']=BusinessPropertyName::where('property_type',$value['type_id'])->get();
+            }
+            //产品属性关联数据
+            $properties=ProductProperties::where('business_id',$id)->get();
+            return view('admin.product.edit',compact('data','product_data','other_type','property_type','properties'));
         }
 
     }

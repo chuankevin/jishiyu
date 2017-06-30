@@ -74,6 +74,30 @@
                         <textarea name="condition" id="condition" class='form-control' cols="50" rows="5" placeholder="请输入申请条件">{{$data->tiaojian}}</textarea>
                     </div>
                 </div>
+
+                @foreach($property_type as $value)
+                    <div class="form-group">
+                        <label for="" class="col-sm-2 control-label">{{$value->type_name}}：</label>
+
+                        <div class="form-group">
+                            <div class="checkbox">
+                                @foreach($value->data as $v)
+                                    <label>
+                                        <input type="checkbox" name="{{$value->type_name_en}}[]" value="{{$v->property_id}}"
+                                               @foreach($properties as $property)
+                                               @if($property->property_id==$v->property_id)
+                                               checked
+                                                @endif
+                                                @endforeach
+                                        >{{$v->property_name}}
+                                    </label>
+                                @endforeach
+                            </div>
+
+                        </div>
+                    </div>
+                @endforeach
+
                 <div class="form-group">
                     <label for="" class="col-sm-2 control-label">认证资料：</label>
 
