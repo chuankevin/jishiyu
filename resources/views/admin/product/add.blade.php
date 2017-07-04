@@ -94,13 +94,28 @@
                 @endforeach
 
                 <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">标签：</label>
+
+                    <div class="form-group col-sm-6">
+                        <div class="checkbox">
+                            @foreach($tags as $item)
+                                <label>
+                                    <input type="checkbox" name="tags[]" value="{{$item->id}}">{{$item->tag_name}}
+                                </label>
+                            @endforeach
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
                     <label for="" class="col-sm-2 control-label">认证资料：</label>
 
                     <div class="form-group col-sm-6">
                         <div class="checkbox">
                             @foreach($product_data as $item)
                                 <label>
-                                    <input type="checkbox" name="tags[]" value="{{$item->id}}">{{$item->data_name}}
+                                    <input type="checkbox" name="data_id[]" value="{{$item->id}}">{{$item->data_name}}
                                 </label>
                             @endforeach
                         </div>

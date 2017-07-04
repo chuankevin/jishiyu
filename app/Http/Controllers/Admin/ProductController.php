@@ -3,11 +3,13 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\HomeController;
+use App\Model\ProductTags;
 use App\Models\BusinessPropertyName;
 use App\Models\BusinessPropertyType;
 use App\Models\ProductData;
 use App\Models\ProductProperties;
 use App\Models\Products;
+use App\Models\Tags;
 use App\Models\UserOtherType;
 use Illuminate\Http\Request;
 
@@ -66,13 +68,13 @@ class ProductController extends HomeController
             $data->api_type=$request->api_type;
             $data->type=$request->type;
             $data->img=$request->img_path;
-            $data->data_id=json_encode($request->tags);
+            $data->data_id=json_encode($request->data_id);
             $data->other_id=json_encode($request->other_id);
 
             if($data->save()){
                 //维护产品属性
                 $arr=array();//存属性
-                $properties=BusinessPropertyType::whereIn('type_id',[1,2,3])->get();//属性数据
+                $properties=BusinessPropertyType::get();//属性数据
                 foreach($properties as $property){
                     $value=$property->type_name_en;
                     $arr[]=$request->$value;
@@ -83,7 +85,16 @@ class ProductController extends HomeController
                         $product_pro->insert(['business_id'=>$data->id,'property_id'=>$vv]);
                     }
                 }
-
+                //维护标签
+                $tags=$request->tags;
+                foreach ($tags as $tag){
+                    ProductTags::insert([
+                        'product_id'=>$data->id,
+                        'tag_id'=>$tag,
+                        'created_at'=>date('Y-m-d H:i:s'),
+                        'updated_at'=>date('Y-m-d H:i:s'),
+                    ]);
+                }
                 return Redirect::to('admin/product/list');
             }
 
@@ -93,11 +104,13 @@ class ProductController extends HomeController
             //其他资料
             $other_type=UserOtherType::get();
             //产品属性
-            $property_type=BusinessPropertyType::whereIn('type_id',[1,2,3])->get();
+            $property_type=BusinessPropertyType::get();
             foreach($property_type as $value){
                 $value['data']=BusinessPropertyName::where('property_type',$value['type_id'])->get();
             }
-            return view('admin.product.add',compact('product_data','other_type','property_type'));
+            //标签
+            $tags=Tags::get();
+            return view('admin.product.add',compact('product_data','other_type','property_type','tags'));
         }
 
     }
@@ -126,11 +139,11 @@ class ProductController extends HomeController
             $data->api_type=$request->api_type;
             $data->type=$request->type;
             $data->img=$request->img_path;
-            $data->data_id=json_encode($request->tags);
+            $data->data_id=json_encode($request->data_id);
             $data->other_id=json_encode($request->other_id);
             if($data->save()){
                 $arr=array();//存属性
-                $properties=BusinessPropertyType::whereIn('type_id',[1,2,3])->get();//属性数据
+                $properties=BusinessPropertyType::get();//属性数据
                 foreach($properties as $property){
                     $value=$property->type_name_en;
                     $arr[]=$request->$value;
@@ -142,6 +155,17 @@ class ProductController extends HomeController
                     foreach($v as $vv){
                         $product_pro->insert(['business_id'=>$id,'property_id'=>$vv]);
                     }
+                }
+                //维护标签
+                ProductTags::where('product_id',$id)->delete();
+                $tags=$request->tags;
+                foreach ($tags as $tag){
+                    ProductTags::insert([
+                        'product_id'=>$data->id,
+                        'tag_id'=>$tag,
+                        'created_at'=>date('Y-m-d H:i:s'),
+                        'updated_at'=>date('Y-m-d H:i:s'),
+                    ]);
                 }
 
                 return Redirect::to('admin/product/list');
@@ -156,13 +180,16 @@ class ProductController extends HomeController
             //其他资料选项
             $other_type=UserOtherType::get();
             //产品属性
-            $property_type=BusinessPropertyType::whereIn('type_id',[1,2,3])->get();
+            $property_type=BusinessPropertyType::get();
             foreach($property_type as $value){
                 $value['data']=BusinessPropertyName::where('property_type',$value['type_id'])->get();
             }
             //产品属性关联数据
             $properties=ProductProperties::where('business_id',$id)->get();
-            return view('admin.product.edit',compact('data','product_data','other_type','property_type','properties'));
+            //标签
+            $tags=Tags::get();
+            $product_tags=ProductTags::where('product_id',$id)->get();
+            return view('admin.product.edit',compact('data','product_data','other_type','property_type','properties','tags','product_tags'));
         }
 
     }

@@ -106,6 +106,14 @@ class ChannelRegController extends HomeController
             $end=date('Y-m-d',strtotime($end_time)+3600*24);
             $users3=$users3->where('create_time','<=',$end);
         }
+        $users4=new User();
+        if($start_time!=''){
+            $users4=$users4->where('create_time','>=',$start_time);
+        }
+        if($end_time!=''){
+            $end=date('Y-m-d',strtotime($end_time)+3600*24);
+            $users4=$users4->where('create_time','<=',$end);
+        }
 
 
         //注册数量
@@ -128,7 +136,7 @@ class ChannelRegController extends HomeController
             $data['count']=$num;
 
         }else{
-            $num=$users->where('channel',$channel)->count();
+            $num=$users4->where('channel',$channel)->count();
             $data['count']=ceil(($data->proportion)/100*$num);
         }
 
