@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\HomeController;
-use App\Model\ProductTags;
+use App\Models\ProductTags;
 use App\Models\BusinessPropertyName;
 use App\Models\BusinessPropertyType;
 use App\Models\ProductData;
