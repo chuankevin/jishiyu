@@ -46,6 +46,7 @@ Route::group(['namespace' => 'Admin', 'middleware' => ['web']], function () {
 	Route::controller('admin/banner', 'BannerController');
 	Route::controller('admin/pushlog', 'PushLogController');
 	Route::controller('admin/product', 'ProductController');
+	Route::controller('admin/share', 'ShareController');
 });
 
 Route::group(['namespace' => 'Api', 'middleware' => ['web']], function () {
