@@ -231,7 +231,31 @@
                 msg('请输入产品链接');
                 return false;
             }
-
+            //额度范围
+            if($('#edufanwei').val()==''){
+                msg('请输入额度范围');
+                return false;
+            }
+            //费率
+            if($('#feilv').val()==''){
+                msg('请输入费率');
+                return false;
+            }
+            //期限范围
+            if($('#qixianfanwei').val()==''){
+                msg('请输入期限范围');
+                return false;
+            }
+            //最快放款
+            if($('#zuikuaifangkuan').val()==''){
+                msg('请输入最快放款');
+                return false;
+            }
+            //申请条件
+            if($('#condition').val()==''){
+                msg('请输入申请条件');
+                return false;
+            }
             //图片
             if($('.iconimg').attr('src')==''){
                 msg('请上传图片');

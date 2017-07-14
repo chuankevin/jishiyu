@@ -226,6 +226,10 @@ $menuList = RoleMenu::getMenuList($admin_id);
                         <li class="admin-share-edit"><a href="{{action('Admin\ShareController@anyEdit')}}"><i class="fa fa-circle-o"></i>编辑分享内容</a></li>
                     <?php endif ?>
 
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'安卓APP更新','menuName')): ?>
+                        <li class="admin-appupdate-edit"><a href="{{action('Admin\AppUpdateController@anyEdit')}}"><i class="fa fa-circle-o"></i>安卓APP更新</a></li>
+                    <?php endif ?>
+
                 </ul>
             </li>
             <?php endif ?>
