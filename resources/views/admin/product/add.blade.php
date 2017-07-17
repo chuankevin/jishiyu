@@ -129,7 +129,7 @@
                         <div class="checkbox">
                             @foreach($other_type as $item)
                                 <label>
-                                    <input type="checkbox" name="other_id[]" value="{{$item->id}}">{{$item->name}}
+                                    <input class="other-{{$item->default}}" type="checkbox" name="other_id[]" onclick="selectType(this)" value="{{$item->id}}">{{$item->name}}
                                 </label>
                             @endforeach
                         </div>
@@ -214,6 +214,17 @@
     @endif
 
     <script>
+        //选中方法
+        function selectType(obj){
+            var classname=obj.className;
+            if(classname!="other-"){
+                if(obj.checked){
+                    $('.'+classname).prop("checked",true);
+                }else{
+                    $('.'+classname).prop("checked",false);
+                }
+            }
+        }
         //字段验证
         function check(){
             //名称
