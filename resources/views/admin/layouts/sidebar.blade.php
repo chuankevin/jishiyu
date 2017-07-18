@@ -230,6 +230,10 @@ $menuList = RoleMenu::getMenuList($admin_id);
                         <li class="admin-appupdate-edit"><a href="{{action('Admin\AppUpdateController@anyEdit')}}"><i class="fa fa-circle-o"></i>安卓APP更新</a></li>
                     <?php endif ?>
 
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'启动页设置','menuName')): ?>
+                        <li class="admin-bootpage-edit"><a href="{{action('Admin\BootPageController@anyEdit')}}"><i class="fa fa-circle-o"></i>启动页设置</a></li>
+                    <?php endif ?>
+
                 </ul>
             </li>
             <?php endif ?>
