@@ -52,7 +52,7 @@ class TouTiaoController extends ApiController
             $data->last_login_time=date('Y-m-d H:i:s');
             $data->user_status = 1;
             $data->user_type=2;
-            $data->channel='QD0007';
+            $data->channel='QD0048';
             $data->save();
         //}
 

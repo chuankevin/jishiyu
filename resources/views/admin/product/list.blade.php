@@ -26,6 +26,7 @@
                     <th style="width: 10px">ID</th>
                     <th style="width: 30px">排序</th>
                     <th>产品名称</th>
+                    <th>点击量</th>
                     <th>产品描述</th>
                     <th>产品类型</th>
                     <th>图标</th>
@@ -38,6 +39,7 @@
                     <td>{{$value->id}}</td>
                     <td><input type="text" style="width:30px" value="{{$value->order}}" onchange="changeOrder(this,{{$value->id}})"></td>
                     <td><a href="{{$value->pro_link}}" target="_blank">{{$value->pro_name}}</a></td>
+                    <td>{{$value->hits}}</td>
                     <td>{{$value->pro_describe}}</td>
                     <td>
                         @if($value->type==1)
