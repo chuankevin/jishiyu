@@ -163,7 +163,7 @@ class ChannelController extends HomeController
         $data=$data
             //->leftjoin('channel','channel_no.lv2','=','channel.id')
             ->orderBy('channel_no.create_at','desc')
-            ->select('channel_no.id','channel_no.no','lv1','lv2','lv3','lv4','lv5','channel_no.create_at','channel_no.is_delete','channel_no.name')
+            ->select('channel_no.id','channel_no.no','lv1','lv2','lv3','lv4','lv5','channel_no.create_at','channel_no.is_delete','channel_no.name','h5_hits')
             ->paginate(10);
 
         foreach($data as $k=>$v){

@@ -23,7 +23,8 @@
                 <tr>
                     <th style="width: 10px">ID</th>
                     <th>业务名称</th>
-                    <th>点击量</th>
+                    <th>app点击</th>
+                    <th>h5点击</th>
                     {{--<th>点击时间</th>--}}
 
                 </tr>
@@ -32,6 +33,7 @@
                         <td>{{$value->id}}</td>
                         <td>{{$value->post_title}}</td>
                         <td>{{$value->count}}</td>
+                        <td>{{$value->h5_count}}</td>
                         {{--<td>{{$value->created_at}}</td>--}}
                     </tr>
                 @endforeach

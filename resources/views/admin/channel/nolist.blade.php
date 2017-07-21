@@ -26,6 +26,7 @@
                     <th>渠道别名</th>
                     <th>注册数量</th>
                     <th>激活数量</th>
+                    <th>h5点击</th>
                     <th>一级渠道</th>
                     <th>二级渠道</th>
                     <th>三级渠道</th>
@@ -42,6 +43,7 @@
                         <td>{{$value->name}}</td>
                         <td>{{$value->count}}</td>
                         <td>{{$value->activate_count}}</td>
+                        <td>{{$value->h5_hits}}</td>
                         <td>{{$value->lv1}}</td>
                         <td>{{$value->lv2}}</td>
                         <td>{{$value->lv3}}</td>

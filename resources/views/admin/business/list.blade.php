@@ -26,7 +26,8 @@
                     <th style="width: 10px">ID</th>
                     <th style="width: 30px">排序</th>
                     <th>名称</th>
-                    <th>点击量</th>
+                    <th>app点击</th>
+                    <th>h5点击</th>
                     <th>额度范围</th>
                     <th>费率</th>
                     <th>期限范围</th>
@@ -44,6 +45,7 @@
                         <a href="{{$value->link}}" target="_blank">{{$value->post_title}}</a>
                     </td>
                     <td>{{$value->post_hits}}</td>
+                    <td>{{$value->h5_hits}}</td>
                     <td>{{$value->edufanwei}}</td>
                     <td>{{$value->feilv}}</td>
                     <td>{{$value->qixianfanwei}}</td>

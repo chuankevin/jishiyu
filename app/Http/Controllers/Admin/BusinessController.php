@@ -41,7 +41,7 @@ class BusinessController extends HomeController
         $data=$data
             //->where('post_status',1)
             ->orderBy('post_date','desc')
-            ->select('id','post_title','post_hits','edufanwei','feilv','qixianfanwei','zuikuaifangkuan','smeta','post_date','link','post_status','listorder','fv_unit','qx_unit')
+            ->select('id','post_title','post_hits','edufanwei','feilv','qixianfanwei','zuikuaifangkuan','smeta','post_date','link','post_status','listorder','fv_unit','qx_unit','h5_hits')
             ->paginate(10);
 
         return view('admin.business.list',compact('data','keywords','post_status'));
@@ -310,7 +310,7 @@ class BusinessController extends HomeController
         $data=$data
             ->leftjoin('business','hits_log.business_id','=','business.id')
             ->where('business.post_status',1)
-            ->select('hits_log.*','business.post_title',DB::raw('SUM(hits) as count'))
+            ->select('hits_log.*','business.post_title',DB::raw('SUM(hits) as count'),DB::raw('SUM(cmf_hits_log.h5_hits) as h5_count'))
             ->groupBy('business_id')
             ->orderBy('hits_log.id')
             ->paginate(10);
