@@ -50,9 +50,21 @@ $menuList = RoleMenu::getMenuList($admin_id);
             <?php endif ?>
             <?php if(RoleMenu::hasMenuCategory($menuList,'用户管理','category')): ?>
             <li class="treeview">
-                <a href="{{action('Admin\UserController@getList')}}"><i class="fa  fa-user"></i>
+                <a href="#"><i class="fa  fa-user"></i>
                     <span>用户管理</span>
+                    <span class="pull-right-container">
+                          <i class="fa fa-angle-left pull-right"></i>
+                    </span>
                 </a>
+                <ul class="treeview-menu">
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'用户管理','menuName')): ?>
+                    <li class="admin-user-list"><a href="{{action('Admin\UserController@getList')}}"><i class="fa fa-circle-o"></i>用户管理</a></li>
+                    <?php endif ?>
+
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'用户点击统计','menuName')): ?>
+                    <li class="admin-user-userhits"><a href="{{action('Admin\UserController@getUserhits')}}"><i class="fa fa-circle-o"></i>用户点击统计</a></li>
+                    <?php endif ?>
+                </ul>
             </li>
             <?php endif ?>
 
@@ -128,6 +140,10 @@ $menuList = RoleMenu::getMenuList($admin_id);
 
                         <?php if(RoleMenu::hasMenuCategory($menuList,'渠道编号列表','menuName')): ?>
                             <li class="admin-channel-nolist"><a href="{{action('Admin\ChannelController@getNolist')}}"><i class="fa fa-circle-o"></i>渠道编号列表</a></li>
+                        <?php endif ?>
+
+                        <?php if(RoleMenu::hasMenuCategory($menuList,'渠道点击量','menuName')): ?>
+                            <li class="admin-channel-hits"><a href="{{action('Admin\ChannelController@getHits')}}"><i class="fa fa-circle-o"></i>渠道点击量</a></li>
                         <?php endif ?>
 
                             <?php if(RoleMenu::hasMenuCategory($menuList,'比例设置','menuName')): ?>

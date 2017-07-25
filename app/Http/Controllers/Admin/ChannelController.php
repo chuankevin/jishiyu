@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\HomeController;
 use App\Models\AppActivate;
 use App\Models\Channel;
+use App\Models\ChannelHits;
 use App\Models\ChannelNo;
 use App\Models\ChannelNoPro;
 use App\Models\User;
@@ -163,7 +164,7 @@ class ChannelController extends HomeController
         $data=$data
             //->leftjoin('channel','channel_no.lv2','=','channel.id')
             ->orderBy('channel_no.create_at','desc')
-            ->select('channel_no.id','channel_no.no','lv1','lv2','lv3','lv4','lv5','channel_no.create_at','channel_no.is_delete','channel_no.name','h5_hits')
+            ->select('channel_no.id','channel_no.no','lv1','lv2','lv3','lv4','lv5','channel_no.create_at','channel_no.is_delete','channel_no.name')
             ->paginate(10);
 
         foreach($data as $k=>$v){
@@ -262,5 +263,38 @@ class ChannelController extends HomeController
                 return response()->json(['code'=>0,'msg'=>'启用失败']);
             }
         }
+    }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * 渠道点击
+     */
+    public function getHits(Request $request){
+        $data=new ChannelHits();
+        //条件筛选
+        $keywords=$request->keywords;
+         if($keywords!=''){
+             //$data=$data->where('post_title','like','%'.$keywords.'%');
+             $data=$data->where('channel_hits.channel','like','%'.$keywords.'%')
+                 ->orWhere('channel_no.name','like','%'.$keywords.'%');
+         }
+        $start_time=$request->start_time;
+        $end_time=$request->end_time;
+        if($start_time!=''){
+            $data=$data->where('created_at','>=',$start_time);
+        }
+        if($end_time!=''){
+            $end=date('Y-m-d',strtotime($end_time)+3600*24);
+            $data=$data->where('created_at','<',$end);
+        }
+        //业务数据
+        $data=$data
+            ->leftjoin('channel_no','channel_hits.channel','=','channel_no.no')
+            ->select('channel_hits.*','channel_no.name',DB::raw('SUM(app_hits) as app_count'),DB::raw('SUM(cmf_channel_hits.h5_hits) as h5_count'))
+            ->groupBy('channel_hits.channel')
+            ->paginate(15);
+
+        return view('admin.channel.hits',compact('data','start_time','end_time','keywords'));
     }
 }

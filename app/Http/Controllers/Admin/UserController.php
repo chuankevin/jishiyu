@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\HomeController;
 use App\Models\ChannelNo;
 use App\Models\User;
+use App\Models\UserHits;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -90,6 +91,11 @@ class UserController extends HomeController{
         }
     }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     * 导出表格
+     */
     public function postExport(Request $request){
         $data=new User();
         //时间筛选
@@ -126,5 +132,47 @@ class UserController extends HomeController{
         $data=array_merge($head,$data);
 
         return $this->export('user_'.date('Ymdis'),'用户表',$data);
+    }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * 用户点击统计
+     */
+    public function getUserhits(Request $request){
+        $data=new UserHits();
+        $keywords=$request->keywords;
+        if($keywords!=''){
+            $data=$data->where('mobile','like','%'.$keywords.'%');
+        }
+        $data=$data
+            ->leftjoin('users','user_hits.uid','=','users.id')
+            ->select('user_hits.id','uid','mobile')
+            ->orderBy('id','desc')
+            ->groupBy('uid')
+            ->paginate(15);
+        foreach($data as $key=>$value){
+            //今日点击
+            $today=UserHits::where('created_at',date('Y-m-d'))
+                ->where('uid',$value->uid)
+                ->sum('app_hits');
+            $value->today=$today;
+            //昨日点击
+            $yesterday=UserHits::where('created_at',date('Y-m-d')-3600*24)
+                ->where('uid',$value->uid)
+                ->sum('app_hits');
+            $value->yesterday=$yesterday;
+            //一周点击
+            $week=UserHits::whereBetween('created_at',[date('Y-m-d')-3600*24*7,date('Y-m-d')])
+                ->where('uid',$value->uid)
+                ->sum('app_hits');
+            $value->week=$week;
+            //本月点击
+            $month=UserHits::whereBetween('created_at',[date('Y-m'),date('Y-m-d')])
+                ->where('uid',$value->uid)
+                ->sum('app_hits');
+            $value->month=$month;
+        }
+        return view('admin.user.userhits',compact('data','keywords'));
     }
 }

@@ -2,7 +2,7 @@
 @section('content')
     <div class="box">
         <div class="box-header with-border">
-            <h3 class="box-title">渠道编号列表</h3>
+            <h3 class="box-title">渠道点击量查询</h3>
         </div>
         <form class="form-inline" method="get">
             <div class="box-body">
@@ -23,47 +23,27 @@
                 <tr>
                     <th style="width: 10px">ID</th>
                     <th>渠道编号</th>
-                    <th>渠道别名</th>
-                    <th>注册数量</th>
-                    <th>激活数量</th>
-                    <th>一级渠道</th>
-                    <th>二级渠道</th>
-                    <th>三级渠道</th>
-                    <th>四级渠道</th>
-                    <th>五级渠道</th>
-                    <th>状态</th>
-                    <th>创建时间</th>
-                    <th style="width: 40px">操作</th>
+                    <th>渠道名称</th>
+                    {{--<th>app点击</th>--}}
+                    <th>h5点击</th>
+                    {{--<th>点击时间</th>--}}
+
                 </tr>
                 @foreach($data as $key=>$value)
                     <tr>
                         <td>{{$value->id}}</td>
-                        <td>{{$value->no}}</td>
+                        <td>{{$value->channel}}</td>
                         <td>{{$value->name}}</td>
-                        <td>{{$value->count}}</td>
-                        <td>{{$value->activate_count}}</td>
-                        <td>{{$value->lv1}}</td>
-                        <td>{{$value->lv2}}</td>
-                        <td>{{$value->lv3}}</td>
-                        <td>{{$value->lv4}}</td>
-                        <td>{{$value->lv5}}</td>
-
-                        <td>
-                            @if($value->is_delete==0)
-                                正常
-                            @elseif($value->is_delete==1)
-                                禁用
-                            @endif
-                        </td>
-                        <td>{{$value->create_at}}</td>
-                        <td><button type="button" class="btn btn-block btn-danger btn-sm" onclick="if(confirm('确定要删除这条渠道吗？')){_delete({{$value->id}})}">删除</button></td>
+                        {{--<td>{{$value->count}}</td>--}}
+                        <td>{{$value->h5_count}}</td>
+                        {{--<td>{{$value->created_at}}</td>--}}
                     </tr>
                 @endforeach
             </table>
         </div>
         <!-- /.box-body -->
         <div class="box-footer clearfix">
-            {!! $data->appends(['keywords'=>$keywords,'start_time'=>$start_time,'end_time'=>$end_time])->links() !!}
+            {!! $data->appends(['start_time'=>$start_time,'end_time'=>$end_time,'keywords'=>$keywords])->links() !!}
             {{--<ul class="pagination pagination-sm no-margin pull-left">
                 <li><a href="#">&laquo;</a></li>
                 <li><a href="#">1</a></li>
