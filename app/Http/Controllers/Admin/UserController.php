@@ -141,29 +141,42 @@ class UserController extends HomeController{
      */
     public function getUserhits(Request $request){
         $data=new UserHits();
+        //手机号筛选
         $keywords=$request->keywords;
         if($keywords!=''){
             $data=$data->where('mobile','like','%'.$keywords.'%');
         }
+        //渠道筛选
+        $channel=$request->channel;
+        if($channel!=''){
+            $data=$data->where('user_hits.channel','like','%'.$channel.'%')
+                ->orWhere('channel_no.name','like','%'.$channel.'%');
+        }
+        //时间筛选
+        $start_time=$request->start_time;
+        if($start_time==''){
+            $start_time=date('Y-m-d');
+        }
         $data=$data
             ->leftjoin('users','user_hits.uid','=','users.id')
-            ->select('user_hits.id','uid','mobile')
+            ->leftjoin('channel_no','user_hits.channel','=','channel_no.no')
+            ->select('user_hits.id','uid','mobile','user_hits.channel','channel_no.name')
             ->orderBy('id','desc')
             ->groupBy('uid')
             ->paginate(15);
         foreach($data as $key=>$value){
             //今日点击
-            $today=UserHits::where('created_at',date('Y-m-d'))
+            $today=UserHits::where('created_at',$start_time)
                 ->where('uid',$value->uid)
                 ->sum('app_hits');
             $value->today=$today;
             //昨日点击
-            $yesterday=UserHits::where('created_at',date('Y-m-d')-3600*24)
+            $yesterday=UserHits::where('created_at',date('Y-m-d',strtotime($start_time)-3600*24))
                 ->where('uid',$value->uid)
                 ->sum('app_hits');
             $value->yesterday=$yesterday;
             //一周点击
-            $week=UserHits::whereBetween('created_at',[date('Y-m-d')-3600*24*7,date('Y-m-d')])
+            $week=UserHits::whereBetween('created_at',[date('Y-m-d',strtotime($start_time)-3600*24*7),$start_time])
                 ->where('uid',$value->uid)
                 ->sum('app_hits');
             $value->week=$week;
@@ -173,6 +186,6 @@ class UserController extends HomeController{
                 ->sum('app_hits');
             $value->month=$month;
         }
-        return view('admin.user.userhits',compact('data','keywords'));
+        return view('admin.user.userhits',compact('data','keywords','channel','start_time'));
     }
 }
