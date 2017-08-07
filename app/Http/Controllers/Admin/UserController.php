@@ -66,7 +66,7 @@ class UserController extends HomeController{
     /**
      * @param Request $request
      * @return mixed
-     * 禁用或启用渠道
+     * 禁用或启用
      */
     public function postDelete(Request $request){
         $id=$request->id;
@@ -97,6 +97,8 @@ class UserController extends HomeController{
      * 导出表格
      */
     public function postExport(Request $request){
+        ini_set("memory_limit","256M");
+        set_time_limit(600);
         $data=new User();
         //时间筛选
         $start_time=$request->start_time;
@@ -121,13 +123,16 @@ class UserController extends HomeController{
         }
         $head=[['ID','来源','渠道编号','用户名','昵称','手机','注册时间','最后登录时间','最后登录IP','点击','停留（秒）']];
         //用户信息
-        $data=$data->where('user_status',1)
+        $data=$data
+            ->leftjoin('channel_no','users.channel','=','channel_no.no')
+            ->where('user_status',1)
             ->orderBy('create_time','desc')
-            ->select('id','reg_from','channel','user_login','user_nicename','mobile','create_time','last_login_time','last_login_ip','hits','stay_time')
+            ->select('users.id','reg_from','channel_no.name','user_login','user_nicename','mobile','create_time','last_login_time','last_login_ip','hits','stay_time')
             ->get()
             ->toArray();
         foreach($data as $key=>$value){
             $data[$key]['stay_time']=ceil($value['stay_time']/1000);
+            $data[$key]['create_time']=date('Y-m-d',strtotime($value['create_time']));
         }
         $data=array_merge($head,$data);
 

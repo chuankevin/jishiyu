@@ -313,8 +313,21 @@ class BusinessController extends HomeController
             ->select('hits_log.*','business.post_title',DB::raw('SUM(hits) as count'),DB::raw('SUM(cmf_hits_log.h5_hits) as h5_count'))
             ->groupBy('business_id')
             ->orderBy('hits_log.id')
-            ->paginate(10);
+            ->paginate(15);
 
-        return view('admin.business.hitslist',compact('data','start_time','end_time'));
+        //业务点击数据汇总
+        $hit_log=new HitsLog();
+        if($start_time!=''){
+            $hit_log=$hit_log->where('created_at','>=',$start_time);
+        }
+        if($end_time!=''){
+            $end=date('Y-m-d',strtotime($end_time)+3600*24);
+            $hit_log=$hit_log->where('created_at','<',$end);
+        }
+        $app_sum=$hit_log->sum('hits_log.hits');
+        $h5_sum=$hit_log->sum('hits_log.h5_hits');
+
+
+        return view('admin.business.hitslist',compact('data','start_time','end_time','app_sum','h5_sum'));
     }
 }

@@ -37,6 +37,13 @@
                         {{--<td>{{$value->created_at}}</td>--}}
                     </tr>
                 @endforeach
+                <tr>
+                    <th></th>
+                    <th>总计</th>
+                    <th>{{$app_sum}}</th>
+                    <th>{{$h5_sum}}</th>
+                    {{--<td>{{$value->created_at}}</td>--}}
+                </tr>
             </table>
         </div>
         <!-- /.box-body -->
