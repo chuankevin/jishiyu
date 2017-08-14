@@ -83,6 +83,15 @@
         <!-- /.box-body -->
         <div class="box-footer clearfix">
             {!! $data->appends(['channel'=>$channel,'mobile'=>$mobile,'start_time'=>$start_time,'end_time'=>$end_time])->links() !!}
+           {{-- <form class="form-inline" method="get" >
+                <div class="box-body">
+                    <div class="form-group">&nbsp;&nbsp;&nbsp;&nbsp;
+                        页码：
+                        <input type="text" class="form-control input-sm" name="page" placeholder="">&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="submit" class="btn btn-primary">跳转</button>
+                    </div>
+                </div>
+            </form>--}}
             {{--<ul class="pagination pagination-sm no-margin pull-left">
                 <li><a href="#">&laquo;</a></li>
                 <li><a href="#">1</a></li>
