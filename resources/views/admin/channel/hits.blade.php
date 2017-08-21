@@ -28,6 +28,7 @@
                     <th>总点击次数</th>
                     <th>点击人数</th>
                     <th>点击人数（当日注册点击）</th>
+                    <th>留存</th>
                 </tr>
                 @foreach($data as $key=>$value)
                     <tr>
@@ -38,8 +39,18 @@
                         <td>{{$value->hits_num}}</td>
                         <td>{{$value->user_num}}</td>
                         <td>{{$value->today_num}}</td>
+                        <td>{{$value->user_num-$value->today_num}}</td>
                     </tr>
                 @endforeach
+                <tr>
+                    <th>总计</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>{{$total[0]['hits_total']}}</th>
+                    <th></th>
+                    <th></th>
+                </tr>
             </table>
         </div>
         <!-- /.box-body -->

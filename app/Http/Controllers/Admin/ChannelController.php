@@ -350,15 +350,19 @@ class ChannelController extends HomeController
             $data[$key]['user_num']=count($user_num);
             //当日点击用户数量
             $today_num=UserProChannelHits::leftjoin('users','user_pro_channel_hits.uid','=','users.id')
-                ->whereBetween('created_at',[date('Y-m-d'),date("Y-m-d",strtotime("+1 day"))])
-                ->whereBetween('create_time',[date('Y-m-d'),date("Y-m-d",strtotime("+1 day"))])
+                ->whereBetween('created_at',[$start_time,date('Y-m-d',strtotime($start_time)+3600*24)])
+                ->whereBetween('create_time',[$start_time,date('Y-m-d',strtotime($start_time)+3600*24)])
                 ->where('user_pro_channel_hits.channel',$val->channel)
                 ->groupBy('uid')
                 ->get();
             $data[$key]['today_num']=count($today_num);
         }
-        //dd($data);
+        $total=UserProChannelHits::where('created_at','>=',$start_time)
+            ->where('created_at','<',date('Y-m-d',strtotime($end_time)+3600*24))
+            ->select(DB::raw('SUM(hits) as hits_total'))
+            ->get();
+        //dd($total[0]->hits_total);
 
-        return view('admin.channel.hits',compact('data','start_time','end_time','keywords'));
+        return view('admin.channel.hits',compact('data','start_time','end_time','keywords','total'));
     }
 }

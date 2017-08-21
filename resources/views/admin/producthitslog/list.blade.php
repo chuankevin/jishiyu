@@ -12,6 +12,13 @@
                     <input type="text" class="form-control date-picker end" name="end_time" placeholder="" value="{{$end_time}}">&nbsp;&nbsp;&nbsp;&nbsp;
                    {{-- 渠道编号：
                     <input type="text" class="form-control" name="keywords" placeholder="渠道编号" value="{{$keywords}}">&nbsp;&nbsp;&nbsp;&nbsp;--}}
+                    产品名称：
+                    <input type="text" class="form-control" name="keywords" placeholder="请输入关键词" value="{{$keywords}}">&nbsp;&nbsp;&nbsp;&nbsp;
+                    发布状态：
+                    <select class="form-control selectpicker2" id="channel" name="status">
+                        <option value="1" @if($status==1) selected @endif >已上架</option>
+                        <option value="0" @if($status==0) selected @endif>已下架</option>
+                    </select>&nbsp;&nbsp;
                     <button type="submit" class="btn btn-primary">搜索</button>
                     <button type="button" class="btn btn-success" onclick="location.reload()">刷新</button>
                 </div>

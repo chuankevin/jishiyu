@@ -293,10 +293,16 @@ class BusinessController extends HomeController
     public function getHitslist(Request $request){
         $data=new HitsLog();
         //条件筛选
-       /* $keywords=$request->keywords;
+        $keywords=$request->keywords;
         if($keywords!=''){
             $data=$data->where('post_title','like','%'.$keywords.'%');
-        }*/
+        }
+        $post_status=isset($request->post_status) ? $request->post_status : 1;
+        if($post_status!=''){
+            $data=$data->where('post_status',$post_status);
+        }else{
+            $data=$data->where('post_status',1);
+        }
         $start_time=$request->start_time;
         $end_time=$request->end_time;
         if($start_time!=''){
@@ -309,14 +315,19 @@ class BusinessController extends HomeController
         //业务数据
         $data=$data
             ->leftjoin('business','hits_log.business_id','=','business.id')
-            ->where('business.post_status',1)
+            //->where('business.post_status',1)
             ->select('hits_log.*','business.post_title',DB::raw('SUM(hits) as count'),DB::raw('SUM(cmf_hits_log.h5_hits) as h5_count'))
             ->groupBy('business_id')
-            ->orderBy('hits_log.id')
+            ->orderBy('business.post_title')
             ->paginate(15);
 
         //业务点击数据汇总
         $hit_log=new HitsLog();
+        if($post_status!=''){
+            $hit_log=$hit_log->where('business.post_status',$post_status);
+        }else{
+            $hit_log=$hit_log->where('business.post_status',1);
+        }
         if($start_time!=''){
             $hit_log=$hit_log->where('created_at','>=',$start_time);
         }
@@ -324,10 +335,11 @@ class BusinessController extends HomeController
             $end=date('Y-m-d',strtotime($end_time)+3600*24);
             $hit_log=$hit_log->where('created_at','<',$end);
         }
+        $hit_log=$hit_log->leftjoin('business','hits_log.business_id','=','business.id');
         $app_sum=$hit_log->sum('hits_log.hits');
         $h5_sum=$hit_log->sum('hits_log.h5_hits');
 
 
-        return view('admin.business.hitslist',compact('data','start_time','end_time','app_sum','h5_sum'));
+        return view('admin.business.hitslist',compact('data','keywords','post_status','start_time','end_time','app_sum','h5_sum'));
     }
 }
