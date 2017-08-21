@@ -31,9 +31,10 @@
                 @foreach($data as $key=>$value)
                     <tr>
                         <td>{{$value->id}}</td>
-                        <td>{{$value->post_title}}</td>
-                        <td>{{$value->count}}</td>
-                        <td>{{$value->h5_count}}</td>
+                        <td style="width: 25%;">{{$value->post_title}}</td>
+                        <td style="width: 25%;">{{$value->count}}</td>
+                        <td style="width: 25%;">{{$value->h5_count}}</td>
+                        <td></td>
                         {{--<td>{{$value->created_at}}</td>--}}
                     </tr>
                 @endforeach

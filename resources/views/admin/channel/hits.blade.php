@@ -21,22 +21,23 @@
         <div class="box-body">
             <table class="table table-bordered">
                 <tr>
-                    <th style="width: 10px">ID</th>
                     <th>渠道编号</th>
                     <th>渠道名称</th>
-                    {{--<th>app点击</th>--}}
-                    <th>h5点击</th>
-                    {{--<th>点击时间</th>--}}
-
+                    <th>渠道注册量</th>
+                    <th>点击品类量</th>
+                    <th>总点击次数</th>
+                    <th>点击人数</th>
+                    <th>点击人数（当日注册点击）</th>
                 </tr>
                 @foreach($data as $key=>$value)
                     <tr>
-                        <td>{{$value->id}}</td>
                         <td>{{$value->channel}}</td>
                         <td>{{$value->name}}</td>
-                        {{--<td>{{$value->count}}</td>--}}
-                        <td>{{$value->h5_count}}</td>
-                        {{--<td>{{$value->created_at}}</td>--}}
+                        <td>{{$value->reg_num}}</td>
+                        <td>{{$value->pro_num}}</td>
+                        <td>{{$value->hits_num}}</td>
+                        <td>{{$value->user_num}}</td>
+                        <td>{{$value->today_num}}</td>
                     </tr>
                 @endforeach
             </table>

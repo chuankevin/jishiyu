@@ -23,11 +23,11 @@ class ProductHitsLogController extends HomeController
         $start_time=$request->start_time;
         $end_time=$request->end_time;
         if($start_time!=''){
-            $data=$data->where('created_at','>=',$start_time);
+            $data=$data->where('product_hits_log.created_at','>=',$start_time);
         }
         if($end_time!=''){
             $end=date('Y-m-d',strtotime($end_time)+3600*24);
-            $data=$data->where('created_at','<',$end);
+            $data=$data->where('product_hits_log.created_at','<',$end);
         }
         //业务数据
         $data=$data

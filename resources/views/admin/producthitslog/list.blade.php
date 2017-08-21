@@ -28,8 +28,9 @@
                 @foreach($data as $key=>$value)
                     <tr>
                         <td>{{$value->id}}</td>
-                        <td>{{$value->pro_name}}</td>
-                        <td>{{$value->count}}</td>
+                        <td style="width: 25%;">{{$value->pro_name}}</td>
+                        <td style="width: 25%;">{{$value->count}}</td>
+                        <td></td>
                     </tr>
                 @endforeach
                 <tr>

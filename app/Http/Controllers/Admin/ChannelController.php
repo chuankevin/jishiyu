@@ -9,6 +9,7 @@ use App\Models\ChannelHits;
 use App\Models\ChannelNo;
 use App\Models\ChannelNoPro;
 use App\Models\User;
+use App\Models\UserProChannelHits;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -271,16 +272,16 @@ class ChannelController extends HomeController
      * 渠道点击
      */
     public function getHits(Request $request){
-        $data=new ChannelHits();
-        //条件筛选
         $keywords=$request->keywords;
+        $start_time=$request->start_time ? $request->start_time : date('Y-m-d');
+        $end_time=$request->end_time ? $request->end_time : date("Y-m-d");
+        //点击数据
+        $data=new UserProChannelHits();
+        //条件筛选
          if($keywords!=''){
-             //$data=$data->where('post_title','like','%'.$keywords.'%');
-             $data=$data->where('channel_hits.channel','like','%'.$keywords.'%')
+             $data=$data->where('user_pro_channel_hits.channel','like','%'.$keywords.'%')
                  ->orWhere('channel_no.name','like','%'.$keywords.'%');
          }
-        $start_time=$request->start_time;
-        $end_time=$request->end_time;
         if($start_time!=''){
             $data=$data->where('created_at','>=',$start_time);
         }
@@ -288,12 +289,75 @@ class ChannelController extends HomeController
             $end=date('Y-m-d',strtotime($end_time)+3600*24);
             $data=$data->where('created_at','<',$end);
         }
+
+
         //业务数据
         $data=$data
-            ->leftjoin('channel_no','channel_hits.channel','=','channel_no.no')
-            ->select('channel_hits.*','channel_no.name',DB::raw('SUM(app_hits) as app_count'),DB::raw('SUM(cmf_channel_hits.h5_hits) as h5_count'))
-            ->groupBy('channel_hits.channel')
-            ->paginate(15);
+            ->leftjoin('channel_no','user_pro_channel_hits.channel','=','channel_no.no')
+            ->select('user_pro_channel_hits.*','channel_no.name',DB::raw('SUM(hits) as hits_num'))
+            ->groupBy('user_pro_channel_hits.channel')
+            ->paginate(10);
+        foreach($data as $key=>$val){
+
+            //****************用户注册数据*****************
+            $m_user=new User();
+            //时间筛选
+            if($start_time!=''){
+                $m_user=$m_user->where('create_time','>=',$start_time);
+            }
+            if($end_time!=''){
+                $end=date('Y-m-d',strtotime($end_time)+3600*24);
+                $m_user=$m_user->where('create_time','<=',$end);
+            }
+
+            //数据1
+            $data1=new UserProChannelHits();
+            //条件筛选
+            if($start_time!=''){
+                $data1=$data1->where('created_at','>=',$start_time);
+            }
+            if($end_time!=''){
+                $end=date('Y-m-d',strtotime($end_time)+3600*24);
+                $data1=$data1->where('created_at','<',$end);
+            }
+            //数据2
+            $data2=new UserProChannelHits();
+            //条件筛选
+            if($start_time!=''){
+                $data2=$data2->where('created_at','>=',$start_time);
+            }
+            if($end_time!=''){
+                $end=date('Y-m-d',strtotime($end_time)+3600*24);
+                $data2=$data2->where('created_at','<',$end);
+            }
+
+            //***************注册数******************
+            $reg_num=$m_user
+                ->where('channel',$val->channel)
+                ->count();
+            $data[$key]['reg_num']=$reg_num;
+            //***************品类数量*****************
+            $pro_num=$data1
+                ->where('channel',$val->channel)
+                ->groupBy('pid')
+                ->get();
+            $data[$key]['pro_num']=count($pro_num);
+            //****************点击用户数量****************
+            $user_num=$data2
+                ->where('channel',$val->channel)
+                ->groupBy('uid')
+                ->get();
+            $data[$key]['user_num']=count($user_num);
+            //当日点击用户数量
+            $today_num=UserProChannelHits::leftjoin('users','user_pro_channel_hits.uid','=','users.id')
+                ->whereBetween('created_at',[date('Y-m-d'),date("Y-m-d",strtotime("+1 day"))])
+                ->whereBetween('create_time',[date('Y-m-d'),date("Y-m-d",strtotime("+1 day"))])
+                ->where('user_pro_channel_hits.channel',$val->channel)
+                ->groupBy('uid')
+                ->get();
+            $data[$key]['today_num']=count($today_num);
+        }
+        //dd($data);
 
         return view('admin.channel.hits',compact('data','start_time','end_time','keywords'));
     }
