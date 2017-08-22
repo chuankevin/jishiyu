@@ -21,23 +21,15 @@
                 <tr>
                     <th>渠道编号</th>
                     <th>注册数量</th>
-                    <th>一级渠道</th>
-                    <th>二级渠道</th>
-                    <th>三级渠道</th>
-                    <th>四级渠道</th>
-                    <th>五级渠道</th>
+                    <th>渠道名称</th>
+
 
                 </tr>
                 {{--@foreach($data as $key=>$value)--}}
                     <tr>
-                        <td>{{$data->no}}</td>
-                        <td>{{$data->count}}</td>
-                        <td>{{$data->lv1}}</td>
-                        <td>{{$data->lv2}}</td>
-                        <td>{{$data->lv3}}</td>
-                        <td>{{$data->lv4}}</td>
-                        <td>{{$data->lv5}}</td>
-
+                        <td>{{$channel}}</td>
+                        <td>{{$total}}</td>
+                        <td>{{$channel_name->name}}</td>
                     </tr>
                 {{--@endforeach--}}
             </table>
@@ -59,13 +51,17 @@
 
                 </tr>
                 <tr>
-                    <td>{{$data->today}}</td>
-                    <td>{{$data->day1}}</td>
-                    <td>{{$data->day2}}</td>
-                    <td>{{$data->day3}}</td>
-                    <td>{{$data->day4}}</td>
-                    <td>{{$data->day5}}</td>
-                    <td>{{$data->day6}}</td>
+                    @foreach($data as $datum)
+                    <td>
+                        {{$datum->reg_num}}
+                    </td>
+                    @endforeach
+                   {{-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>--}}
 
                 </tr>
             </table>

@@ -39,7 +39,13 @@
                         <td>{{$value->hits_num}}</td>
                         <td>{{$value->user_num}}</td>
                         <td>{{$value->today_num}}</td>
-                        <td>{{$value->user_num-$value->today_num}}</td>
+                        <td>
+                            @if($value->yes_reg==0)
+                                0%
+                            @else
+                                {{round(($value->user_num-$value->today_num)/($value->yes_reg),2)}} %
+                            @endif
+                        </td>
                     </tr>
                 @endforeach
                 <tr>

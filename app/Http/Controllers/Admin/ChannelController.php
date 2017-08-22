@@ -356,6 +356,12 @@ class ChannelController extends HomeController
                 ->groupBy('uid')
                 ->get();
             $data[$key]['today_num']=count($today_num);
+            //前一天注册
+            $yes_reg=User::where('create_time','>=',date('Y-m-d',strtotime($end_time)-3600*24))
+                ->where('create_time','<',date('Y-m-d'))
+                ->where('channel',$val->channel)
+                ->count();
+            $data[$key]['yes_reg']=$yes_reg;
         }
         $total=UserProChannelHits::where('created_at','>=',$start_time)
             ->where('created_at','<',date('Y-m-d',strtotime($end_time)+3600*24))
