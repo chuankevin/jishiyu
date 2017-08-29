@@ -50,6 +50,7 @@ Route::group(['namespace' => 'Admin', 'middleware' => ['web']], function () {
 	Route::controller('admin/bootpage', 'BootPageController');
 	Route::controller('admin/appupdate', 'AppUpdateController');
 	Route::controller('admin/producthitslog', 'ProductHitsLogController');
+	Route::controller('admin/productcate', 'ProductCateController');
 });
 
 Route::group(['namespace' => 'Api', 'middleware' => ['web']], function () {

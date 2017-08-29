@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\HomeController;
+use App\Models\ProductCate;
 use App\Models\ProductTags;
 use App\Models\BusinessPropertyName;
 use App\Models\BusinessPropertyType;
@@ -68,6 +69,7 @@ class ProductController extends HomeController
             $data->api_type=$request->api_type;
             $data->type=$request->type;
             $data->img=$request->img_path;
+            $data->cat_id=$request->cat_id;
             $data->data_id=json_encode($request->data_id);
             $data->other_id=json_encode($request->other_id);
 
@@ -110,7 +112,9 @@ class ProductController extends HomeController
             }
             //标签
             $tags=Tags::get();
-            return view('admin.product.add',compact('product_data','other_type','property_type','tags'));
+            //产品分类
+            $cats=ProductCate::get();
+            return view('admin.product.add',compact('product_data','other_type','property_type','tags','cats'));
         }
 
     }
@@ -139,6 +143,7 @@ class ProductController extends HomeController
             $data->api_type=$request->api_type;
             $data->type=$request->type;
             $data->img=$request->img_path;
+            $data->cat_id=$request->cat_id;
             $data->data_id=json_encode($request->data_id);
             $data->other_id=json_encode($request->other_id);
             if($data->save()){
@@ -189,7 +194,9 @@ class ProductController extends HomeController
             //标签
             $tags=Tags::get();
             $product_tags=ProductTags::where('product_id',$id)->get();
-            return view('admin.product.edit',compact('data','product_data','other_type','property_type','properties','tags','product_tags'));
+            //产品分类
+            $cats=ProductCate::get();
+            return view('admin.product.edit',compact('data','product_data','other_type','property_type','properties','tags','product_tags','cats'));
         }
 
     }

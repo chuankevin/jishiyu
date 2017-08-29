@@ -76,6 +76,21 @@
                     </div>
                 </div>
 
+                <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">产品分类：</label>
+
+                    <div class="form-group col-sm-6">
+                        <div class="checkbox">
+                            @foreach($cats as $cat)
+                                <label>
+                                    <input type="checkbox" name="cat_id" value="{{$cat->id}}">{{$cat->cat_name}}
+                                </label>
+                            @endforeach
+                        </div>
+
+                    </div>
+                </div>
+
                 @foreach($property_type as $value)
                     <div class="form-group">
                         <label for="" class="col-sm-2 control-label">{{$value->type_name}}：</label>

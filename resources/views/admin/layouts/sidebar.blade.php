@@ -242,6 +242,14 @@ $menuList = RoleMenu::getMenuList($admin_id);
                         <li class="admin-producthitslog-list"><a href="{{action('Admin\ProductHitsLogController@getList')}}"><i class="fa fa-circle-o"></i>产品点击</a></li>
                     <?php endif ?>
 
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'添加产品分类','menuName')): ?>
+                        <li class="admin-productcate-add"><a href="{{action('Admin\ProductCateController@anyAdd')}}"><i class="fa fa-circle-o"></i>添加产品分类</a></li>
+                    <?php endif ?>
+
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'产品分类列表','menuName')): ?>
+                        <li class="admin-productcate-list"><a href="{{action('Admin\ProductCateController@getList')}}"><i class="fa fa-circle-o"></i>产品分类列表</a></li>
+                    <?php endif ?>
+
                     <?php if(RoleMenu::hasMenuCategory($menuList,'编辑分享内容','menuName')): ?>
                         <li class="admin-share-edit"><a href="{{action('Admin\ShareController@anyEdit')}}"><i class="fa fa-circle-o"></i>编辑分享内容</a></li>
                     <?php endif ?>
