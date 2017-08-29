@@ -49,7 +49,7 @@
         </div>
         <!-- /.box-body -->
         <div class="box-footer clearfix">
-            {!! $data->appends(['start_time'=>$start_time,'end_time'=>$end_time])->links() !!}
+            {!! $data->appends(['start_time'=>$start_time,'end_time'=>$end_time,'keywords'=>$keywords,'status'=>$status])->links() !!}
         </div>
     </div>
 

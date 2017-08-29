@@ -283,6 +283,7 @@ class BusinessController extends HomeController
         }else{
             echo json_encode(['msg'=>'1','path'=>'/'.date('Ymd').'/'.$upFilePath]);
         }
+
     }
 
     /**

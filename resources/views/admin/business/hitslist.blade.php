@@ -56,7 +56,7 @@
         </div>
         <!-- /.box-body -->
         <div class="box-footer clearfix">
-            {!! $data->appends(['start_time'=>$start_time,'end_time'=>$end_time])->links() !!}
+            {!! $data->appends(['start_time'=>$start_time,'end_time'=>$end_time,'keywords'=>$keywords,'post_status'=>$post_status])->links() !!}
             {{--<ul class="pagination pagination-sm no-margin pull-left">
                 <li><a href="#">&laquo;</a></li>
                 <li><a href="#">1</a></li>

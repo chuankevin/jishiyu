@@ -29,6 +29,7 @@
                     <th>点击人数</th>
                     <th>点击人数（当日注册点击）</th>
                     <th>留存</th>
+                    <th style="width: 40px">操作</th>
                 </tr>
                 @foreach($data as $key=>$value)
                     <tr>
@@ -45,6 +46,9 @@
                             @else
                                 {{round(($value->user_num-$value->today_num)/($value->yes_reg),2)}} %
                             @endif
+                        </td>
+                        <td>
+                            <a href="{{url('admin/channel/prohits')}}?channel={{$value->channel}}"><button type="button" class="btn btn-block btn-success btn-sm">点击详情</button></a>
                         </td>
                     </tr>
                 @endforeach
