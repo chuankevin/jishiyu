@@ -82,10 +82,15 @@
                         <div class="checkbox">
                             @foreach($cats as $cat)
                                 <label>
-                                    <input type="checkbox" name="cat_id" value="{{$cat->id}}"
+                                    <input type="checkbox" name="cat_id[]" value="{{$cat->id}}"
                                                @if($data->cat_id==$cat->id)
                                                     checked
                                                @endif
+                                           @foreach($pro_cats as $pro_cat)
+                                               @if($pro_cat->cid==$cat->id)
+                                                    checked
+                                               @endif
+                                           @endforeach
                                     >{{$cat->cat_name}}
                                 </label>
                             @endforeach

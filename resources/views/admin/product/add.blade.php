@@ -83,7 +83,7 @@
                         <div class="checkbox">
                             @foreach($cats as $cat)
                                 <label>
-                                    <input type="checkbox" name="cat_id" value="{{$cat->id}}">{{$cat->cat_name}}
+                                    <input type="checkbox" name="cat_id[]" value="{{$cat->id}}">{{$cat->cat_name}}
                                 </label>
                             @endforeach
                         </div>
