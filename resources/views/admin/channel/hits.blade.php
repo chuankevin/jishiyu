@@ -13,7 +13,11 @@
                     渠道编号：
                     <input type="text" class="form-control" name="keywords" placeholder="渠道编号" value="{{$keywords}}">&nbsp;&nbsp;&nbsp;&nbsp;
                     <button type="submit" class="btn btn-primary">搜索</button>
-                    <button type="button" class="btn btn-success" onclick="location.reload()">刷新</button>
+                    <button type="button" class="btn btn-success" onclick="location.reload()">刷新</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    导出时间段：
+                    <input type="text" class="form-control datetime-picker export_start" name="export_start_time" placeholder="" value="">－
+                    <input type="text" class="form-control datetime-picker export_end" name="export_end_time" placeholder="" value="">&nbsp;
+
                 </div>
             </div>
         </form>
@@ -25,7 +29,8 @@
                     <th>渠道名称</th>
                     <th>渠道注册量</th>
                     <th>点击品类量</th>
-                    <th>总点击次数</th>
+                    <th>APP总点击次数</th>
+                    <th>H5总点击次数</th>
                     <th>点击人数</th>
                     <th>点击人数（当日注册点击）</th>
                     <th>留存</th>
@@ -38,6 +43,7 @@
                         <td>{{$value->reg_num}}</td>
                         <td>{{$value->pro_num}}</td>
                         <td>{{$value->hits_num}}</td>
+                        <td>{{$value->h5_hits_num}}</td>
                         <td>{{$value->user_num}}</td>
                         <td>{{$value->today_num}}</td>
                         <td>
@@ -48,7 +54,7 @@
                             @endif
                         </td>
                         <td>
-                            <a href="{{url('admin/channel/prohits')}}?channel={{$value->channel}}"><button type="button" class="btn btn-block btn-success btn-sm">点击详情</button></a>
+                            <button type="button" class="btn btn-block btn-success btn-sm" onclick="exportExcel('{{$value->channel}}')">导出点击</button>
                         </td>
                     </tr>
                 @endforeach
@@ -58,6 +64,7 @@
                     <th></th>
                     <th></th>
                     <th>{{$total[0]['hits_total']}}</th>
+                    <th>{{$total[0]['h5_hits_total']}}</th>
                     <th></th>
                     <th></th>
                 </tr>
@@ -92,22 +99,35 @@
                 autoclose: true,
                 todayBtn : true,
             });
+
+            $('.datetime-picker').datetimepicker({
+                format:'yyyy-mm-dd hh:ii',
+                language: 'zh-CN',
+                autoclose: true,
+                todayBtn : true,
+            });
         });
 
-        function _delete(id){
-            $.ajax({
-                data:{
-                    id:id,
-                },
-                dataType:'json',
-                type:'get',
-                url:"{{url('admin/channel/delete')}}",
-                success:function(data){
-                    alert(data.msg);
-                    location.reload();
-                }
-            });
-        }
+       function exportExcel(channel){
+           var start_time=$('.export_start').val();
+           var end_time=$('.export_end').val();
+           //alert(start_time);return false;
+           $.ajax({
+               data:{
+                   start_time:start_time,
+                   end_time:end_time,
+                   channel:channel,
+                   _token:"{{csrf_token()}}"
+               },
+               dataType:'json',
+               type:'post',
+               url:"{{url('/admin/channel/export')}}",
+               success:function(data){
+                   location.href=data.url;
+               }
+           });
+       }
+
     </script>
 
 

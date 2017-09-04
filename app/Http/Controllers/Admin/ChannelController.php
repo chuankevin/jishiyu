@@ -4,10 +4,12 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\HomeController;
 use App\Models\AppActivate;
+use App\Models\Business;
 use App\Models\Channel;
 use App\Models\ChannelHits;
 use App\Models\ChannelNo;
 use App\Models\ChannelNoPro;
+use App\Models\Products;
 use App\Models\User;
 use App\Models\UserProChannelHits;
 use Illuminate\Http\Request;
@@ -294,7 +296,7 @@ class ChannelController extends HomeController
         //业务数据
         $data=$data
             ->leftjoin('channel_no','user_pro_channel_hits.channel','=','channel_no.no')
-            ->select('user_pro_channel_hits.*','channel_no.name',DB::raw('SUM(hits) as hits_num'))
+            ->select('user_pro_channel_hits.*','channel_no.name',DB::raw('SUM(hits) as hits_num'),DB::raw('SUM(cmf_user_pro_channel_hits.h5_hits) as h5_hits_num'))
             ->groupBy('user_pro_channel_hits.channel')
             ->paginate(10);
         foreach($data as $key=>$val){
@@ -365,10 +367,58 @@ class ChannelController extends HomeController
         }
         $total=UserProChannelHits::where('created_at','>=',$start_time)
             ->where('created_at','<',date('Y-m-d',strtotime($end_time)+3600*24))
-            ->select(DB::raw('SUM(hits) as hits_total'))
+            ->select(DB::raw('SUM(hits) as hits_total'),DB::raw('SUM(cmf_user_pro_channel_hits.h5_hits) as h5_hits_total'))
             ->get();
         //dd($total[0]->hits_total);
 
         return view('admin.channel.hits',compact('data','start_time','end_time','keywords','total'));
+    }
+
+    public function postExport(Request $request){
+        ini_set("memory_limit","256M");
+        set_time_limit(600);
+        $data=new UserProChannelHits();
+        //时间筛选
+        $start_time=$request->start_time;
+        $end_time=$request->end_time;
+        if($start_time!=''){
+            $data=$data->where('user_pro_channel_hits.created_at','>=',$start_time);
+        }
+        if($end_time!=''){
+            $data=$data->where('user_pro_channel_hits.created_at','<=',$end_time);
+        }
+        //渠道筛选
+        $channel=$request->channel;
+        if(!empty($channel)){
+            $data=$data->where('user_pro_channel_hits.channel',$channel);
+        }
+
+        $head=[['ID','手机号','渠道名称','APP点击','H5点击','创建时间','点击产品']];
+        //用户信息
+        $data=$data
+            ->leftjoin('channel_no','user_pro_channel_hits.channel','=','channel_no.no')
+            ->leftjoin('users','users.id','=','user_pro_channel_hits.uid')
+            ->select('user_pro_channel_hits.id','users.mobile','channel_no.name','user_pro_channel_hits.hits','user_pro_channel_hits.h5_hits','user_pro_channel_hits.created_at','user_pro_channel_hits.pid','user_pro_channel_hits.is_old')
+            ->get()
+            ->toArray();
+        //dd($data);
+        foreach ($data as $key=>$val){
+            if($val['is_old']==1){
+                $business=Business::find($val['pid']);
+                if($business){
+                    $data[$key]['pid']=$business->post_title;
+                }
+            }else{
+                $product=Products::find($val['pid']);
+                if($product){
+                    $data[$key]['pid']=$product->pro_name;
+                }
+            }
+
+            unset($data[$key]['is_old']);
+        }
+        $data=array_merge($head,$data);
+
+        return $this->export('channel_hits_'.date('Ymdis'),'渠道点击表',$data);
     }
 }

@@ -77,6 +77,37 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">新品或推荐：</label>
+
+                    <div class="form-group col-sm-6">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="is_new" value="1" checked>新品
+                            </label>
+                            <label>
+                                <input type="radio" name="is_new" value="2">推荐
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">是否活动：</label>
+
+                    <div class="form-group col-sm-6">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="is_activity" value="1" checked>是
+                            </label>
+                            <label>
+                                <input type="radio" name="is_activity" value="0">否
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
                     <label for="" class="col-sm-2 control-label">产品分类：</label>
 
                     <div class="form-group col-sm-6">
@@ -155,13 +186,6 @@
                     <label for="" class="col-sm-2 control-label">产品类型：</label>
 
                     <div class="form-group col-sm-6">
-                       {{-- <div class="checkbox">
-                            @foreach($tags as $item)
-                                <label>
-                                    <input type="checkbox" name="tags[]" value="{{$item->id}}">{{$item->tag_name}}
-                                </label>
-                            @endforeach
-                        </div>--}}
                         <div class="radio">
                             <label>
                                 <input type="radio" name="type" value="1" checked>好评推荐
@@ -206,6 +230,93 @@
                     </div>
 
                 </div>
+                <hr>
+
+                <div class="form-group lv-1" >
+                    <label for="" class="col-sm-2 control-label">新手指导：</label>
+
+                    <div class="col-sm-6">
+                        <textarea name="guid" id="guid" class='form-control' cols="50" rows="5" placeholder="请输入新手指导"></textarea>
+                    </div>
+                </div>
+                <div class="form-group lv-1" >
+                    <label for="" class="col-sm-2 control-label">贷款类型：</label>
+
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="loan_type" placeholder="请输入贷款类型" name="loan_type">
+                    </div>
+                </div>
+                <div class="form-group lv-1" >
+                    <label for="" class="col-sm-2 control-label">面向人群：</label>
+
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="group" placeholder="请输入面向人群" name="group">
+                    </div>
+                </div>
+                <div class="form-group lv-1" >
+                    <label for="" class="col-sm-2 control-label">审核方式：</label>
+
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="check_type" placeholder="请输入审核方式" name="check_type">
+                    </div>
+                </div>
+                <div class="form-group lv-1" >
+                    <label for="" class="col-sm-2 control-label">到账方式：</label>
+
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="in_account_type" placeholder="请输入到账方式" name="in_account_type">
+                    </div>
+                </div>
+                <div class="form-group lv-1" >
+                    <label for="" class="col-sm-2 control-label">实际到账：</label>
+
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="in_account" placeholder="请输入实际到账" name="in_account">
+                    </div>
+                </div>
+                <div class="form-group lv-1" >
+                    <label for="" class="col-sm-2 control-label">还款途径：</label>
+
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="repayment" placeholder="请输入还款途径" name="repayment">
+                    </div>
+                </div>
+                <div class="form-group lv-1" >
+                    <label for="" class="col-sm-2 control-label">还款方式：</label>
+
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="repay_type" placeholder="请输入还款方式" name="repay_type">
+                    </div>
+                </div>
+                <div class="form-group lv-1" >
+                    <label for="" class="col-sm-2 control-label">提前还款：</label>
+
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="prepayment" placeholder="请输入提前还款" name="prepayment">
+                    </div>
+                </div>
+                <div class="form-group lv-1" >
+                    <label for="" class="col-sm-2 control-label">逾期还款：</label>
+
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="delinquency" placeholder="请输入逾期还款" name="delinquency">
+                    </div>
+                </div>
+                <div class="form-group lv-1" >
+                    <label for="" class="col-sm-2 control-label">能否提额：</label>
+
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="is_up" placeholder="请输入能否提额" name="is_up">
+                    </div>
+                </div>
+                <div class="form-group lv-1" >
+                    <label for="" class="col-sm-2 control-label">所属平台：</label>
+
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="platform" placeholder="请输入所属平台" name="platform">
+                    </div>
+                </div>
+
             </div>
             <input type="hidden" name="img_path" id="file_url" value="">
             <!-- /.box-body -->
@@ -282,6 +393,87 @@
                 msg('请输入申请条件');
                 return false;
             }
+            //产品分类
+            if($("input[name='cat_id[]']:checked").length==0) {
+                msg('请选择产品分类');
+                return false;
+            }
+            //标签
+            if($("input[name='tags[]']:checked").length==0) {
+                msg('请选择标签');
+                return false;
+            }
+            //认证资料
+            if($("input[name='data_id[]']:checked").length==0) {
+                msg('请选择认证资料');
+                return false;
+            }
+            //其他认证资料
+            if($("input[name='other_id[]']:checked").length==0) {
+                msg('请选择其他认证资料');
+                return false;
+            }
+            /*//新手指导
+            if($('#guid').val()==''){
+                msg('请输入新手指导');
+                return false;
+            }
+            //贷款类型
+            if($('#loan_type').val()==''){
+                msg('请输入贷款类型');
+                return false;
+            }
+            //面向人群
+            if($('#group').val()==''){
+                msg('请输入面向人群');
+                return false;
+            }
+            //审核方式
+            if($('#check_type').val()==''){
+                msg('请输入审核方式');
+                return false;
+            }
+            //到账方式
+            if($('#in_account_type').val()==''){
+                msg('请输入到账方式');
+                return false;
+            }
+            //实际到账
+            if($('#in_account').val()==''){
+                msg('请输入实际到账');
+                return false;
+            }
+            //还款途径
+            if($('#repayment').val()==''){
+                msg('请输入还款途径');
+                return false;
+            }
+            //还款方式
+            if($('#repay_type').val()==''){
+                msg('请输入还款方式');
+                return false;
+            }
+            //提前还款
+            if($('#prepayment').val()==''){
+                msg('请输入提前还款');
+                return false;
+            }
+            //逾期还款
+            if($('#delinquency').val()==''){
+                msg('请输入逾期还款');
+                return false;
+            }
+            //能否提额
+            if($('#is_up').val()==''){
+                msg('请输入能否提额');
+                return false;
+            }
+            //平台
+            if($('#platform').val()==''){
+                msg('请输入所属平台');
+                return false;
+            }*/
+
             //图片
             if($('.iconimg').attr('src')==''){
                 msg('请上传图片');

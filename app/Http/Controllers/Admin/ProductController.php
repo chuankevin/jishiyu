@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\HomeController;
 use App\Models\ProCat;
 use App\Models\ProductCate;
+use App\Models\ProductDetail;
 use App\Models\ProductTags;
 use App\Models\BusinessPropertyName;
 use App\Models\BusinessPropertyType;
@@ -72,8 +73,26 @@ class ProductController extends HomeController
             $data->img=$request->img_path;
             $data->data_id=json_encode($request->data_id);
             $data->other_id=json_encode($request->other_id);
+            $data->is_new=$request->is_new;
+            $data->is_activity=$request->is_activity;
 
             if($data->save()){
+                //产品详情维护
+                $product_detail=new ProductDetail();
+                $product_detail->pid=$data->id;
+                $product_detail->guid=$request->guid;
+                $product_detail->loan_type=$request->loan_type;
+                $product_detail->group=$request->group;
+                $product_detail->check_type=$request->check_type;
+                $product_detail->in_account_type=$request->in_account_type;
+                $product_detail->in_account=$request->in_account;
+                $product_detail->repayment=$request->repayment;
+                $product_detail->repay_type=$request->repay_type;
+                $product_detail->prepayment=$request->prepayment;
+                $product_detail->delinquency=$request->delinquency;
+                $product_detail->is_up=$request->is_up;
+                $product_detail->platform=$request->platform;
+                $product_detail->save();
                 //维护产品属性
                 $arr=array();//存属性
                 $properties=BusinessPropertyType::get();//属性数据
@@ -156,7 +175,30 @@ class ProductController extends HomeController
             $data->img=$request->img_path;
             $data->data_id=json_encode($request->data_id);
             $data->other_id=json_encode($request->other_id);
+            $data->is_new=$request->is_new;
+            $data->is_activity=$request->is_activity;
             if($data->save()){
+                //产品详情维护
+                $product_detail=ProductDetail::where('pid',$data->id)->first();
+                if(!$product_detail){
+                    $product_detail=new ProductDetail();
+                    $product_detail->pid=$data->id;
+                    $product_detail->save();
+                }
+                $product_detail->guid=$request->guid;
+                $product_detail->loan_type=$request->loan_type;
+                $product_detail->group=$request->group;
+                $product_detail->check_type=$request->check_type;
+                $product_detail->in_account_type=$request->in_account_type;
+                $product_detail->in_account=$request->in_account;
+                $product_detail->repayment=$request->repayment;
+                $product_detail->repay_type=$request->repay_type;
+                $product_detail->prepayment=$request->prepayment;
+                $product_detail->delinquency=$request->delinquency;
+                $product_detail->is_up=$request->is_up;
+                $product_detail->platform=$request->platform;
+                $product_detail->save();
+                //维护产品属性
                 $arr=array();//存属性
                 $properties=BusinessPropertyType::get();//属性数据
                 foreach($properties as $property){
@@ -200,7 +242,9 @@ class ProductController extends HomeController
 
         }else{
             //回显产品数据
-            $data=Products::find($id);
+            $data=Products::leftjoin('product_detail','product_detail.pid','=','products.id')
+                ->where('products.id',$id)
+                ->first();
             //资料选项
             $product_data=ProductData::get();
             //其他资料选项
