@@ -81,10 +81,10 @@
                     <div class="form-group col-sm-6">
                         <div class="radio">
                             <label>
-                                <input type="radio" name="is_new" value="1" @if ($data->is_new==1) checked @endif>新品
+                                <input type="radio" name="is_new" value="/20170904/xinpin.png" @if ($data->is_new=='/20170904/xinpin.png') checked @endif>新品
                             </label>
                             <label>
-                                <input type="radio" name="is_new" value="2" @if ($data->is_new==2) checked @endif>推荐
+                                <input type="radio" name="is_new" value="/20170904/tuijian.png" @if ($data->is_new=='/20170904/tuijian.png') checked @endif>推荐
                             </label>
                         </div>
 
@@ -96,10 +96,10 @@
                     <div class="form-group col-sm-6">
                         <div class="radio">
                             <label>
-                                <input type="radio" name="is_activity" value="1" @if ($data->is_activity==1) checked @endif>是
+                                <input type="radio" name="is_activity" value="/20170904/huodong.png" @if ($data->is_activity=='/20170904/huodong.png') checked @endif>是
                             </label>
                             <label>
-                                <input type="radio" name="is_activity" value="0" @if ($data->is_activity==0) checked @endif>否
+                                <input type="radio" name="is_activity" value="" @if ($data->is_activity=='') checked @endif>否
                             </label>
                         </div>
 

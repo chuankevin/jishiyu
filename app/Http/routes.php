@@ -51,6 +51,7 @@ Route::group(['namespace' => 'Admin', 'middleware' => ['web']], function () {
 	Route::controller('admin/appupdate', 'AppUpdateController');
 	Route::controller('admin/producthitslog', 'ProductHitsLogController');
 	Route::controller('admin/productcate', 'ProductCateController');
+	Route::controller('admin/businessshow', 'BusinessShowController');
 });
 
 Route::group(['namespace' => 'Api', 'middleware' => ['web']], function () {

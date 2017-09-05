@@ -82,10 +82,10 @@
                     <div class="form-group col-sm-6">
                         <div class="radio">
                             <label>
-                                <input type="radio" name="is_new" value="1" checked>新品
+                                <input type="radio" name="is_new" value="/20170904/xinpin.png" checked>新品
                             </label>
                             <label>
-                                <input type="radio" name="is_new" value="2">推荐
+                                <input type="radio" name="is_new" value="/20170904/tuijian.png">推荐
                             </label>
                         </div>
 
@@ -97,10 +97,10 @@
                     <div class="form-group col-sm-6">
                         <div class="radio">
                             <label>
-                                <input type="radio" name="is_activity" value="1" checked>是
+                                <input type="radio" name="is_activity" value="/20170904/huodong.png" checked>是
                             </label>
                             <label>
-                                <input type="radio" name="is_activity" value="0">否
+                                <input type="radio" name="is_activity" value="">否
                             </label>
                         </div>
 

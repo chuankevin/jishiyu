@@ -89,6 +89,10 @@ $menuList = RoleMenu::getMenuList($admin_id);
                         <?php if(RoleMenu::hasMenuCategory($menuList,'点击量查询','menuName')): ?>
                             <li class="admin-business-hitslist"><a href="{{action('Admin\BusinessController@getHitslist')}}"><i class="fa fa-circle-o"></i>点击量查询</a></li>
                         <?php endif ?>
+
+                        <?php if(RoleMenu::hasMenuCategory($menuList,'H5展示','menuName')): ?>
+                            <li class="admin-businessshow-add"><a href="{{action('Admin\BusinessShowController@anyAdd')}}"><i class="fa fa-circle-o"></i>H5展示</a></li>
+                        <?php endif ?>
                     </ul>
                 </li>
             <?php endif ?>
