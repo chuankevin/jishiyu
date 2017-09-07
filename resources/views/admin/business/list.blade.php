@@ -14,6 +14,11 @@
                         <option value="1" @if($post_status==1) selected @endif >已上架</option>
                         <option value="0" @if($post_status==0) selected @endif>已下架</option>
                     </select>&nbsp;&nbsp;&nbsp;
+                    上架位置：
+                    <select class="form-control selectpicker2" id="channel" name="location">
+                        <option value="1" @if($location==1) selected @endif >APP</option>
+                        <option value="2" @if($location==2) selected @endif>H5</option>
+                    </select>&nbsp;
                     <button type="submit" class="btn btn-primary">搜索</button>
                     <button type="button" class="btn btn-success" onclick="location.reload()">刷新</button>
                 </div>
@@ -35,6 +40,7 @@
                     <th>缩略图</th>
                     <th>发布时间</th>
                     <th>状态</th>
+                    <th>上架位置</th>
                     <th style="width: 40px" colspan="2">操作</th>
                 </tr>
                 @foreach($data as $key=>$value)
@@ -63,6 +69,7 @@
                     </td>
                     <td>{{$value->post_date}}</td>
                     <td>@if($value->post_status==1) 已上架 @else 已下架 @endif</td>
+                    <td>@if($value->location==1) APP @else H5 @endif</td>
                     <td style="width: 40px">
                         <button type="button" class="btn btn-block btn-warning btn-sm" onclick="if(confirm('确定要执行吗？')){is_sale({{$value->id}},{{$value->post_status}})}">@if($value->post_status==0) 上架 @else 下架 @endif</button>
                     </td>
@@ -79,7 +86,7 @@
         <!-- /.box-body -->
         <div class="box-footer clearfix">
 
-           {!! $data->appends(['keywords'=>$keywords,'post_status'=>$post_status])->links() !!}
+           {!! $data->appends(['keywords'=>$keywords,'post_status'=>$post_status,'location'=>$location])->links() !!}
 
         </div>
     </div>

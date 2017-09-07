@@ -149,6 +149,21 @@
                     </div>
 
                 </div>
+                <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">上架位置：</label>
+
+                    <div class="form-group col-sm-6">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="location" value="1" @if ($data->location==1) checked @endif>上架APP
+                            </label>
+                            <label>
+                                <input type="radio" name="location" value="2" @if ($data->location==2) checked @endif>上架H5
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
             </div>
             @if($data->smeta!='')
                 <input type="hidden" name="img_path" id="file_url" value="{{json_decode($data->smeta)->thumb}}">

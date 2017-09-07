@@ -31,20 +31,24 @@ class BusinessController extends HomeController
         if($keywords!=''){
             $data=$data->where('post_title','like','%'.$keywords.'%');
         }
+        //上下架筛选
         $post_status=isset($request->post_status) ? $request->post_status : 1;
         if($post_status!=''){
             $data=$data->where('post_status',$post_status);
         }else{
             $data=$data->where('post_status',1);
         }
+        //上架位置筛选
+        $location=isset($request->location) ? $request->location : 1;
+        $data=$data->where('location',$location);
         //业务数据
         $data=$data
             //->where('post_status',1)
             ->orderBy('post_date','desc')
-            ->select('id','post_title','post_hits','edufanwei','feilv','qixianfanwei','zuikuaifangkuan','smeta','post_date','link','post_status','listorder','fv_unit','qx_unit','h5_hits')
+            ->select('id','post_title','post_hits','edufanwei','feilv','qixianfanwei','zuikuaifangkuan','smeta','post_date','link','post_status','listorder','fv_unit','qx_unit','h5_hits','location')
             ->paginate(10);
 
-        return view('admin.business.list',compact('data','keywords','post_status'));
+        return view('admin.business.list',compact('data','keywords','post_status','location'));
     }
 
     /**
@@ -71,6 +75,7 @@ class BusinessController extends HomeController
                 $data->shenqingtiaojian=$request->shenqingtiaojian;
                 $data->link=$request->link;
                 $data->link_h5=$request->link_h5;
+                $data->location=$request->location;
                 $data->smeta=json_encode(['thumb'=>$request->img_path]);
                 $data->post_date=date('Y-m-d H:i:s');
                 $data->post_modified=date('Y-m-d H:i:s');
@@ -156,6 +161,7 @@ class BusinessController extends HomeController
                 $data->shenqingtiaojian=$request->shenqingtiaojian;
                 $data->link=$request->link;
                 $data->link_h5=$request->link_h5;
+                $data->location=$request->location;
                 $data->smeta=json_encode(['thumb'=>$request->img_path]);
                 $data->post_modified=date('Y-m-d H:i:s');
                 $data->save();
@@ -298,12 +304,17 @@ class BusinessController extends HomeController
         if($keywords!=''){
             $data=$data->where('post_title','like','%'.$keywords.'%');
         }
+        //上下架筛选
         $post_status=isset($request->post_status) ? $request->post_status : 1;
         if($post_status!=''){
             $data=$data->where('post_status',$post_status);
         }else{
             $data=$data->where('post_status',1);
         }
+        //上架位置筛选
+        $location=isset($request->location) ? $request->location : 1;
+        $data=$data->where('location',$location);
+        //时间筛选
         $start_time=$request->start_time;
         $end_time=$request->end_time;
         if($start_time!=''){
@@ -341,6 +352,6 @@ class BusinessController extends HomeController
         $h5_sum=$hit_log->sum('hits_log.h5_hits');
 
 
-        return view('admin.business.hitslist',compact('data','keywords','post_status','start_time','end_time','app_sum','h5_sum'));
+        return view('admin.business.hitslist',compact('data','keywords','post_status','location','start_time','end_time','app_sum','h5_sum'));
     }
 }

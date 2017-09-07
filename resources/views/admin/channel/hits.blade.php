@@ -47,11 +47,12 @@
                         <td>{{$value->user_num}}</td>
                         <td>{{$value->today_num}}</td>
                         <td>
-                            @if($value->yes_reg==0)
+                            {{$value->user_num-$value->today_num}}
+                            {{--@if($value->yes_reg==0)
                                 0%
                             @else
                                 {{round(($value->user_num-$value->today_num)/($value->yes_reg),2)}} %
-                            @endif
+                            @endif--}}
                         </td>
                         <td>
                             <button type="button" class="btn btn-block btn-success btn-sm" onclick="exportExcel('{{$value->channel}}')">导出点击</button>

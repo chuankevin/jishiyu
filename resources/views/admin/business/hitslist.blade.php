@@ -18,6 +18,11 @@
                     <select class="form-control selectpicker2" id="channel" name="post_status">
                         <option value="1" @if($post_status==1) selected @endif >已上架</option>
                         <option value="0" @if($post_status==0) selected @endif>已下架</option>
+                    </select>&nbsp;&nbsp;&nbsp;&nbsp;
+                    上架位置：
+                    <select class="form-control selectpicker2" id="channel" name="location">
+                        <option value="1" @if($location==1) selected @endif >APP</option>
+                        <option value="2" @if($location==2) selected @endif>H5</option>
                     </select>&nbsp;
                     <button type="submit" class="btn btn-primary">搜索</button>
                     <button type="button" class="btn btn-success" onclick="location.reload()">刷新</button>
@@ -56,7 +61,7 @@
         </div>
         <!-- /.box-body -->
         <div class="box-footer clearfix">
-            {!! $data->appends(['start_time'=>$start_time,'end_time'=>$end_time,'keywords'=>$keywords,'post_status'=>$post_status])->links() !!}
+            {!! $data->appends(['start_time'=>$start_time,'end_time'=>$end_time,'keywords'=>$keywords,'post_status'=>$post_status,'location'=>$location])->links() !!}
             {{--<ul class="pagination pagination-sm no-margin pull-left">
                 <li><a href="#">&laquo;</a></li>
                 <li><a href="#">1</a></li>

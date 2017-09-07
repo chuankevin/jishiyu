@@ -133,6 +133,21 @@
                     </div>
 
                 </div>
+                <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">上架位置：</label>
+
+                    <div class="form-group col-sm-6">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="location" value="1" checked>上架APP
+                            </label>
+                            <label>
+                                <input type="radio" name="location" value="2">上架H5
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
             </div>
             <input type="hidden" name="img_path" id="file_url" value="">
             <!-- /.box-body -->
