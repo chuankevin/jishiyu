@@ -306,10 +306,8 @@ class BusinessController extends HomeController
         }
         //上下架筛选
         $post_status=isset($request->post_status) ? $request->post_status : 1;
-        if($post_status!=''){
+        if($post_status!=2){
             $data=$data->where('post_status',$post_status);
-        }else{
-            $data=$data->where('post_status',1);
         }
         //上架位置筛选
         $location=isset($request->location) ? $request->location : 1;

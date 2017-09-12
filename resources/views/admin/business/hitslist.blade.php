@@ -16,6 +16,7 @@
                     <input type="text" class="form-control" name="keywords" placeholder="请输入关键词" value="{{$keywords}}">&nbsp;&nbsp;&nbsp;&nbsp;
                     发布状态：
                     <select class="form-control selectpicker2" id="channel" name="post_status">
+                        <option value="2" @if($post_status=='2') selected @endif >全部</option>
                         <option value="1" @if($post_status==1) selected @endif >已上架</option>
                         <option value="0" @if($post_status==0) selected @endif>已下架</option>
                     </select>&nbsp;&nbsp;&nbsp;&nbsp;
