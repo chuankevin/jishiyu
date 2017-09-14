@@ -41,14 +41,24 @@ class BusinessController extends HomeController
         //上架位置筛选
         $location=isset($request->location) ? $request->location : 1;
         $data=$data->where('location',$location);
+        //上架时间筛选
+        $start_time=$request->start_time;
+        $end_time=$request->end_time;
+        if($start_time!=''){
+            $data=$data->where('post_date','>=',$start_time);
+        }
+        if($end_time!=''){
+            $end=date('Y-m-d',strtotime($end_time)+3600*24);
+            $data=$data->where('post_date','<',$end);
+        }
         //业务数据
         $data=$data
             //->where('post_status',1)
             ->orderBy('post_date','desc')
-            ->select('id','post_title','post_hits','edufanwei','feilv','qixianfanwei','zuikuaifangkuan','smeta','post_date','link','post_status','listorder','fv_unit','qx_unit','h5_hits','location')
+            ->select('id','post_title','post_hits','edufanwei','feilv','qixianfanwei','zuikuaifangkuan','smeta','post_date','link','post_status','listorder','fv_unit','qx_unit','h5_hits','location','post_modified')
             ->paginate(10);
 
-        return view('admin.business.list',compact('data','keywords','post_status','location'));
+        return view('admin.business.list',compact('data','keywords','post_status','location','start_time','end_time'));
     }
 
     /**
@@ -264,6 +274,7 @@ class BusinessController extends HomeController
             }
         }elseif ($status==1){
             $business->post_status=0;
+            $business->post_modified=date('Y-m-d H:i:s');
             if($business->save()){
                 return response()->json(['msg'=>'下架成功']);
             }else{

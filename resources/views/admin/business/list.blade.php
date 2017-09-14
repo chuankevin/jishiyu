@@ -18,7 +18,11 @@
                     <select class="form-control selectpicker2" id="channel" name="location">
                         <option value="1" @if($location==1) selected @endif >APP</option>
                         <option value="2" @if($location==2) selected @endif>H5</option>
-                    </select>&nbsp;
+                    </select>&nbsp;&nbsp;&nbsp;&nbsp;
+                    上架时间：
+                    <input type="text" class="form-control date-picker start" name="start_time" placeholder="" value="{{$start_time}}">－
+                    <input type="text" class="form-control date-picker end" name="end_time" placeholder="" value="{{$end_time}}">&nbsp;&nbsp;&nbsp;&nbsp;
+
                     <button type="submit" class="btn btn-primary">搜索</button>
                     <button type="button" class="btn btn-success" onclick="location.reload()">刷新</button>
                 </div>
@@ -36,9 +40,15 @@
                     <th>额度范围</th>
                     <th>费率</th>
                     <th>期限范围</th>
-                    <th>最快放款</th>
                     <th>缩略图</th>
                     <th>发布时间</th>
+                    <th>
+                        @if(isset($_GET['post_status']) && $_GET['post_status']==0)
+                            下架时间
+                        @else
+                            更新时间
+                        @endif
+                    </th>
                     <th>状态</th>
                     <th>上架位置</th>
                     <th style="width: 40px" colspan="2">操作</th>
@@ -55,7 +65,6 @@
                     <td>{{$value->edufanwei}}</td>
                     <td>{{$value->feilv}}</td>
                     <td>{{$value->qixianfanwei}}</td>
-                    <td>{{$value->zuikuaifangkuan}}</td>
                     <td>
                         @if($value->smeta!='')
                        <a href="{{asset('/upload/'.json_decode($value->smeta)->thumb)}}" target="_blank">
@@ -68,6 +77,7 @@
                        </a>
                     </td>
                     <td>{{$value->post_date}}</td>
+                    <td>{{$value->post_modified}}</td>
                     <td>@if($value->post_status==1) 已上架 @else 已下架 @endif</td>
                     <td>@if($value->location==1) APP @else H5 @endif</td>
                     <td style="width: 40px">
@@ -86,14 +96,19 @@
         <!-- /.box-body -->
         <div class="box-footer clearfix">
 
-           {!! $data->appends(['keywords'=>$keywords,'post_status'=>$post_status,'location'=>$location])->links() !!}
+           {!! $data->appends(['keywords'=>$keywords,'post_status'=>$post_status,'location'=>$location,'start_time'=>$start_time,'end_time'=>$end_time])->links() !!}
 
         </div>
     </div>
 
     <script>
         $(function() {
-            //$('.selectpicker2').select2();
+            $('.date-picker').datepicker({
+                format:'yyyy-mm-dd',
+                language: 'zh-CN',
+                autoclose: true,
+                todayBtn : true,
+            });
         });
 
         function _delete(id){

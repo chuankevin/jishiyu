@@ -40,12 +40,22 @@ class ProductController extends HomeController
         }else{
             $data=$data->where('status',1);
         }
+        //上架时间筛选
+        $start_time=$request->start_time;
+        $end_time=$request->end_time;
+        if($start_time!=''){
+            $data=$data->where('created_at','>=',$start_time);
+        }
+        if($end_time!=''){
+            $end=date('Y-m-d',strtotime($end_time)+3600*24);
+            $data=$data->where('created_at','<',$end);
+        }
         //业务数据
         $data=$data
             ->orderBy('created_at','desc')
             ->paginate(10);
 
-        return view('admin.product.list',compact('data','keywords','status'));
+        return view('admin.product.list',compact('data','keywords','status','start_time','end_time'));
     }
 
     /**
@@ -315,6 +325,7 @@ class ProductController extends HomeController
             }
         }elseif ($status==1){
             $data->status=0;
+            $data->updated_at=date('Y-m-d H:i:s');
             if($data->save()){
                 return response()->json(['msg'=>'下架成功']);
             }else{

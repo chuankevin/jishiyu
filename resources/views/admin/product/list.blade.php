@@ -14,6 +14,10 @@
                         <option value="1" @if($status==1) selected @endif >已上架</option>
                         <option value="0" @if($status==0) selected @endif>已下架</option>
                     </select>&nbsp;&nbsp;&nbsp;
+                    上架时间：
+                    <input type="text" class="form-control date-picker start" name="start_time" placeholder="" value="{{$start_time}}">－
+                    <input type="text" class="form-control date-picker end" name="end_time" placeholder="" value="{{$end_time}}">&nbsp;
+
                     <button type="submit" class="btn btn-primary">搜索</button>
                     <button type="button" class="btn btn-success" onclick="location.reload()">刷新</button>
                 </div>
@@ -31,6 +35,13 @@
                     <th>产品类型</th>
                     <th>图标</th>
                     <th>发布时间</th>
+                    <th>
+                        @if(isset($_GET['status']) && $_GET['status']==0)
+                            下架时间
+                        @else
+                            更新时间
+                        @endif
+                    </th>
                     <th>状态</th>
                     <th style="width: 40px" colspan="2">操作</th>
                 </tr>
@@ -54,6 +65,7 @@
                        </a>
                     </td>
                     <td>{{$value->created_at}}</td>
+                    <td>{{$value->updated_at}}</td>
                     <td>@if($value->status==1) 已上架 @else 已下架 @endif</td>
                     <td style="width: 40px">
                         <button type="button" class="btn btn-block btn-warning btn-sm" onclick="if(confirm('确定要执行吗？')){is_sale({{$value->id}},{{$value->status}})}">@if($value->status==0) 上架 @else 下架 @endif</button>
@@ -71,14 +83,19 @@
         <!-- /.box-body -->
         <div class="box-footer clearfix">
 
-           {!! $data->appends(['keywords'=>$keywords,'post_status'=>$status])->links() !!}
+           {!! $data->appends(['keywords'=>$keywords,'post_status'=>$status,'start_time'=>$start_time,'end_time'=>$end_time])->links() !!}
 
         </div>
     </div>
 
     <script>
         $(function() {
-            //$('.selectpicker2').select2();
+            $('.date-picker').datepicker({
+                format:'yyyy-mm-dd',
+                language: 'zh-CN',
+                autoclose: true,
+                todayBtn : true,
+            });
         });
 
         function _delete(id){
