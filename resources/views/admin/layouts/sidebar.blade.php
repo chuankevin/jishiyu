@@ -190,7 +190,7 @@ $menuList = RoleMenu::getMenuList($admin_id);
 
             <?php if(RoleMenu::hasMenuCategory($menuList,'积分商城管理','category')): ?>
             <li class="treeview ">
-                <a href="#"><i class="fa fa-picture-o"></i>
+                <a href="#"><i class="fa fa-gift"></i>
                     <span>积分商城管理</span>
                     <span class="pull-right-container">
                           <i class="fa fa-angle-left pull-right"></i>

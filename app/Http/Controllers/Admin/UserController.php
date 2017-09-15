@@ -40,7 +40,7 @@ class UserController extends HomeController{
         //手机号筛选
         $mobile=$request->mobile;
         if(!empty($mobile)){
-            $data=$data->where('mobile','like','%'.$mobile.'%');
+            $data=$data->where('mobile',$mobile);
         }
         //用户信息
         $data=$data/*->where('user_status',1)*/
