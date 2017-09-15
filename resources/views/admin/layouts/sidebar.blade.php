@@ -188,6 +188,32 @@ $menuList = RoleMenu::getMenuList($admin_id);
                 </li>
             <?php endif ?>
 
+            <?php if(RoleMenu::hasMenuCategory($menuList,'积分商城管理','category')): ?>
+            <li class="treeview ">
+                <a href="#"><i class="fa fa-picture-o"></i>
+                    <span>积分商城管理</span>
+                    <span class="pull-right-container">
+                          <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                </a>
+                <ul class="treeview-menu">
+
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'新增商品','menuName')): ?>
+                    <li class="admin-scoreproduct-add"><a href="{{action('Admin\ScoreProductController@anyAdd')}}"><i class="fa fa-circle-o"></i>新增商品</a></li>
+                    <?php endif ?>
+
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'商品列表','menuName')): ?>
+                    <li class="admin-scoreproduct-list"><a href="{{action('Admin\ScoreProductController@getList')}}"><i class="fa fa-circle-o"></i>商品列表</a></li>
+                    <?php endif ?>
+
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'兑换记录','menuName')): ?>
+                        <li class="admin-scoreproduct-orderlist"><a href="{{action('Admin\ScoreProductController@getOrderlist')}}"><i class="fa fa-circle-o"></i>兑换记录</a></li>
+                    <?php endif ?>
+
+                </ul>
+            </li>
+            <?php endif ?>
+
             <?php if(RoleMenu::hasMenuCategory($menuList,'APP日志','category')): ?>
             <li class="treeview">
                 <a href="{{action('Admin\AppLogController@getList')}}"><i class="fa  fa-file-text-o"></i>
