@@ -33,6 +33,8 @@
                     <th>H5总点击次数</th>
                     <th>点击人数</th>
                     <th>点击人数（当日注册点击）</th>
+                    <th>注册到点击比例</th>
+                    <th>人均点击</th>
                     <th>留存</th>
                     <th style="width: 40px">操作</th>
                 </tr>
@@ -46,6 +48,20 @@
                         <td>{{$value->h5_hits_num}}</td>
                         <td>{{$value->user_num}}</td>
                         <td>{{$value->today_num}}</td>
+                        <td>
+                            @if($value->reg_num==0)
+                                0%
+                            @else
+                                {{round(($value->today_num/$value->reg_num)*100,2)}} %
+                            @endif
+                        </td>
+                        <td>
+                            @if($value->user_num==0)
+                                0%
+                            @else
+                                {{round(($value->hits_num+$value->h5_hits_num)/$value->user_num,2)}}
+                            @endif
+                        </td>
                         <td>
                             {{$value->user_num-$value->today_num}}
                             {{--@if($value->yes_reg==0)
