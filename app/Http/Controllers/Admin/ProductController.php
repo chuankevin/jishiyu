@@ -34,7 +34,7 @@ class ProductController extends HomeController
         if($keywords!=''){
             $data=$data->where('pro_name','like','%'.$keywords.'%');
         }
-        $status=isset($request->status) ? $request->status : 1;
+        $status=isset($request->post_status) ? $request->post_status : 1;
         if($status!=''){
             $data=$data->where('status',$status);
         }else{
