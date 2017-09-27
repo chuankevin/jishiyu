@@ -66,5 +66,6 @@ Route::group(['namespace' => 'Api', 'middleware' => ['web']], function () {
 	Route::controller('api/banner', 'BannerController');
 	Route::controller('api/userinfo', 'UserInfoController');
 	Route::controller('api/product', 'ProductController');
+    Route::controller('api/flush', 'FlushController');
 
 });
