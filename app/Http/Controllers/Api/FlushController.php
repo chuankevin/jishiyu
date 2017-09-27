@@ -25,6 +25,7 @@ class FlushController extends ApiController
         }
     }
 
+    
     public function generate($date,$channel){
         if(!strstr($channel,'QD')){
             return;
