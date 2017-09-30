@@ -64,6 +64,10 @@ $menuList = RoleMenu::getMenuList($admin_id);
                     <?php if(RoleMenu::hasMenuCategory($menuList,'用户点击统计','menuName')): ?>
                     <li class="admin-user-userhits"><a href="{{action('Admin\UserController@getUserhits')}}"><i class="fa fa-circle-o"></i>用户点击统计</a></li>
                     <?php endif ?>
+
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'恶意用户统计','menuName')): ?>
+                        <li class="admin-sendcode-list"><a href="{{action('Admin\SendCodeController@getList')}}"><i class="fa fa-circle-o"></i>恶意用户统计</a></li>
+                    <?php endif ?>
                 </ul>
             </li>
             <?php endif ?>
