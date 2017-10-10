@@ -398,7 +398,8 @@ class ChannelController extends HomeController
         $data=$data
             ->leftjoin('channel_no','user_pro_channel_hits.channel','=','channel_no.no')
             ->leftjoin('users','users.id','=','user_pro_channel_hits.uid')
-            ->select('user_pro_channel_hits.id','users.mobile','channel_no.name','user_pro_channel_hits.hits','user_pro_channel_hits.h5_hits','user_pro_channel_hits.created_at','users.create_time','user_pro_channel_hits.pid','user_pro_channel_hits.is_old')
+           /* ->select('user_pro_channel_hits.id','users.mobile','channel_no.name','user_pro_channel_hits.hits','user_pro_channel_hits.h5_hits','user_pro_channel_hits.created_at','users.create_time','user_pro_channel_hits.pid','user_pro_channel_hits.is_old')*/
+            ->select(DB::raw("cmf_user_pro_channel_hits.id,cmf_users.mobile,cmf_channel_no.name,cmf_user_pro_channel_hits.hits,cmf_user_pro_channel_hits.h5_hits,cmf_user_pro_channel_hits.created_at,DATE_FORMAT(create_time,'%Y-%m-%d'),cmf_user_pro_channel_hits.pid,cmf_user_pro_channel_hits.is_old"))
             ->get()
             ->toArray();
         //dd($data);
