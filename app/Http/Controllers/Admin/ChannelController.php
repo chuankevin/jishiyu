@@ -393,12 +393,12 @@ class ChannelController extends HomeController
             $data=$data->where('user_pro_channel_hits.channel',$channel);
         }
 
-        $head=[['ID','手机号','渠道名称','APP点击','H5点击','创建时间','点击产品']];
+        $head=[['ID','手机号','渠道名称','APP点击','H5点击','创建时间','注册时间','点击产品']];
         //用户信息
         $data=$data
             ->leftjoin('channel_no','user_pro_channel_hits.channel','=','channel_no.no')
             ->leftjoin('users','users.id','=','user_pro_channel_hits.uid')
-            ->select('user_pro_channel_hits.id','users.mobile','channel_no.name','user_pro_channel_hits.hits','user_pro_channel_hits.h5_hits','user_pro_channel_hits.created_at','user_pro_channel_hits.pid','user_pro_channel_hits.is_old')
+            ->select('user_pro_channel_hits.id','users.mobile','channel_no.name','user_pro_channel_hits.hits','user_pro_channel_hits.h5_hits','user_pro_channel_hits.created_at','users.create_time','user_pro_channel_hits.pid','user_pro_channel_hits.is_old')
             ->get()
             ->toArray();
         //dd($data);
