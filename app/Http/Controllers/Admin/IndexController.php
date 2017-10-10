@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 
 class IndexController extends HomeController
 {
@@ -16,7 +17,7 @@ class IndexController extends HomeController
      * @return mixed
      * 后台首页
      */
-    public function getIndex(){
+    public function getIndex(Request $request){
 
         //总用户量
         $sum=User::count();
@@ -31,7 +32,25 @@ class IndexController extends HomeController
         //月新增
         $month=date('Y-m-d',strtotime(date('Y-m-d'))-3600*24*30);
         $month_sum=User::where('create_time','>',$month)->count();
+        //图表数据
+        $amount=$request->amount;
+        $data=User::select(DB::raw("DATE_FORMAT(create_time,'%Y%m%d') days,count(id) count"))
+            ->groupBy('days')
+            ->orderBy('days','desc')
+            ->limit($amount ? $amount : 15)
+            ->get();
 
-        return view('admin/index/index',compact('sum','today_sum','yesterday_sum','week_sum','month_sum'));
+        $days=[];
+        foreach($data as $key=>$value){
+            $days[]=intval($value->days);
+        }
+        $days=json_encode(array_reverse($days));
+        $count=[];
+        foreach($data as $key=>$value){
+            $count[]=intval($value->count);
+        }
+        $count=json_encode(array_reverse($count));
+
+        return view('admin/index/index',compact('sum','today_sum','yesterday_sum','week_sum','month_sum','days','count','amount'));
     }
 }
