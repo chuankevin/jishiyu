@@ -70,9 +70,9 @@ class UserController extends HomeController{
      */
     public function postDelete(Request $request){
         $id=$request->id;
-        $status=$request->status;
+        //$status=$request->status;
         $user=User::find($id);
-        if($status==1){
+       /* if($status==1){
             //正常
             $user->user_status=0;
             if($user->save()){
@@ -88,6 +88,11 @@ class UserController extends HomeController{
             }else{
                 return response()->json(['code'=>0,'msg'=>'启用失败']);
             }
+        }*/
+        if($user->delete()){
+            return response()->json(['msg'=>'删除成功']);
+        }else{
+            return response()->json(['msg'=>'删除失败']);
         }
     }
 

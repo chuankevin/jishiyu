@@ -70,11 +70,7 @@
                     <td>{{$value->hits}}</td>
                     <td>{{ceil($value->stay_time/1000)}}</td>
                     <td>
-                        @if($value->user_status==1)
-                            <button type="button" class="btn btn-block btn-danger btn-sm" onclick="is_delete({{$value->id}},{{$value->user_status}})">禁用</button>
-                        @elseif($value->user_status==0)
-                            <button type="button" class="btn btn-block btn-success btn-sm" onclick="is_delete({{$value->id}},{{$value->user_status}})">启用</button>
-                        @endif
+                            <button type="button" class="btn btn-block btn-danger btn-sm" onclick="if(confirm('确定要删除吗？'))is_delete({{$value->id}})">删除</button>
                     </td>
                 </tr>
                 @endforeach
@@ -114,11 +110,10 @@
         });
 
 
-        function is_delete(id,status){
+        function is_delete(id){
             $.ajax({
                 data:{
                     id:id,
-                    status:status,
                     _token:"{{csrf_token()}}"
                 },
                 dataType:'json',
