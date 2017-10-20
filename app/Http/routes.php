@@ -54,6 +54,8 @@ Route::group(['namespace' => 'Admin', 'middleware' => ['web']], function () {
 	Route::controller('admin/businessshow', 'BusinessShowController');
 	Route::controller('admin/scoreproduct', 'ScoreProductController');
 	Route::controller('admin/sendcode', 'SendCodeController');
+	Route::controller('admin/totalhits', 'TotalHitsController');
+	Route::controller('admin/comment', 'CommentController');
 });
 
 Route::group(['namespace' => 'Api', 'middleware' => ['web']], function () {

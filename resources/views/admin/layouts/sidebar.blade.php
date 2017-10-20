@@ -61,6 +61,10 @@ $menuList = RoleMenu::getMenuList($admin_id);
                     <li class="admin-user-list"><a href="{{action('Admin\UserController@getList')}}"><i class="fa fa-circle-o"></i>用户管理</a></li>
                     <?php endif ?>
 
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'用户评论','menuName')): ?>
+                        <li class="admin-comment-list"><a href="{{action('Admin\CommentController@getList')}}"><i class="fa fa-circle-o"></i>用户评论</a></li>
+                    <?php endif ?>
+
                     <?php if(RoleMenu::hasMenuCategory($menuList,'用户点击统计','menuName')): ?>
                     <li class="admin-user-userhits"><a href="{{action('Admin\UserController@getUserhits')}}"><i class="fa fa-circle-o"></i>用户点击统计</a></li>
                     <?php endif ?>
@@ -309,33 +313,51 @@ $menuList = RoleMenu::getMenuList($admin_id);
             <?php endif ?>
 
             <?php if(RoleMenu::hasMenuCategory($menuList,'权限管理','category')): ?>
-                <li class="treeview">
-                    <a href="#"><i class="fa fa-lock"></i>
-                        <span>权限管理</span>
-                        <span class="pull-right-container">
+            <li class="treeview">
+                <a href="#"><i class="fa fa-lock"></i>
+                    <span>权限管理</span>
+                    <span class="pull-right-container">
                           <i class="fa fa-angle-left pull-right"></i>
                         </span>
-                    </a>
-                    <ul class="treeview-menu">
+                </a>
+                <ul class="treeview-menu">
 
-                        <?php if(RoleMenu::hasMenuCategory($menuList,'新增管理员','menuName')): ?>
-                            <li class="admin-adminuser-add"><a href="{{action('Admin\AdminUserController@anyAdd')}}"><i class="fa fa-circle-o"></i>新增管理员</a></li>
-                        <?php endif ?>
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'新增管理员','menuName')): ?>
+                    <li class="admin-adminuser-add"><a href="{{action('Admin\AdminUserController@anyAdd')}}"><i class="fa fa-circle-o"></i>新增管理员</a></li>
+                    <?php endif ?>
 
-                        <?php if(RoleMenu::hasMenuCategory($menuList,'管理员列表','menuName')): ?>
-                            <li class="admin-adminuser-list"><a href="{{action('Admin\AdminUserController@getList')}}"><i class="fa fa-circle-o"></i>管理员列表</a></li>
-                        <?php endif ?>
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'管理员列表','menuName')): ?>
+                    <li class="admin-adminuser-list"><a href="{{action('Admin\AdminUserController@getList')}}"><i class="fa fa-circle-o"></i>管理员列表</a></li>
+                    <?php endif ?>
 
-                        <?php if(RoleMenu::hasMenuCategory($menuList,'新增角色','menuName')): ?>
-                            <li class="admin-role-add"><a href="{{action('Admin\RoleController@anyAdd')}}"><i class="fa fa-circle-o"></i>新增角色</a></li>
-                        <?php endif ?>
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'新增角色','menuName')): ?>
+                    <li class="admin-role-add"><a href="{{action('Admin\RoleController@anyAdd')}}"><i class="fa fa-circle-o"></i>新增角色</a></li>
+                    <?php endif ?>
 
-                        <?php if(RoleMenu::hasMenuCategory($menuList,'角色列表','menuName')): ?>
-                            <li class="admin-role-list"><a href="{{action('Admin\RoleController@getList')}}"><i class="fa fa-circle-o"></i>角色列表</a></li>
-                        <?php endif ?>
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'角色列表','menuName')): ?>
+                    <li class="admin-role-list"><a href="{{action('Admin\RoleController@getList')}}"><i class="fa fa-circle-o"></i>角色列表</a></li>
+                    <?php endif ?>
 
-                    </ul>
-                </li>
+                </ul>
+            </li>
+            <?php endif ?>
+
+            <?php if(RoleMenu::hasMenuCategory($menuList,'财务统计','category')): ?>
+            <li class="treeview">
+                <a href="#"><i class="fa fa-lock"></i>
+                    <span>财务统计</span>
+                    <span class="pull-right-container">
+                          <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                </a>
+                <ul class="treeview-menu">
+
+                    <?php if(RoleMenu::hasMenuCategory($menuList,'点击管理','menuName')): ?>
+                    <li class="admin-totalhits-list"><a href="{{action('Admin\TotalHitsController@getList')}}"><i class="fa fa-circle-o"></i>点击管理</a></li>
+                    <?php endif ?>
+
+                </ul>
+            </li>
             <?php endif ?>
            {{-- <li class="treeview ">
                 <a href="#"><i class="fa  fa-cog"></i>
